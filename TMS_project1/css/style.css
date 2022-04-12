@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway" ;
+}
+.container{
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.tabs {
+    margin: 0 0 111px 0;
+}
+
+.tabs__buttons{
+    display: flex;
+}
+/* Не понимаю как убрать пробел между кнопками (там нет margin или padding)*/
+.tabs__btn {
+    max-width: 184px;
+    width: 100%;
+    min-height: 40px;
+    border: transparent;
+    font-family: "OpenSans";
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #fff;
+    cursor: pointer;
+}
+.tabs__btn:hover, .tabs__btn:checked {
+    border: 1px solid #C6CBCD;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+/* Сделала верхнюю границу блока линиями, как на макете. Но не совсем понимаю, 
+как это потом адаптивить можно будет. 
+Может есть другие способы сделать эту границу с исчезающей нижней границей кнопки? */
+/* .tabs__buttons__line{
+    height: .5px;
+    width: 610px;
+    margin: -1px 0 0 560px;
+    background-color:#C6CBCD ;
+} */
+.tabs__content {
+    border: 1px solid #C6CBCD;
+    /* border-top: none; */
+    display: flex;
+    /* Использовала флекс, т.к. inline inline-block почему-то не работают*/
+    /* margin: 0 0 111px 0; */
+    height: 500px;
+}
+.tabs__content__text{
+    padding: 55px 30px 0 100px ;
+    width: 60%;
+}
+.tabs__title {
+    font-family: "OpenSans";
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 0 57px 0;
+}
+.tabs__text{
+    font-size: 18px;
+    margin: 0 0 26px 0;
+}
+.tabs__text:last-of-type{
+    margin-bottom: 0px;
+}
+/* .paragraph2 {
+    margin: 0 0 84px 0;
+} */
+.tabs__content__btn{
+    max-width: 270px;
+    width: 100%;
+    /* height: 58px; */
+    background-color: #EC7979;
+    font-size: 18px;
+    color: #fff;
+    font-family: "OpenSans";
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-top: 84px;
+    line-height: 24px;
+    padding: 17px;
+}
+.tabs__content__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.awesome__title{
+    margin: 0 auto 40px;
+    font-size: 36px;
+    text-align: center;
+}
+.awesome__line{
+    height: 1px;
+    width: 170px;
+    background-color: #EC7979;
+    margin: 0 auto 40px;
+}
+.awesome__text{
+    font-size: 18px;
+    text-align: center;
+    color: #86878B;
+    margin: 0 auto 92px;
+}
+/* Использовала флекс, т.к. inline inline-block почему-то не работают*/
+.awesome__articles{
+    display: flex;
+    justify-content: center;
+}
+.awesome__article {
+    max-width: 370px;
+    text-align: center;
+    margin-right: 28px;
+}
+.third_article {
+    margin-right: 0px;
+}
+.awesome__article__title{
+    font-family: "OpenSans";
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 auto 30px;
+}
+.awesome__article__logo{
+    width: 92px;
+    height: 92px;
+    margin: 0 auto 24px;
+    border: 1px solid #EC7979;
+    border-radius: 90px;
+}
+.awesome__article__img {
+    object-fit: contain;
+}
+.bulb {
+    margin: 10px auto 0;
+}
+.keyboard{
+    margin: 23px auto 0; 
+}
+.lightning{
+    margin: 13px auto 0; 
+}
+.awesome__article__text {
+    font-size: 18px;
+}
+
+
+
+
