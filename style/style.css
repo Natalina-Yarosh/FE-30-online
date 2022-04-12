@@ -1,1 +1,136 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.tabs {
+    margin-bottom: 111px;
+}
+
+.tabs__buttons {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.tabs__tab.active {
+    max-width: 203px;
+    width: 100%;
+    min-height: 40px;
+    border: 1px solid rgba(198, 203, 205, 1);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.tabs__tab {
+    min-width: 184px;
+    display:inline-block;
+    border: 1px solid transparent;
+    background-color: #fff;
+}
+
+.tabs__info {
+    border: 1px solid rgba(198, 203, 205, 1);
+}
+
+.tabs__content {
+    width: 60%;
+    display:inline-block;
+    vertical-align:top;
+    padding: 55px 30px 54px 101px;
+}
+
+.tabs__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 57px;
+}
+
+.tabs__text {
+    margin-bottom: 26px;
+    font-size: 18px;
+}
+.tabs__text:last-of-type {
+    margin: 0;
+}
+
+.tabs__button {
+    max-width: 270px;
+    width: 100%;
+    line-height: 24px;
+    padding: 17px 0;
+    color: #fff;
+    background-color: rgba(236, 121, 121, 1);
+    border: 1px solid rgba(236, 121, 121, 1);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 84px;
+}
+
+.tabs__wrap {
+    width: 39%;
+    min-height: 500px;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.tabs__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.extra-information {
+    margin-bottom: 111px;
+}
+
+.extra-information__title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.extra-information__line {
+    width: 170px;
+    border-bottom: 1px solid rgba(236, 121, 121, 1);
+    margin: 40px auto 40px;
+}
+
+.extra-information__text {
+    text-align: center;
+    margin: 0 0 92px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.advantage {
+    max-width: 370px;
+    display: inline-block;
+    text-align: center;
+}
+.advantage__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin: 24px 0 26px 0;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.advantage__text {
+    font-weight: 400;
+    font-size: 18px;
+}
+
 
