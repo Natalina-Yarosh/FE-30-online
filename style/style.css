@@ -20,7 +20,7 @@
 }
 
 .tabs__card {
-    display: inline-block;
+    display: flex;
 }
 
 .tabs__item_active {
@@ -42,7 +42,7 @@
 .container {
     max-width: 1170px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 0 15px;
 }
 
 .advantages__title {
@@ -64,11 +64,14 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.advantages__info {
+    display: flex;
+    justify-content: center;
+}
+
 .advantage {
     max-width: 360px;
-    display: inline-block;
     text-align: center;
-    margin-right: 2px;
 }
 
 .advantage_wrap {
@@ -97,13 +100,11 @@
 
 .tabs__info {
     width: 60%;
-    background-color: #C4C4C4;
     padding: 55px 20px 55px 100px;
     display: inline-block;
 }
 
 .tabs__wrap {
-    display: inline-block;
     width: 40%;
 }
 
@@ -136,10 +137,9 @@
 }
 
 .tabs__button:hover {
-    background-color: #327517;
+    background-color: #2c9105;
     cursor: pointer;
 }
-
 
 .contact {
     background-color: #E6EDF2;
