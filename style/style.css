@@ -48,6 +48,12 @@
 .advantages__title {
     text-align: center;
     margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.advantages {
+    margin-bottom: 82px;
+    text-align: center;
 }
 
 .advantages__line {
@@ -59,7 +65,6 @@
 
 .advantages__text {
     color: #86878B;
-    text-align: center;
     margin-bottom: 95px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -71,7 +76,6 @@
 
 .advantage {
     max-width: 360px;
-    text-align: center;
 }
 
 .advantage_wrap {
@@ -141,42 +145,91 @@
     cursor: pointer;
 }
 
-.contact {
-    background-color: #E6EDF2;
-    padding: 100px 230px;
+.pricing {
+    text-align: center;
+    padding: 82px 169px;
+    background-color: #F5F5F5;
 }
 
-.contact__wrep {
-    display: inline-block;
-    max-width: 370px;
-    width: 50%;
-}
-
-.contact__forma {
-    display: inline-block;
-    width: 49%;
-    background: #0c1c22;
-}
-
-.contact__desc {
-    color: #C72535;
+.pricing__title {
+    margin-bottom: 40px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
     text-transform: uppercase;
-    letter-spacing: 0.145em;
-    line-height: 23px;
-    opacity: 0.6;
-    margin-bottom: 5px;
 }
 
-.contact__title {
-    font-size: 25px;
-    line-height: 40px;
-    color: #030D15;
-    margin-bottom: 10px;
+.dricing__line {
+    max-width: 170px;
+    border-bottom: 1px solid #EC7979;
+    margin: 0 auto 40px;
 }
 
-.contact__text {
-    font-size: 14px;
+.pricing__text {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
     line-height: 21px;
-    color: #030D15;
-    opacity: 0.6;
+    color: #86878B;
+    margin-bottom: 75px;
+}
+
+.offers {
+    display: flex;
+    column-gap: 30px;
+}
+
+.offers__wrep {
+    max-width: 370px;
+    width: 100%;
+}
+
+.offers__wrep-center {
+    margin-top: -17px;
+}
+
+.offers__configuration {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    padding: 15px 0;
+    border-bottom: 1px #fff solid;
+}
+
+.offers__price {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 30px 0;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    border-bottom: 1px #fff solid;
+}
+
+.offers__text {
+    background-color: #333333;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    border-bottom: 1px #fff solid;
+    padding: 10px 0;
+}
+
+.offers__memory {
+    background-color: #fff;
+    padding: 10px 0;
+    border: 1px #F5F5F5 solid;
+    color: #86878B;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 }
