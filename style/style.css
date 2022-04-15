@@ -6,6 +6,7 @@
 }
 .container {
     max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -14,8 +15,10 @@
 .tabs {
     margin-bottom: 111px;
 }
+.tabs__nav {
+    display: flex;
+}
 .tabs__item {
-    display: inline-block;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     max-width: 184px;
@@ -24,22 +27,27 @@
     color: #333333;
     background-color: #FFFFFF;
     border: 1px solid transparent;
+    border-radius: 5px 5px 0 0;
 }
 .tabs__item_active {
     border: 1px solid #C6CBCD;
 }
 .tabs__block {
     border: 1px solid #C6CBCD;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 30px;
 }
 .tabs__info {
-    max-width: 59%;
-    display: inline-block;
-    padding: 55px 30px 55px 100px;
+    max-width: 570px;
+    width: 100%;
+    padding: 55px 0;
 }
 .tabs__title {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 30px;
+    line-height: 41px;
     margin-bottom: 57px;
 }
 .tabs__text {
@@ -49,7 +57,6 @@ p.tabs__text:last-of-type {
     margin-bottom: 0;
 }
 .tabs__btn {
-    display: inline-block;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     max-width: 270px;
@@ -61,10 +68,8 @@ p.tabs__text:last-of-type {
     margin-top: 84px;
 }
 .tabs__warp {
-    width: 40%;
-    height: 100%;
-    display: inline-block;
-    vertical-align: top;
+    max-width: 470px;
+    width: 100%;
 }
 .tabs__img {
     width: 100%;
@@ -82,31 +87,35 @@ p.tabs__text:last-of-type {
     width: 170px;
     height: 1px;
     background-color: #EC7979;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
 }
 .awesome__text {
     text-align: center;
     color: #86878B;
     margin-bottom: 92px;
 }
+.awesome__block {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
 .advantage {
-    max-width: 370px;
-    display: inline-block;
+    width: calc((100%-30px) / 3);
 }
 .advantage__wrap {
     width: 92px;
     height: 92px;
     text-align: center;
     border: 1px solid #EC7979;
-    border-radius: 46px;
-    margin: 0 auto;
-    margin-bottom: 24px;
+    border-radius: 50%;
+    margin: 0 auto 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .advantage__img {
     width: 65px;
     height: 65px;
-    margin-top: 13.5px;
     object-fit: contain;
 }
 .advantage__title {
