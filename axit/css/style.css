@@ -160,7 +160,7 @@
 }
 .prices__text {
   font-size: 18px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   text-align: center;
 }
 .prices__options {
@@ -170,6 +170,9 @@
 .prices__option {
   width: calc((100% - 60px) / 3);
   text-align: center;
+}
+.prices__option_active {
+  margin-top: -20px;
 }
 .prices__option__title {
   font-size: 24px;
