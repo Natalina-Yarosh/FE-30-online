@@ -22,14 +22,27 @@ border: none;
 font-family: 'Open Sans', sans-serif;
 }
 
-.tab{
+.tabs__nav-btnactive{
+    max-width: 203px;
+    min-height: 40px;
+    width: 100%;
     border: 1px solid #C6CBCD;
-    display: flex;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: none;
+}
+
+.tabs{
     margin-bottom: 111px;
 }
 
+.tab{
+    border: 1px solid #C6CBCD;
+    display: flex;
+}
+
 .tab__wrap{  
-    width: 39%;
+    width: 40%;
 }
 
 .tab__info{
@@ -95,11 +108,12 @@ font-family: 'Open Sans', sans-serif;
 
 .designs__block{
     display: flex;
+    justify-content: space-around;
 }
 
 .advantage{
-    max-width: 370px;
     text-align: center;
+    max-width: 370px;
 }
 
 .advantage__title{
