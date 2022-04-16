@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+max-width: 1170px;
+min-height: 540px;
+padding: 0px 15px;
+margin: 0 auto;
+}
+
+.tabs__nav-btn{
+max-width: 203px;
+min-height: 40px;
+width: 100%;
+border: 1px solid #C6CBCD;
+background-color: rgb(255, 255, 255);
+border: none;
+font-family: 'Open Sans', sans-serif;
+}
+
+.tab{
+    border: 1px solid #C6CBCD;
+    display: flex;
+    margin-bottom: 111px;
+}
+
+.tab__wrap{  
+    width: 39%;
+}
+
+.tab__info{
+    width: 60%;
+    padding: 50px 30px 50px 100px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.tab__text{
+    margin-bottom: 74px;
+    font-size: 18px;
+}
+
+.tab__btn{
+    max-width: 270px;
+    width: 100%;
+    background-color: #EC7979;
+    font-weight: 400;
+    border: none;
+    margin-top: 64px;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 17px;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+.tab__text:last-of-type{
+    margin: 0;
+}
+
+.tab__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 500px;
+    vertical-align: top;
+}
+
+.tab__title{
+    margin-bottom: 57px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.designs__title{
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.designs__description{
+    text-align: center;
+    color: #86878B;
+    margin-bottom: 92px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.designs__line{
+    border: 1px solid #EC7979;
+    margin: 0 auto 40px;
+    max-width: 170px;
+}
+
+.designs__block{
+    display: flex;
+}
+
+.advantage{
+    max-width: 370px;
+    text-align: center;
+}
+
+.advantage__title{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 24px;
+}
+
+.advantage__wrap{
+    width: 92px;
+    height: 92px;
+    border: 1px solid #EC7979;
+    border-radius: 50%;
+    margin: 0 auto 24px;
+}
+
+.advantage__img{
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+    margin-top: 9px;
+}
+
+.advantage__text{
+    font-family: 'Raleway', sans-serif;
+}
