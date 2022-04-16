@@ -18,12 +18,12 @@
   display: flex;
 }
 /* Не понимаю как убрать пробел между кнопками (там нет margin или padding)*/
-.tabs__btn {
+.tabs__item {
   max-width: 184px;
   width: 100%;
   min-height: 40px;
   border: transparent;
-  font-family: "OpenSans";
+  font-family: "OpenSans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   background-color: #fff;
@@ -31,11 +31,11 @@
   border-radius: 5px 5px 0 0;
   border: 1px solid transparent;
 }
-.tabs__btn:hover,
-.tabs__btn:checked {
+.tabs__item:hover,
+.tabs__item:checked {
   border: 1px solid #c6cbcd;
 }
-.tabs__btn_active {
+.tabs__item_active {
   border: 1px solid #c6cbcd;
 }
 .tabs__content {
@@ -48,7 +48,7 @@
   width: 60%;
 }
 .tabs__title {
-  font-family: "OpenSans";
+  font-family: "OpenSans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   margin: 0 0 57px 0;
@@ -66,7 +66,7 @@
   background-color: #ec7979;
   font-size: 18px;
   color: #fff;
-  font-family: "OpenSans";
+  font-family: "OpenSans", sans-serif;
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -114,7 +114,7 @@
   margin-right: 0px;
 }
 .awesome__article__title {
-  font-family: "OpenSans";
+  font-family: "OpenSans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 30px;
@@ -132,15 +132,7 @@
 .awesome__article__img {
   object-fit: contain;
 }
-/* .bulb {
-  margin: 10px auto 0;
-}
-.keyboard {
-  margin: 23px auto 0;
-}
-.lightning {
-  margin: 13px auto 0;
-} */
+
 .awesome__article__text {
   font-size: 18px;
 }
@@ -148,13 +140,14 @@
 .prices {
   margin-bottom: 110px;
   background-color: #f5f5f5;
-  padding-top: 82px;
+  padding: 82px 0;
 }
 .prices__title {
   font-weight: 400;
   font-size: 36px;
   text-align: center;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 .prices__line {
   height: 1px;
@@ -181,10 +174,11 @@
 .prices__option__title {
   font-size: 24px;
   color: #fff;
-  font-family: "OpenSans";
+  font-family: "OpenSans", sans-serif;
   font-weight: 700;
   background-color: #333333;
   border: 2px solid #f5f5f5;
+  /* Я посмотрела, там бордеров нет только между блоками, поэтому верхний лок не трогала, а у всех остальных верхнюю границу убрала */
   padding: 18px;
 }
 .prices__option__price {
@@ -193,6 +187,7 @@
   color: #fff;
   background-color: #333333;
   border: 2px solid #f5f5f5;
+  border-top: none;
   padding: 32px;
 }
 .prices__option__comment {
@@ -201,6 +196,7 @@
   color: #fff;
   background-color: #333333;
   border: 2px solid #f5f5f5;
+  border-top: none;
   padding: 16px;
 }
 .prices__option__values {
@@ -211,5 +207,6 @@
   font-size: 18px;
   padding: 16px;
   border: 2px solid #f5f5f5;
+  border-top: none;
   background-color: #fff;
 }
