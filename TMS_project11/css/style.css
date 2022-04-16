@@ -11,7 +11,7 @@
 }
 
 .tabs {
-    margin: 0 0 111px 0;
+    margin: 0 0 110px 0;
 }
 
 .tabs__buttons{
@@ -34,21 +34,9 @@
     border-bottom: none;
     border-radius: 5px 5px 0 0;
 }
-/* Сделала верхнюю границу блока линиями, как на макете. Но не совсем понимаю, 
-как это потом адаптивить можно будет. 
-Может есть другие способы сделать эту границу с исчезающей нижней границей кнопки? */
-/* .tabs__buttons__line{
-    height: .5px;
-    width: 610px;
-    margin: -1px 0 0 560px;
-    background-color:#C6CBCD ;
-} */
 .tabs__content {
     border: 1px solid #C6CBCD;
-    /* border-top: none; */
     display: flex;
-    /* Использовала флекс, т.к. inline inline-block почему-то не работают*/
-    /* margin: 0 0 111px 0; */
     height: 500px;
 }
 .tabs__content__text{
@@ -68,13 +56,9 @@
 .tabs__text:last-of-type{
     margin-bottom: 0px;
 }
-/* .paragraph2 {
-    margin: 0 0 84px 0;
-} */
 .tabs__content__btn{
     max-width: 270px;
     width: 100%;
-    /* height: 58px; */
     background-color: #EC7979;
     font-size: 18px;
     color: #fff;
@@ -92,6 +76,10 @@
     object-fit: cover;
 }
 
+
+.awesome {
+    margin-bottom: 110px;
+}
 .awesome__title{
     margin: 0 auto 40px;
     font-size: 36px;
@@ -109,7 +97,6 @@
     color: #86878B;
     margin: 0 auto 92px;
 }
-/* Использовала флекс, т.к. inline inline-block почему-то не работают*/
 .awesome__articles{
     display: flex;
     justify-content: center;
@@ -151,6 +138,71 @@
     font-size: 18px;
 }
 
-
-
-
+.prices {
+    margin-bottom: 110px;
+    background-color: #F5F5F5;
+    padding-top: 82px;
+}
+.prices__title {
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.prices__line {
+    height: 1px;
+    width: 170px;
+    background-color: #EC7979;
+    margin: 0 auto 40px;
+    border: 0.5px solid #EC7979;
+    /* почему-то если сделать у этой линии такие же стили,
+    как у предыдщей, то визуально они выглядят по-разному. Пришлось добавить бордер. */
+}
+.prices__text {
+    font-size: 18px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.prices__options {
+    display: flex;
+    justify-content: space-between;
+}
+.prices__option {
+    width: calc( (100% - 60px) / 3);
+    text-align: center;
+}
+.prices__option__title {
+    font-size: 24px;
+    color: #fff;
+    font-family: "OpenSans";
+    font-weight: 700;
+    background-color: #333333;
+    border:  2px solid #F5F5F5;
+    padding: 18px;
+}
+.prices__option__price{
+    font-weight: 700;
+    font-size: 36px;
+    color: #fff;
+    background-color: #333333;
+    border:  2px solid #F5F5F5;
+    padding: 32px;
+}
+.prices__option__comment {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    background-color: #333333;
+    border:  2px solid #F5F5F5;
+    padding: 16px;
+}
+.prices__option__values {
+    list-style-type: none;
+}
+.prices__option__value {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 16px;
+    border:  2px solid #F5F5F5;
+    background-color: #fff;
+}
