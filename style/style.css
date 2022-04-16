@@ -21,6 +21,7 @@
 .designs__description{
     text-align: center;
     color: #86878B;
+    margin-bottom: 92px;
 }
 
 .designs__line{
@@ -29,14 +30,13 @@
     max-width: 170px;
 }
 
-article{
-    max-width: 370px;
-    display: inline-block;
+.designs__block{
+    display: flex;
 }
 
-.designs__block{
+article{
+    max-width: 370px;
     text-align: center;
-    margin-top: 92px;
 }
 
 .advantage__title{
