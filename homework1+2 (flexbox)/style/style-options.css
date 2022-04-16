@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.options{
+    background-color: #F5F5F5;
+}
+
+.container-options{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.options__title{
+    text-align: center;
+    padding-top: 82px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.options__line{
+    border: 1px solid #EC7979;
+    margin: 40px auto 40px;
+    max-width: 170px;
+}
+
+.options__text{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #86878B;
+    margin-bottom: 59px;
+}
+
+.content {
+    display: flex;
+    margin: 0 ;
+}
