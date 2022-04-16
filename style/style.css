@@ -1,0 +1,36 @@
+* {
+    font-family: "Open Sans", sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+.tab{
+    margin-bottom: 110px;
+}
+.container{
+    max-width: 1170px;
+    margin: 0px auto;
+}
+.tab__button-name_activ{
+    tab__button-name tab__button-name_activ
+}
+.tab__button-name{
+    height: 40px;
+width: 203px;
+left: -585px;
+top: -1477px;
+border-radius: [object Object]px;
+
+
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #333333;
+}
+.text{
+    font-family: "Raleway", sans-serif; size: 18px; background: #000000;
+}
