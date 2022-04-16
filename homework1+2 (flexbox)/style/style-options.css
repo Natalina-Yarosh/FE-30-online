@@ -38,5 +38,14 @@
 
 .content {
     display: flex;
-    margin: 0 ;
+    justify-content: space-around;
+}
+
+li{
+    list-style-type: none;
+    background-color: #333333;
+    width: 370px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
 }
