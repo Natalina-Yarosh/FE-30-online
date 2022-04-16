@@ -1,1 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v28-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v28-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v28-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v28-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v28-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v28-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* open-sans-700 - latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v28-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/open-sans-v28-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/open-sans-v28-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/open-sans-v28-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/open-sans-v28-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/open-sans-v28-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
+  /* raleway-regular - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/raleway-v26-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/raleway-v26-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v26-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v26-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v26-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v26-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+  }
+  /* raleway-700 - latin */
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/raleway-v26-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/raleway-v26-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v26-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v26-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v26-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v26-latin-700.svg#Raleway') format('svg'); /* Legacy iOS */
+  }
+.wrapper{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+	margin: 0px 15px;
+    width: 1170px;
+}
+.servis_wrapper{
+    width: 100%;
+    height: 501px;
+    color: #EC7979;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servis_wrapper__title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+}
+.servis_wrapper__line{
+width: 170px;
+display: flex;
+justify-content: center;
+height: 0px;
+margin-top: 40px;
+border: 1px solid #EC7979;
+}
+.servis_wrapper__discription{
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+color: #86878B;
+margin-top: 40px;
+}
+.servis_wrapper__blocks{   
+display: flex;
+flex-flow: row wrap-reverse;
+justify-content: space-around;
+width: 100%;
+margin-top: 92px;
+background-color: #ffffff;
+}
+.servis_wrapper__block{
+align-items: center;
+width: 371px;
+height: 259px;
+left: 173px;
+top: 2163px;
+}
+.servis_wrapper__block .img_block{
+    height:100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.servis_wrapper__block .title{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+text-align: center;
+text-transform: capitalize;
+color: #000000;
+margin-top: 24.19px ;
+}
+.servis_wrapper__block .text{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    margin-top: 26px;
+}
 
+
+
+.info_wrapper{
+    width: 100%;
+}
+.info_wrapper__tabs{
+    
+    display: flex;
+}
+.info_wrapper__tabs .tab{
+    min-width: 202px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:#86878B 1px solid;
+}
+.info_wrapper__tabs .tab:last-child {
+    width:100%;
+}
+.info_wrapper__tabs .active_tab{
+    border: 1px #86878B solid;
+    border-bottom: 0;
+    border-radius: 5px 5px 0px 0px;
+}
+.info_wrapper_content{
+    width:100%;
+    height: 501px;
+    border:1px #86878B solid;
+    border-top: 0;
+    display: flex;
+    margin-bottom: 118px;
+}
+.img_info_wrapper{
+    width: 470px;
+    height: 100%;
+}
+.info_wrapper_content_text{
+    padding: 50px;
+    padding-left: 100px;
+}
+.info_wrapper_content_text h2{
+    padding-bottom: 55px;
+}
+.content_text{
+    margin-bottom:26px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.info_wrapper__btn{
+    width: 270px;
+    height: 58px;
+    background: #EC7979;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 84px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color:#ffffff;
+}
+.info_wrapper__h2{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 41px;
+}
