@@ -1,41 +1,44 @@
 *{
     padding: 0;
-    margin: 0;
     box-sizing: border-box ;
     font-family: 'Raleway', sans-serif;
 }
 .container{
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
     
 }
-
-.tab{
-    border: 1px solid black;}
+.tabs{
+    margin-bottom: 118px;
+}
 .tabs__item{
+    background-color: rgb(255, 255, 255);
+    max-width: 203px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px 5px 0px 0px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-}
+    }
+.tabs__item_active{
+    border: 1px solid #c6cbcd;
+    border-radius: 5px 5px 0px 0px;
+    }
 .tab__info{
-    max-width: 580px;
-    vertical-align: top;
     width: 60%;
-    display: inline-block;
-    margin: 0px 10px 50px 100px;
+    padding: 55px 30px 55px 100px;
 }
 .tab__wrap{
-    margin-top: 10px;
-    width: 39%;
-    display: inline-block;
-    min-height: 500px;
+    width: 40%;
 }
-.tab{
+.tab__image{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin: 0;
 }
 .tab__title{
-    margin-top: 55px;
     margin-bottom: 57px;
     font-family: 'Open Sans', sans-serif; 
     font-weight: 400;
@@ -52,11 +55,6 @@
 .tab__text:last-of-type{
     margin-bottom: 0;
 }
-.tabs__item{
-    padding: 10px 82px;
-    background: #FFFFFF;
-    border:none;
-}
 .tab__btn{
     margin-top: 84px;
     max-width: 270px;
@@ -69,49 +67,58 @@
     background: rgba(236, 121, 121, 1);
     padding: 22px 90px;
 }
-
-
-.container_center{
-    text-align: center;
+.tab{
+    display: flex;
+    border: 1px solid #000;
 }
+
 .advantage__title{ 
     font-family: 'Open Sans', sans-serif;
-    margin-bottom: 26px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 .advantages__title{
     color: rgba(0, 0, 0, 1);
-    margin: 40px 0;
+    margin-bottom: 40px;
+    text-align: center;
 }
 .border{
     border: 1px solid #EC7979;
     width: 170px;
-    display: inline-block;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
 }
 .text{
     color: #86878B;
     margin-bottom: 92px;
+    text-align: center;
 }
 .image {
-    display: inline-block;
     border: 1px solid #EC7979;
     border-radius: 50%;
-    margin-bottom: 24px;
     width: 92px;
     height: 92px;
     overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 } 
-img{
+.advantage__img{
     width: 75%;
     height: 75%;
     object-fit: contain;
-    margin-top: 9px;
 }
 .advantages{
     margin-bottom: 20px;
 }
 .advantage__text{
     max-width: 300px;
-    display: inline-block;
+    text-align: center;
     margin-right: 32px;
 }
+.advantage__text:last-of-type{
+    margin-right: 0;
+}
+.advantage{
+    display: flex;
+}
+
