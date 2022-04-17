@@ -79,12 +79,16 @@
 }
 
 .advantage_wrap {
-    max-width: 90px;
-    max-height: 90px;
+    width: 90px;
+    height: 90px;
     margin: 0 auto;
     margin-bottom: 25px;
+    border: 1px #EC7979 solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 .advantage-title {
     margin-bottom: 40px;
@@ -129,7 +133,8 @@
 }
 
 .tabs__button {
-    width: 270px;
+    max-width: 270px;
+    width:100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     margin-top: 80px;
@@ -147,7 +152,7 @@
 
 .pricing {
     text-align: center;
-    padding: 82px 169px;
+    padding: 82px 0;
     background-color: #F5F5F5;
 }
 
