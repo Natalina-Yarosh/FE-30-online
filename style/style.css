@@ -73,12 +73,15 @@ margin-top: 84px;
 border: 1px solid #EC7979;
 
 }
-
+.awesome{
+    margin-bottom: 110px;
+}
 .container {
     max-width: 1170px;
     padding: 0 15px;
     width: 100%;
-    margin: 0 auto;}
+    margin: 0 auto;
+color: #000;}
 
 .awesome__why{
 
@@ -158,3 +161,46 @@ color: #86878B
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 21px;}
+.pricing{
+max-width: 1508px;
+width: 100%;
+height: 900px;
+padding: 0 15px;
+margin: 0 auto;
+background: #F5F5F5
+}
+.container__pricing{
+    max-width: 1170px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}                
+.pricing__why{
+    width: 1170px;
+    height: 45px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 80px 40px;
+
+}
+.pricing__line { margin: 0 auto;
+    width: 170px;
+    height: 0px;
+    border-bottom: 1px solid #EC7979;
+margin-bottom: 40px;}
+
+.pricing__lr{
+height: 21px;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+align-items: center;
+text-align: center;
+color: #86878B;
+}
