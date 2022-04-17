@@ -6,7 +6,7 @@
 
 .options{
     background-color: #F5F5F5;
-    padding-top: 82px;
+    padding: 82px 0px 83px;
 }
 
 .container-options{
@@ -20,12 +20,13 @@
     text-align: center;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
 .options__line{
     border: 1px solid #EC7979;
-    margin: 40px auto 40px;
     max-width: 170px;
+    margin: 40px auto;
 }
 
 .options__text{
@@ -38,60 +39,51 @@
 
 .content {
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 83px;
+    column-gap: 30px;
+}
+
+.content ul {
+    width: calc((100% - 60px) / 3);
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    background: #FFFFFF;
+    border: 2px solid #F5F5F5;
+    width: 100%;
+    padding: 14px;
+    font-family: 'Raleway', sans-serif;
+    color: #86878B;
 }
 
 .content__header{
-    width: 370px;
-    height: 60px;
+    width: 100%;
+    padding: 19px;
     background-color: #333333;
-    color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
     font-weight: 700;
     font-size: 24px;
-    line-height: 33px;
 }
 
 .content__price{
-    width: 370px;
-    height: 100px;
+    width: 100%;
+    padding: 39px;
     background-color: #333333;
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
 }
 
-.content__freeforlife{
-    width: 370px;
-    height: 50px;
+.content__freeforlife {
     background-color: #333333;
-    color: #ffffff80;
-    font-family: 'Raleway', sans-serif;
+    color: hwb(0 100% 0% 0.5);
     font-weight: 400;
     font-size: 18px;
-    line-height: 21px;
 }
 
-li{
-    list-style-type: none;
-    width: 370px;
-    height: 50px;
-    background: #FFFFFF;
-    border: 2px solid #F5F5F5;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    font-family: 'Raleway', sans-serif;
-    color: #86878B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.content__optima{
+.content__center{
     margin-top: -15px;
 }
