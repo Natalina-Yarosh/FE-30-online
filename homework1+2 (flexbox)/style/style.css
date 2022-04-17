@@ -108,7 +108,7 @@ font-family: 'Open Sans', sans-serif;
 
 .designs__block{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .advantage{
@@ -126,7 +126,8 @@ font-family: 'Open Sans', sans-serif;
     height: 92px;
     border: 1px solid #EC7979;
     border-radius: 50%;
-    margin: 0 auto 24px;
+    display: flex;
+    justify-content: center;
 }
 
 .advantage__img{

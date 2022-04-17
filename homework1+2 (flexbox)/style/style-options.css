@@ -6,6 +6,7 @@
 
 .options{
     background-color: #F5F5F5;
+    padding-top: 82px;
 }
 
 .container-options{
@@ -17,7 +18,6 @@
 
 .options__title{
     text-align: center;
-    padding-top: 82px;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
 }
