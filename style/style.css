@@ -1,6 +1,5 @@
 * {
-    font-family: "Open Sans", sans-serif;
-    
+    font-family: "Open Sans", sans-serif;    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,6 +10,7 @@
 .container{
     max-width: 1170px;
     margin: 0px auto;
+    padding: 0 15px;
 }
 .tab__button-name_activ{
     tab__button-name tab__button-name_activ
@@ -33,4 +33,10 @@ border-radius: [object Object]px;
 }
 .text{
     font-family: "Raleway", sans-serif; size: 18px; background: #000000;
+}
+.section__block{
+    flex-direction: row;
+}
+.section__block__vector{
+    flex-direction: column;
 }
