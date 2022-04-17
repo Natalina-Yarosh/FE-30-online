@@ -42,7 +42,13 @@
     column-gap: 30px;
 }
 
-.content ul {
+.content__items {
+    width: calc((100% - 60px) / 3);
+    text-align: center;
+}
+
+.content__items-optima{
+    margin-top: -15px;
     width: calc((100% - 60px) / 3);
     text-align: center;
 }
@@ -82,8 +88,4 @@ li {
     color: hwb(0 100% 0% 0.5);
     font-weight: 400;
     font-size: 18px;
-}
-
-.content__center{
-    margin-top: -15px;
 }
