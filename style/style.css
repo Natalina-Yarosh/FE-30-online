@@ -7,7 +7,7 @@
 .tabs{ 
     margin-bottom: 118px;
 }
-.container__tabs{
+.container{
 max-width: 1170px;
 padding: 0 15px;
 width: 100%;
@@ -74,11 +74,11 @@ border: 1px solid #EC7979;
 
 }
 
-.container {padding: 0 15px;
+.container {
     max-width: 1170px;
-    height: 501px;
+    padding: 0 15px;
     width: 100%;
-margin: 0 auto;}
+    margin: 0 auto;}
 
 .awesome__why{
 
