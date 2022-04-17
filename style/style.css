@@ -176,7 +176,6 @@ background: #F5F5F5
     margin: 0 auto;
 }                
 .pricing__why{
-    width: 1170px;
     height: 45px;
     font-style: normal;
     font-weight: 400;
@@ -204,3 +203,19 @@ align-items: center;
 text-align: center;
 color: #86878B;
 }
+.packages{
+    display: flex;
+    column-gap: 30px;
+}
+.package__block-1{ 
+    width: calc((100%-60px) / 3);
+    text-align: center;}
+
+.package__block-2{ 
+    width: calc((100%-60px) / 3);
+    text-align: center;}
+
+.package__block-3{ 
+    width: calc((100%-60px) / 3);
+    text-align: center;}
+.item{list-style-type: none;}
