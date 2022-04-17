@@ -9,7 +9,7 @@
 }
 .container__tabs{
 max-width: 1170px;
-height: 540px;
+padding: 0 15px;
 width: 100%;
 margin: 0 auto;
 }
