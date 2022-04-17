@@ -13,6 +13,9 @@ height: 540px;
 width: 100%;
 margin: 0 auto;
 }
+.tab__button{
+    display: flex;
+}
 .tabs__btn{
 font-family: 'Open Sans', sans-serif;
 font-weight: 400;
@@ -28,11 +31,12 @@ color: #333333;
 .info__tab{
     border: 1px solid #C6CBCD;
     box-sizing: border-box;
+    display: flex;
 }
 .tab__info{
     display: inline-block;
     width: 60%;
-    padding: 50px 30px 5px 101px;
+    padding: 50px 30px 50px 101px;
     vertical-align: top;
 }
 .tab__img{
@@ -132,14 +136,13 @@ color: #86878B
             width: 92px;
             height: 92px;
             text-align: center;
-            padding: 10px;
             margin: 0 auto 24px;
             display: flex;
             align-items: center;
         justify-content: center;}
         .block-info__img {
-            width: 80%;
-            height: 80%;
+            width: 75%;
+            height: 75%;
             object-fit: contain;
         }
             .block-info__title {
