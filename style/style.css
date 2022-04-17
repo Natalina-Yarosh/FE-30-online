@@ -13,7 +13,7 @@ height: 540px;
 width: 100%;
 margin: 0 auto;
 }
-.tab__button{
+.tab__buttons{
     display: flex;
 }
 .tabs__btn{
