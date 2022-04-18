@@ -160,7 +160,7 @@ p.tabs__text:last-of-type {
 .rate {
     width: calc((100% - 60px) / 3);
     background-color: #F5F5F5;
-    border: 0;
+    text-align: center;
 }
 .rate__title {
     font-family: 'Open Sans';
@@ -247,7 +247,8 @@ p.rate__text:last-of-type {
 .opinion__avatar {
     width: 70px;
     height: 70px;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 50%;
 }
 .opinion__name {
     font-family: 'Open Sans';
