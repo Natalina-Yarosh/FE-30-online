@@ -1,0 +1,88 @@
+.tabs {
+    padding: 55px 15px;
+}
+
+.tabs__container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.tabs__item {
+    background-color: #fff;
+    max-width: 184px;
+    width: 100%;
+    min-height: 40px;
+    border-radius: 5px 5px 0px 0px;
+    border-style: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.tabs__item_active{
+    border: 1px solid #C6CBCD;
+    border-bottom: 1px solid transparent;
+    max-width: 203px;
+}
+
+.tab__title {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 57px;
+}
+
+.tab {
+    max-width: 100%;
+    border: 1px solid #C6CBCD;
+}
+
+.tab__wrap {
+    display: inline-block;
+    width: 39%;
+    vertical-align: top;
+    min-height: 500px;
+}
+
+.tab__text {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 26px;
+}
+
+p.tab__text:last-of-type {
+    margin:0%;
+}
+
+.tab__info {
+    display: inline-block;
+    width: 60%;
+    padding: 55px 30px 54px 100px;
+    vertical-align: top;
+    margin: 0%;
+}
+
+.tab__btn {
+    background: #EC7979;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    max-width: 270px;
+    width: 100%;
+    height: 58px;
+    border-style: hidden;
+    color: #FFFFFF;
+    margin-top: 84px;
+    padding: 16.5px;
+}
+
+.tab__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
