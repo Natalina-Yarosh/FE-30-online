@@ -29,14 +29,40 @@ border-radius: [object Object]px;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
-    background: #333333;
 }
 .text{
-    font-family: "Raleway", sans-serif; size: 18px; background: #000000;
+    font-family: "Raleway", sans-serif; size: 18px; 
 }
 .section__block{
-    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 .section__block__vector{
     flex-direction: column;
+}
+.container__tab{
+    display: flex;
+    justify-content: space-around;
+}
+.section__title{
+    display: flex;
+    justify-content: center;
+}
+.section__line{
+    display: flex;
+    justify-content: center;
+}
+.section__text{
+    display: flex;
+    justify-content: center;
+}
+.section__block__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab__title{
+    display: flex;
+    justify-content: center;
 }
