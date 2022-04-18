@@ -206,6 +206,7 @@ color: #86878B;
 .packages{
     display: flex;
     column-gap: 30px;
+    margin-top: 79px;
 }
 .package__block-1{ 
     width: calc((100%-60px) / 3);
@@ -213,7 +214,8 @@ color: #86878B;
 
 .package__block-2{ 
     width: calc((100%-60px) / 3);
-    text-align: center;}
+    text-align: center;
+margin-top: -20px;}
 
 .package__block-3{ 
     width: calc((100%-60px) / 3);
@@ -223,7 +225,7 @@ color: #86878B;
     background: #333333;
 }
 .package__name{
-    height: 100px;
+    padding: 13px;
     border-bottom: 2px solid #F5F5F5;
     color: #FFFFFF;
     font-style: normal;
@@ -231,13 +233,12 @@ font-weight: 700;
 font-size: 24px;
 line-height: 33px;
 align-items: center;
-text-align: center;
 text-transform: capitalize;
 display: flex;
 justify-content: center
     }
 .package__price{
-    height: 100px;
+    padding: 38px;
     border-bottom: 2px solid #F5F5F5;
     color: #FFFFFF;
     font-style: normal;
@@ -245,23 +246,25 @@ justify-content: center
     font-size: 24px;
     line-height: 33px;
     align-items: center;
-    text-align: center;
     text-transform: capitalize;
     display: flex;
     justify-content: center;
 
     }
     .package__info{
-        height: 21px;
-
-font-family: 'Raleway';
+    padding: 15px;
 font-style: normal;
-font-weight: 400;
 font-size: 18px;
 line-height: 21px;
-display: flex;
 align-items: center;
-text-align: center;
 justify-content: center;
-color: rgba(255, 255, 255, 0.5)
+color: #ffffff80
     }
+.item{
+    padding: 15px;
+    background: #FFFFFF;
+border: 2px solid #F5F5F5;
+color: #86878B;
+font-size: 18px;
+line-height: 21px
+}
