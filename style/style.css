@@ -219,3 +219,49 @@ color: #86878B;
     width: calc((100%-60px) / 3);
     text-align: center;}
 .item{list-style-type: none;}
+.package__title{
+    background: #333333;
+}
+.package__name{
+    height: 100px;
+    border-bottom: 2px solid #F5F5F5;
+    color: #FFFFFF;
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+display: flex;
+justify-content: center
+    }
+.package__price{
+    height: 100px;
+    border-bottom: 2px solid #F5F5F5;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+
+    }
+    .package__info{
+        height: 21px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+color: rgba(255, 255, 255, 0.5)
+    }
