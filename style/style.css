@@ -51,17 +51,20 @@
     font-size: 36px;
 }
 
+.advantages__title::after {
+    content: '';
+    display: block;
+    width: 170px;
+    border-bottom: 1px solid #EC7979;
+    margin: 40px auto 0;
+    margin-bottom: 50px;
+}
+
 .advantages {
     margin-bottom: 82px;
     text-align: center;
 }
 
-.advantages__line {
-    width: 170px;
-    border-bottom: 1px solid #EC7979;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
 
 .advantages__text {
     color: #86878B;
@@ -165,10 +168,13 @@
     text-transform: uppercase;
 }
 
-.dricing__line {
-    max-width: 170px;
+.pricing__title::after {
+    content: '';
+    display: block;
+    width: 170px;
     border-bottom: 1px solid #EC7979;
-    margin: 0 auto 40px;
+    margin: 40px auto 0;
+    margin-bottom: 50px;
 }
 
 .pricing__text {
@@ -229,6 +235,10 @@
 }
 
 .offers__memory {
+    list-style-type: none
+}
+
+.offers__memory li {
     background-color: #fff;
     padding: 10px 0;
     border: 1px #F5F5F5 solid;
@@ -237,4 +247,109 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+}
+
+.reviews {
+    text-align: center;
+    padding: 100px 170px;
+}
+
+.reviews__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+}
+
+.reviews__title::after {
+    content: '';
+    display: block;
+    width: 170px;
+    border-bottom: 1px solid #EC7979;
+    margin: 40px auto 0;
+    margin-bottom: 50px;
+}
+
+.reviews__text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    margin-bottom: 85px;
+}
+
+.reviews__wrep {
+    display: flex;
+    column-gap: 30px;
+}
+
+.reviews__callout {
+    max-width: 370px;
+    width: 100%;
+    background-color: #E2E2E2;
+    padding: 38px 25px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 65px;
+}
+
+.callout__text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+}
+
+.reviews__callout::after {
+    content: '';
+    display: inline-block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #E2E2E2;
+    position: absolute;
+    top: 181px;
+    left: 70px;
+}
+
+.reviews__person {
+    display: flex;
+    column-gap: 30px;
+}
+
+.person__img {
+    width: 70px;
+    height: 70px;
+}
+
+.person__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.person__name {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+}
+
+.person__position {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
 }
