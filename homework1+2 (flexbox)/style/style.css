@@ -144,3 +144,10 @@ font-family: 'Open Sans', sans-serif;
     text-align: center;
     max-width: 370px;
 }
+
+.box{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0px 15px;
+    margin: 0 auto;
+    }

@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.reviews{
+    padding: 107px 0px 100px;
+}
+
+.contaner__reviews{
+    max-width: 1171px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.reviews__title{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.reviews__title::after{
+    content: '';
+    display: block;
+    border: 1px solid #EC7979;
+    max-width: 170px;
+    margin: 40px auto;
+}
+
+.reviews__text{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #86878B;
+    margin-bottom: 83px;
+}
+
+.columns{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+
+.columns__text{
+    background-color: #E2E2E2;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #86878B;
+    padding: 38px 25px 37px;
+    max-width: 370px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 66px;
+}
+
+.columns::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: #E2E2E2;
+    border: 1px solid #E2E2E2;
+}
