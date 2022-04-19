@@ -19,7 +19,6 @@
 
 .tabs__items{
 display: flex;
-flex-direction: row;
 }
 
 .tabs__item{
@@ -35,20 +34,28 @@ flex-direction: row;
 }
 
 .tabs__item_active{
-    border:1px solid #C6CBCD
+    border:1px solid #C6CBCD;
+    border-bottom: none;
+}
+
+.tabs__item:hover{
+    background-color:#C6CBCD
+}
+
+.tabs__item:active{
+    color:white
 }
 
 
 .tab{
-    border: 1px solid #808080;
+    border: 1px solid #C6CBCD;
     display: flex;
-    justify-content: space-between;
 }
 
 .tab__info{
     padding:50px 30px 50px 100px;
     width: 60%;
-    align-self: center;
+    
 }
 
 .tab__title{
@@ -61,6 +68,7 @@ flex-direction: row;
 .tab__text{
     margin-bottom: 74px;
     font-size: 18px;
+    line-height: 21px;
 }
 
 .tab__text:last-of-type{
@@ -81,6 +89,10 @@ flex-direction: row;
     
 }
 
+.tab__button:hover{
+    background-color: #AB4949;
+}
+
 .tab__wrap{
     min-height: 500px;
 }
@@ -88,6 +100,7 @@ flex-direction: row;
 .tab__image{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 
 }
 
@@ -99,25 +112,26 @@ flex-direction: row;
 .answer__block{
     text-align: center;
     margin-bottom: 92px;
+    position: relative;
 }
 
 .answer__subject{
     font-size: 36px;
     font-weight: 400;
     line-height: 42px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     text-transform: uppercase;
     
 }
 
-.line{
-    max-width: 170px;
-    margin: 0px auto;
-    border: 1px solid #EC7979 ;
-    border-top: none;
-    border-right:none;
-    border-left:none;
-    margin-bottom: 40px;
+.answer__subject::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width:170px;
+    border-bottom: 1px solid #EC7979;
+    top:75px;
+    left:470px;
 }
 
 .answer__txt{
@@ -127,34 +141,29 @@ flex-direction: row;
     font-weight: 400;
 }
 
-.reason__logo{
+.reason{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    column-gap: 25px;
+}
+
+.reason__content{
+    max-width: 370px;
 }
 
 .reason__wrap{
     border: 1px solid #EC7979 ;
     width:92px;
     height:92px;
-    border-radius: 100% ;
-    margin:0 0 25px 0;
+    border-radius: 50% ;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto 24px;
 }
 
-.reason__desc{
-    display: flex;
-    text-align: center;
-
-}
 .reason__info{
-    width: calc((1170px - 55px) / 3);
-    margin-right: 28px;
-}
-
-.reason__info:last-of-type{
-    margin: 0;
+    text-align: center;
 }
 
 .reason__title{
@@ -176,20 +185,32 @@ flex-direction: row;
     background-color: #F5F5F5;
     padding: 82px 0;
     margin-bottom: 110px;
+    
 }
 
 .options__block{
     text-align: center;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .options__title{
     font-size: 36px;
     font-weight: 400;
     line-height: 42px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     text-transform: uppercase;
     
+}
+
+.options__title::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width:170px;
+    border-bottom: 1px solid #EC7979;
+    top:75px;
+    left:470px
 }
 
 .options__txt{
@@ -202,29 +223,27 @@ flex-direction: row;
 
 .price{
     display: flex;
-    ;
+    justify-content: center;
+    column-gap: 30px;
     
 }
 
 .block{
     width: calc((100% - 60px) / 3);
-    margin-right:30px ;
+    
     text-align: center;
     max-height: 510px;
+    
 }
 
-.block:nth-child(2){
+.block:hover{
     margin-top: -20px;
-}
-
-.block:nth-child(3){
-    margin-right: 0;
 }
 
 .price__title{
     background-color: #333333;
     color: #ffffff;
-    border: 2px solid #F5F5F5;
+    border-bottom: 2px solid #F5F5F5;
     min-height: 60px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -236,44 +255,61 @@ flex-direction: row;
 .price__cost{
     background-color: #333333;
     color: #ffffff;
-    border: 2px solid #F5F5F5;
+    border-bottom: 2px solid #F5F5F5;
     min-height: 100px;
     padding: 25px 0;
     font-weight: 700;
     font-size: 36px;
     
 }
-.life{
+.price__txt{
     background-color: #333333;
     color: #C4C4C4 ;
     min-height: 50px;
     padding: 15px 0;
     font-size: 18px;
 }
-.space{
+
+.list{
+    list-style-type: none;
+}
+
+.list__block{
     color: #86878B;
-    border: 2px solid #F5F5F5;
+    border-bottom: 2px solid #F5F5F5;
     min-height: 50px;
-    padding: 13px 0;
+    padding:15px 0;
+    background-color: white;
 }
 
 .customers{
-    
     margin-bottom: 110px;
 }
 
 .customers__block{
     text-align: center;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .customers__title{
     font-size: 36px;
     font-weight: 400;
     line-height: 42px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     text-transform: uppercase;
 }
+
+.customers__title::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width:170px;
+    border-bottom: 1px solid #EC7979;
+    top:75px;
+    left:470px;
+}
+
 
 .customers__txt{
     color:#86878B;
@@ -283,21 +319,39 @@ flex-direction: row;
     margin-bottom: 83px;
 }
 
-.comment{
+
+.comments{
     display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    
+}
+
+.comment{
+    max-width: 370px;
+    position: relative;
     
 }
 
 .comments__block{
-    width: calc((100% - 60px) / 3);
     border: 1px solid #E2E2E2;
     min-height: 180px;
     text-align: center;
     background-color: #E2E2E2;
     border-radius: 10px;
-    margin-right: 30px;
     margin-bottom: 66px;
-    
+    }
+
+.comments__block::after{
+    content: '';
+    display:inline-block;
+    position: absolute;
+    left: 50px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #E2E2E2;
 }
 
 .comments__text{
@@ -305,31 +359,20 @@ flex-direction: row;
     font-size: 18px;
     line-height:21px;
     padding: 38px 25px;
+    
+    z-index: 10;
+    bottom: 40px;
 }
 
-.comments__block:last-of-type{
-    margin-right: 0;
-}
-
-.people{
+.comments__info{
     display: flex;
 }
 
-.people__block{
-    display: flex;
-    width: calc((100% - 60px) / 3);
+.comments__wrap{
     margin-right: 30px;
 }
 
-.people__block:last-of-type{
-    margin-right: 0;
-}
-
-.people__wrap{
-    margin-right: 30px;
-}
-
-.people__title{
+.comments__title{
     margin-bottom: 18px;
     font-size: 24px;
     font-weight: 700;
@@ -337,7 +380,7 @@ flex-direction: row;
     line-height: 30px;
 }
 
-.people__text{
+.comments__txt{
     font-size: 18px;
     line-height: 21px;
 }
