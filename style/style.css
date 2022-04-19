@@ -59,9 +59,11 @@
 }
 
 .tabs__text {
+    font-weight: 400;
     margin-bottom: 26px;
     line-height: 21px;
     font-size: 18px;
+    max-width: 570px;
 }
 .tabs__text:last-of-type {
     margin: 0;
@@ -100,11 +102,14 @@
     line-height: 42px;
     margin-bottom: 40px;
 }
-.extra-information__line {
+.extra-information__title::after {
+    content: "";
+    display: block;
     width: 170px;
     border-bottom: 1px solid rgba(236, 121, 121, 1);
-    margin: 0 auto 40px;
+    margin: 40px auto 0;
 }
+
 .extra-information__text {
     text-align: center;
     margin-bottom: 92px;
@@ -130,6 +135,11 @@
     justify-content: center;
     align-items: center;
 }
+.advantage__img {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+}
 
 .advantage__title {
     font-family: 'Open Sans', sans-serif;
@@ -141,6 +151,7 @@
 .advantage__text {
     font-weight: 400;
     font-size: 18px;
+    line-height: 21px;
 }
 
 .price-list {
@@ -156,11 +167,14 @@
     line-height: 42px;
     margin-bottom: 40px;
 }
-.price-list__line {
+.price-list__title::after {
+    content: "";
+    display: block;
     width: 170px;
     border-bottom: 1px solid rgba(236, 121, 121, 1);
-    margin: 0 auto 40px;
+    margin: 40px auto 0;
 }
+
 .price-list__text {
     text-align: center;
     margin-bottom: 79px;
@@ -175,11 +189,14 @@
     padding-bottom: 83px;
 }
 .benefits__column {
-    width: calc((100% - 60px) / 3);
+    list-style-type: none;
+    max-width: 370px;
+    width: 100%;
     text-align: center;
 }
-.benefits__colunm.selected {
-    margin-top: -20px;
+.benefits__column:nth-of-type(2) {
+    position:relative;
+    top: -20px;
 }
 .benefits__title {
     color: rgba(255, 255, 255, 1);
@@ -229,10 +246,12 @@
     line-height: 42px;
     margin-bottom: 40px;
 }
-.reviews__line {
+.reviews__title::after {
+    content: "";
+    display: block;
     width: 170px;
     border-bottom: 1px solid rgba(236, 121, 121, 1);
-    margin: 0 auto 40px;
+    margin: 40px auto 0;
 }
 .reviews__text {
     text-align: center;
@@ -249,6 +268,7 @@
 .comments__text {
     text-align: center;
     color: rgba(134, 135, 139, 1);
+    max-width: 370px;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -258,14 +278,26 @@
     padding: 38px 25px 37px;
     margin-bottom: 66px;
 }
+.comments__text::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid rgba(226, 226, 226, 1);
+    top: 58px;
+    left: 46px;
+}
 .comments__block {
     display:flex;
     justify-content: flex-start;
 }
 .comments__wrap {
     margin-right: 30px;
-    width: 72px;
-    height: 72px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 
