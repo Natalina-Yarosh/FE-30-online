@@ -11,14 +11,12 @@
     max-width: 1170px;
     margin: 0px auto;
     padding: 0 15px;
+    margin-top: 100px;
 }
 .buttons{
     width: 58%;
 }
-.tab__button-name tab__button-name_activ{
-    border: 1px solid #C6CBCD ;
-    border-radius: 5px 5px 0px 0px;
-}
+
 .tab__button-name{
     height: 40px;
     width: 203px; 
@@ -29,8 +27,15 @@
     letter-spacing: 0em;
     text-align: center;
     padding: 10px;
-    border: 1px solid #fbfdfe 
+    background: #FFFFFF; 
+    border: 1px solid #feffff
 }
+.tab__button-name_activ{
+    border: 1px solid #C6CBCD;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: #FFFFFF;
+}
+
 .text{
     font-family: "Raleway", sans-serif; size: 18px; 
     margin: 70px 70px 20px 70px;
@@ -98,7 +103,17 @@
 }
 .tab__picture{
     width: 40%;
+    max width: 270px;
+    height: 500px;
+    object-fit: cover;
 }
 .text{
     margin-top: 50px;
+}
+.container__block{
+    margin-top: 82px;
+}
+.section__line{
+    border: 1px solid #EC7979;
+    widht: 50px;
 }
