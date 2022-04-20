@@ -1,11 +1,12 @@
 
 .awesome {
-    padding: 55px 15px; 
+     
 }
 
 .awesome__wrapper {
     max-width: 1170px;
     margin: 0 auto;
+    margin-bottom: 110px;
 }
 
 .awesome__title {
@@ -38,6 +39,17 @@
     display: inline-block;
 }
 
+.img__container {
+    border: 1px solid #EC7979;
+    width: 92px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 24px;
+    border-radius: 50px;
+    display: flex;
+}
+
 .advantages__title {
     text-align: center;
 }
@@ -46,11 +58,9 @@
     text-align: center;
 }
 .advantages__img {
-    width: 91.86px;
-    height: 91.61px;
-    display: block;
-    margin: auto;
-    margin-bottom: 24.19px;
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
 }
 
 .advantages__title {
