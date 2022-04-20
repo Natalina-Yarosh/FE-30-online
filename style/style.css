@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     }
-.tab{
+.tabs{
     margin-bottom: 110px;
 }
 .container{
@@ -12,38 +12,62 @@
     margin: 0px auto;
     padding: 0 15px;
 }
-.tab__button-name_activ{
-    tab__button-name tab__button-name_activ
+.buttons{
+    width: 58%;
+}
+.tab__button-name tab__button-name_activ{
+    border: 1px solid #C6CBCD ;
+    border-radius: 5px 5px 0px 0px;
 }
 .tab__button-name{
     height: 40px;
-width: 203px;
-left: -585px;
-top: -1477px;
-border-radius: [object Object]px;
-
-
+    width: 203px; 
     font-family: Open Sans;
     font-size: 14px;
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
+    padding: 10px;
+    border: 1px solid #fbfdfe 
 }
 .text{
     font-family: "Raleway", sans-serif; size: 18px; 
+    margin: 70px 70px 20px 70px;
+}
+.text2{
+    font-family: "Raleway", sans-serif; size: 18px; 
+    margin: 30px 70px 70px 70px;
+}
+.button2__text{
+    background: #EC7979;
+    width: 270px;
+    height: 58px;
+    margin: 100px 70px auto 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    ;
 }
 .section__block{
+
+    margin-top: 92px;
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+
+    
 }
 .section__block__vector{
+    
     flex-direction: column;
 }
 .container__tab{
     display: flex;
     justify-content: space-around;
+    border: 1px solid #C6CBCD;
 }
 .section__title{
     display: flex;
@@ -52,10 +76,12 @@ border-radius: [object Object]px;
 .section__line{
     display: flex;
     justify-content: center;
+    margin-top: 40px;
 }
 .section__text{
     display: flex;
     justify-content: center;
+    
 }
 .section__block__title{
     display: flex;
@@ -65,4 +91,14 @@ border-radius: [object Object]px;
 .tab__title{
     display: flex;
     justify-content: center;
+    margin-top: 50px;
+}
+.tab__info{
+    width: 60%;
+}
+.tab__picture{
+    width: 40%;
+}
+.text{
+    margin-top: 50px;
 }
