@@ -22,7 +22,7 @@ display: flex;
 }
 
 .tabs__item{
-    width: calc((100% - 560px) / 3);
+
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     background-color: rgb(255, 255, 255);
@@ -93,8 +93,13 @@ display: flex;
     background-color: #AB4949;
 }
 
+.tab__button:active{
+    background-color: #AB4949;
+}
+
 .tab__wrap{
-    min-height: 500px;
+    width: 40%;
+    
 }
 
 .tab__image{
@@ -112,7 +117,6 @@ display: flex;
 .answer__block{
     text-align: center;
     margin-bottom: 92px;
-    position: relative;
 }
 
 .answer__subject{
@@ -121,6 +125,7 @@ display: flex;
     line-height: 42px;
     margin-bottom: 80px;
     text-transform: uppercase;
+    position: relative;
     
 }
 
@@ -130,8 +135,9 @@ display: flex;
     display: block;
     width:170px;
     border-bottom: 1px solid #EC7979;
-    top:75px;
-    left:470px;
+    top:calc(100% + 40px);
+    left: 50%;
+    transform: translateX(-85px);
 }
 
 .answer__txt{
@@ -149,6 +155,7 @@ display: flex;
 
 .reason__content{
     max-width: 370px;
+    text-align: center;
 }
 
 .reason__wrap{
@@ -162,9 +169,6 @@ display: flex;
     margin: 0 auto 24px;
 }
 
-.reason__info{
-    text-align: center;
-}
 
 .reason__title{
     margin-bottom:30px ;
@@ -179,6 +183,7 @@ display: flex;
     line-height: 21px;
     font-size: 18px;
     font-weight: 400;
+    
 }
 
 .options{
@@ -190,8 +195,8 @@ display: flex;
 
 .options__block{
     text-align: center;
-    margin-bottom: 20px;
-    position: relative;
+    
+    margin-bottom: 92px;
 }
 
 .options__title{
@@ -200,17 +205,22 @@ display: flex;
     line-height: 42px;
     margin-bottom: 80px;
     text-transform: uppercase;
+    /* то тут обязательно релатив чтобы двигать*/
+    position: relative;
     
 }
 
 .options__title::after{
+    /* если здесь абсолют*/
     position: absolute;
     content: '';
     display: block;
     width:170px;
     border-bottom: 1px solid #EC7979;
-    top:75px;
-    left:470px
+    /* выравниваем линию и закрепляем ее*/
+    top:calc(100% + 40px);
+    left:50%;                      
+    transform:translateX(-50%) 
 }
 
 .options__txt{
@@ -218,7 +228,6 @@ display: flex;
     line-height: 21px;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 92px;
 }
 
 .price{
@@ -230,10 +239,7 @@ display: flex;
 
 .block{
     width: calc((100% - 60px) / 3);
-    
     text-align: center;
-    max-height: 510px;
-    
 }
 
 .block:hover{
@@ -244,7 +250,6 @@ display: flex;
     background-color: #333333;
     color: #ffffff;
     border-bottom: 2px solid #F5F5F5;
-    min-height: 60px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -256,7 +261,6 @@ display: flex;
     background-color: #333333;
     color: #ffffff;
     border-bottom: 2px solid #F5F5F5;
-    min-height: 100px;
     padding: 25px 0;
     font-weight: 700;
     font-size: 36px;
@@ -265,7 +269,6 @@ display: flex;
 .price__txt{
     background-color: #333333;
     color: #C4C4C4 ;
-    min-height: 50px;
     padding: 15px 0;
     font-size: 18px;
 }
@@ -277,7 +280,6 @@ display: flex;
 .list__block{
     color: #86878B;
     border-bottom: 2px solid #F5F5F5;
-    min-height: 50px;
     padding:15px 0;
     background-color: white;
 }
@@ -288,8 +290,7 @@ display: flex;
 
 .customers__block{
     text-align: center;
-    margin-bottom: 20px;
-    position: relative;
+    margin-bottom: 83px;
 }
 
 .customers__title{
@@ -298,6 +299,7 @@ display: flex;
     line-height: 42px;
     margin-bottom: 80px;
     text-transform: uppercase;
+    position: relative;
 }
 
 .customers__title::after{
@@ -306,8 +308,12 @@ display: flex;
     display: block;
     width:170px;
     border-bottom: 1px solid #EC7979;
-    top:75px;
-    left:470px;
+    /* делаем отступ  от тайтла родителя 100 % это вся ширина родителя и 40px это отступ до линии*/
+    top:calc(100% + 40px);
+    /* это отсуп слева на 50% от всей длины родителя от 1140px*/
+    left: 50%;
+    /* это отсуп направа так как минус и отступается от длины линии то есть берем 50% длины линии от 170PX*/
+    transform: translateX(-50%);
 }
 
 
@@ -316,7 +322,7 @@ display: flex;
     line-height: 21px;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 83px;
+    
 }
 
 
@@ -329,8 +335,6 @@ display: flex;
 
 .comment{
     max-width: 370px;
-    position: relative;
-    
 }
 
 .comments__block{
@@ -340,6 +344,7 @@ display: flex;
     background-color: #E2E2E2;
     border-radius: 10px;
     margin-bottom: 66px;
+    position: relative;
     }
 
 .comments__block::after{
@@ -347,6 +352,8 @@ display: flex;
     display:inline-block;
     position: absolute;
     left: 50px;
+    /* привязываем по оси X обязательно 100% это если текст будет увеличиваться то отступ все равно будет 100% то есть ширина родителя ,left привязывает по оси Y*/
+    top:100%;
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
@@ -359,8 +366,6 @@ display: flex;
     font-size: 18px;
     line-height:21px;
     padding: 38px 25px;
-    
-    z-index: 10;
     bottom: 40px;
 }
 
@@ -370,6 +375,19 @@ display: flex;
 
 .comments__wrap{
     margin-right: 30px;
+/* это работаем с картинками родителю мы устанавливаем размер картинки то есть 70 на 70 hidden чтобы лишнюю картику прятала и даем радиус*/
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.people__img{
+    /* а тут указывает 100 % ширину и высоту чтобы картинка растянулась на все 70px но 100% и object что она коректно растянулась */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 
 .comments__title{
