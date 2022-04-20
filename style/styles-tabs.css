@@ -9,7 +9,7 @@
 
 .tabs__item {
     background-color: #fff;
-    max-width: 184px;
+    max-width: 203px;
     width: 100%;
     min-height: 40px;
     border-radius: 5px 5px 0px 0px;
@@ -21,7 +21,6 @@
 .tabs__item_active{
     border: 1px solid #C6CBCD;
     border-bottom: 1px solid transparent;
-    max-width: 203px;
 }
 
 .tab__title {
