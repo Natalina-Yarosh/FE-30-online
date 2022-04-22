@@ -29,10 +29,14 @@
     margin-bottom: 92px;
 }
 
+.advantages__container {
+    text-align: center;
+}
+
 .advantages__item {
-    list-style-type: none;
-    width: 370px;
+    max-width: 370px;
     display: inline-block;
+    margin: 0 auto;
 }
 
 .img__container {
@@ -62,8 +66,4 @@
 .advantages__title {
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 26px;
-}
-
-.advantages__list {
-    text-align: center;
 }

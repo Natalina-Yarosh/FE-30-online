@@ -37,12 +37,13 @@
 .tab {
     max-width: 100%;
     border: 1px solid #C6CBCD;
+    display: flex;
 }
 
 .tab__wrap {
-    display: inline-block;
+    /*display: inline-block;*/
     width: 39%;
-    vertical-align: top;
+    /*vertical-align: top;*/
     min-height: 500px;
 }
 
@@ -59,11 +60,11 @@ p.tab__text:last-of-type {
 }
 
 .tab__info {
-    display: inline-block;
+    /*display: inline-block;*/
     width: 60%;
     padding: 33px 30px 54px 100px;
-    vertical-align: top;
-    margin: 0%;
+    /*vertical-align: top;
+    margin: 0%;*/
 }
 
 .tab__btn {
