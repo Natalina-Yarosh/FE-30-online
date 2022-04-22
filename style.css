@@ -10,7 +10,7 @@
     width: 100%;
     min-height: 39px;
     margin-top: 0px;
-    margin-bottom: 118px;
+    margin: 166px 170px 118px 170px;
     
 }
 
@@ -28,6 +28,7 @@
 .tabs__item_active{
     border: 1px solid #c6cbcd;
     border-radius: 5px 5px 0px 0px;
+    border-bottom:none ;
 }
 
 .tab{
