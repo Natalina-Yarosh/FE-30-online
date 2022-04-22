@@ -1,20 +1,15 @@
-* {
-    font-family: "Open Sans", sans-serif;    
+* {   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
+}
 .tabs{
-    margin-bottom: 110px;
+    margin: 110px 30px;
 }
 .container{
     max-width: 1170px;
     margin: 0px auto;
     padding: 0 15px;
-    margin-top: 100px;
-}
-.buttons{
-    width: 58%;
 }
 
 .tab__button-name{
@@ -28,7 +23,8 @@
     text-align: center;
     padding: 10px;
     background: #FFFFFF; 
-    border: 1px solid #feffff
+    border: 1px solid #feffff;
+    cursor: pointer;
 }
 .tab__button-name_activ{
     border: 1px solid #C6CBCD;
@@ -38,11 +34,11 @@
 
 .text{
     font-family: "Raleway", sans-serif; size: 18px; 
-    margin: 70px 70px 20px 70px;
+    margin-bottom: 26px;
+    text-align: left;
 }
 .text2{
     font-family: "Raleway", sans-serif; size: 18px; 
-    margin: 30px 70px 70px 70px;
 }
 .button2__text{
     background: #EC7979;
@@ -53,36 +49,32 @@
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
-    ;
 }
-.section__block{
 
+.section__block{
     margin-top: 92px;
     width: auto;
     height: auto;
     display: flex;
     justify-content: space-around;
-
-    
 }
+
 .section__block__vector{
     
     flex-direction: column;
 }
+
 .container__tab{
     display: flex;
     justify-content: space-around;
     border: 1px solid #C6CBCD;
 }
+
 .section__title{
     display: flex;
     justify-content: center;
 }
-.section__line{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
+
 .section__text{
     display: flex;
     justify-content: center;
@@ -93,27 +85,49 @@
     justify-content: center;
     align-items: center;
 }
+
 .tab__title{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+    
+    margin-bottom: 50px;
+    text-align: center;
 }
 .tab__info{
     width: 60%;
+    padding: 55px 30px 55px 100px;
 }
+
 .tab__picture{
     width: 40%;
-    max width: 270px;
-    height: 500px;
+}
+.tab__picture__title{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
-.text{
-    margin-top: 50px;
-}
+
 .container__block{
     margin-top: 82px;
 }
+
 .section__line{
+    margin: 40px 450px;
+    width: 50px;
+    border: .5px solid #EC7979;
+    width: 30%;
+    display: flex;
+}
+
+.image{
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
     border: 1px solid #EC7979;
-    widht: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+section__block__vector{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
