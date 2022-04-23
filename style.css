@@ -155,7 +155,6 @@
     height: 65px;
     object-fit: contain;
     text-align: center;
-    display: inline-block;
 }
 
 .advantage__wrapper{
@@ -174,7 +173,6 @@
     height: 46px;
     object-fit: contain;
     text-align: center;
-    display: inline-block;
 }
 .advantage__package{
     width: 92px;
@@ -192,7 +190,6 @@
     height: 66px;
     object-fit: contain;
     text-align: center;
-    display: inline-block;
 }  
 .advantage__title{
     margin-bottom: 26px;
@@ -316,6 +313,207 @@
     margin-top: -20px;
 }
 
+.reviews{
+    text-align: center;
+    
+}
+
+.envelope{
+    display: flex;
+    justify-content: center;
+}
+
+.comment{
+    max-width: 1170px; 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.rewiews__header{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.rewiews__header::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 170px;
+    border-bottom: 1px solid #EC7979;
+    margin: 0;
+    left: 50%;
+    top: calc(100% + 40px);
+    transform: translateX(-50%);
+}
+
+.rewiews__text{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color:  #86878B;
+    margin-bottom: 83px;
+}  
+
+.connection-one{
+    max-width: 370px;
+    width: 100%;
+    background-color: #E2E2E2;
+    padding: 38px 25px 38px 25px;
+    border-radius: 10px;
+    margin-bottom: 65px;
+    position: relative;
+    }
+
+.connection-one::after{
+    content: '';
+    display: inline-block;
+    left: 20px; bottom: -20px;
+    border: 20px solid transparent;
+    border-top: 20px solid #E2E2E2;
+    position: absolute;
+    top: 100%;
+    left: 70px;
+}
+
+    .connection-two{
+    max-width: 370px;
+    width: 100%;
+    background-color: #E2E2E2;
+    padding: 38px 25px 38px 25px;
+    border-radius: 10px;
+    margin-bottom: 65px;
+    position: relative;
+    }
+
+    .connection-two::after{
+    content: '';
+    display: inline-block;
+    left: 20px; bottom: -20px;
+    border: 20px solid transparent;
+    border-top: 20px solid #E2E2E2;
+    position: absolute;
+    top: 100%;
+    left: 70px;
+    }
+
+ .connection-three{
+    max-width: 370px;
+    width: 100%;
+    background-color: #E2E2E2;
+    padding: 38px 25px 38px 25px;
+    border-radius: 10px;
+    margin-bottom: 65px;
+    position: relative;
+    }
+
+    .connection-three::after{
+    content: '';
+    display: inline-block;
+    left: 20px; bottom: -20px;
+    border: 20px solid transparent;
+    border-top: 20px solid #E2E2E2;
+    position: absolute;
+    top: 100%;
+    left: 70px;
+    }
+.connection__text{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color:  #86878B;
+}
+
+
+
+.person__img{
+    position: relative;
+    top: 250px;
+    left: -320px;
+    
+}
+.person__name-one{
+    position: relative;
+    top: 250px;
+    left: -370px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 18px;
+}
+
+.person__name-two{
+    position: relative;
+    top: 250px;
+    left: -10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 18px;
+}
+
+.person__name-three{
+    position: relative;
+    top: 250px;
+    left: 360px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 18px;
+}
+.person__info{
+    position: absolute;
+}
+
+.person__position-one{
+    position: relative;
+    top: 250px;
+    left: -370px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.person__position-two{
+    position: relative;
+    top: 250px;
+    left: -10px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+}
+
+.person__position-three{
+    position: relative;
+    top: 250px;
+    left: 360px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.person__photo{
+    width: 70px;
+    height: 70px;
+    border-radius: -50%;
+    overflow: hidden;
+}
 
 
 
