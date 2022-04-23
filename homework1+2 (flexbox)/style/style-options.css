@@ -53,7 +53,7 @@
     text-align: center;
 }
 
-li {
+.content__item,.content__header,.content__price,.content__freeforlife {
     list-style-type: none;
     background: #FFFFFF;
     border: 2px solid #F5F5F5;
