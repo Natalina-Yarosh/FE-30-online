@@ -6,6 +6,126 @@
     font-size: 16px;
 }
 
+.header {
+    padding: 23px 0px;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    margin-left:115px;
+}
+
+.header__logo a {
+    text-decoration: none;
+}
+.header__logo-firstpart {
+    font-size: 31px;
+    color:#fff;
+}
+
+.header__logo-secondpart {
+    font-size: 31px;
+    color:#EC7979;
+    font-weight: 700;
+    text-align: start;
+}
+.header__nav {
+    margin-right: 200px;
+}
+
+.header__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.header__item {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+    margin-right:70px;
+}
+
+.header__item:last-of-type {
+    margin:0;
+}
+
+.header__item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../media/main__banner.png);
+    padding: 300px 0px 185px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    margin-bottom: 166px;
+}
+.banner__logo {
+    margin-bottom:73px;
+}
+.banner__logo a {
+    text-decoration: none;
+}
+.banner__logo-firstpart {
+    font-size: 55px;
+    color:#fff;
+}
+
+.banner__logo-secondpart {
+    font-size: 55px;
+    color:#EC7979;
+    font-weight: 700;
+    text-align: start;
+}
+
+.banner__title {
+    max-width: 670px;
+    width:100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    margin-bottom:97px;
+    color: #FFFFFF;
+}
+
+.banner__text {
+    max-width: 270px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 42px;
+    color: #FFFFFF;
+}
+
+.banner__button {
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    padding: 24px 90px;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.banner__button:hover {
+    background-color: #2c9105;
+    cursor: pointer;
+}
+
 .tabs {
     margin-bottom: 110px;
 }
@@ -24,9 +144,9 @@
 }
 
 .tabs__item_active {
-    border-top: 1px #333333 solid;
-    border-left: 1px #333333 solid;
-    border-right: 1px #333333 solid;
+    border-top: 1px #C6CBCD solid;
+    border-left: 1px #C6CBCD solid;
+    border-right: 1px #C6CBCD solid;
     border-radius: 5px 5px 0px 0px;
 }
 
@@ -36,7 +156,7 @@
 
 .tabs__card {
     display: flex;
-    border: 1px #333333 solid;
+    border: 1px #C6CBCD solid;
 }
 
 .tabs__img {
@@ -372,21 +492,16 @@
 
 .design {
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 70px 0px;
+    background-image: url('../media/night-city.png');
+    padding: 70px 0;;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-/* .design::after {
-    content: '';
-    display: block;
-    width: 100%;
-    background-image: url(/media/night-city.png);
     background-repeat: no-repeat;
     background-size: cover;
-} */
+    background-blend-mode: multiply;
+}
 
 .design__title {
     font-style: normal;
