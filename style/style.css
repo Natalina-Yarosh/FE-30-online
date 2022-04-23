@@ -89,14 +89,18 @@
     line-height: 42px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 80px;
+    position: relative;
 }
 .awesome__title::after {
     content: "";
     display: block;
     width: 170px;
-    height: 1px;
-    background-color: #EC7979;
-    margin: 40px auto;
+    border-bottom: 1px solid #EC7979;
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 40px);
+    transform: translateX(-50%);
 }
 .awesome__text {
     text-align: center;
@@ -149,14 +153,18 @@
     line-height: 42px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 80px;
+    position: relative;
 }
 .pricing__title::after {
     content: "";
     display: block;
     width: 170px;
-    height: 1px;
-    background-color: #EC7979;
-    margin: 40px auto;
+    border-bottom: 1px solid #EC7979;
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 40px);
+    transform: translateX(-50%);
 }
 .pricing__text {
     text-align: center;
@@ -215,19 +223,26 @@
 }
 
 /*reviews*/
+.reviews {
+    margin-bottom: 107px;
+}
 .reviews__title {
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 80px;
+    position: relative;
 }
 .reviews__title::after {
     content: "";
     display: block;
     width: 170px;
-    height: 1px;
-    background-color: #EC7979;
-    margin: 40px auto;
+    border-bottom: 1px solid #EC7979;
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 40px);
+    transform: translateX(-50%);
 }
 .reviews__text {
     text-align: center;
@@ -242,10 +257,16 @@
 .opinion {
     width: calc((100% - 60px) / 3);
 }
-.opinion__item {
+.opinion__text {
+    text-align: center;
+    color: #86878B;
+    background-color: #E2E2E2;
+    border-radius: 10px;
+    padding: 38px 25px;
     position: relative;
+    margin-bottom: 66px;
 }
-.opinion__item::after {
+.opinion__text::after {
     display: block;
     content: "";
 	width: 0;
@@ -253,23 +274,9 @@
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	border-top: 20px solid #E2E2E2;
-    position: relative;
+    position: absolute;
+    top: 100%;
     left: 70px;
-    margin-bottom: 46px;
-}
-.opinion__text {
-    text-align: center;
-    color: #86878B;
-    background-color: #E2E2E2;
-    border-radius: 10px;
-    padding: 38px 25px;
-}
-.opinion__triangle {
-    width: 30px;
-    height: 20px;
-    background-color: #E2E2E2;
-    border-radius: 0 0 15px 15px;
-    margin: 0 270px 46px 70px;
 }
 .opinion__wrap {
     display: flex;
