@@ -50,7 +50,7 @@
 .tabs__text {
     margin-bottom: 26px;
 }
-p.tabs__text:last-of-type {
+.tabs__text:last-of-type {
     margin-bottom: 0;
 }
 .tabs__btn {
@@ -58,11 +58,18 @@ p.tabs__text:last-of-type {
     font-weight: 600;
     max-width: 270px;
     width: 100%;
-    line-height: 58px;
     color: #FFFFFF;
     background-color: #EC7979;
     border: 0;
+    padding: 20px 0;
     margin-top: 84px;
+}
+.tabs__btn:hover {
+    background-color: #AB4949;
+}
+.tabs__btn:active {
+    background-color: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
 }
 .tabs__warp {
     width: 40%;
@@ -81,13 +88,15 @@ p.tabs__text:last-of-type {
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    margin-bottom: 40px;
+    text-transform: uppercase;
 }
-.awesome__line {
+.awesome__title::after {
+    content: "";
+    display: block;
     width: 170px;
     height: 1px;
     background-color: #EC7979;
-    margin: 0 auto 40px;
+    margin: 40px auto;
 }
 .awesome__text {
     text-align: center;
@@ -139,13 +148,15 @@ p.tabs__text:last-of-type {
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    margin-bottom: 40px;
+    text-transform: uppercase;
 }
-.pricing__line {
+.pricing__title::after {
+    content: "";
+    display: block;
     width: 170px;
     height: 1px;
     background-color: #EC7979;
-    margin: 0 auto 40px;
+    margin: 40px auto;
 }
 .pricing__text {
     text-align: center;
@@ -162,6 +173,9 @@ p.tabs__text:last-of-type {
     background-color: #F5F5F5;
     text-align: center;
 }
+.rate:hover {
+    margin-top: -20px;
+}
 .rate__title {
     font-family: 'Open Sans';
     font-weight: 700;
@@ -170,7 +184,7 @@ p.tabs__text:last-of-type {
     color: #FFFFFF;
     background-color: #333333;
     padding: 13.5px 0;
-    margin-bottom: 2px;
+    border-bottom: 2px solid #F5F5F5;
 }
 .rate__price {
     font-weight: 700;
@@ -179,22 +193,25 @@ p.tabs__text:last-of-type {
     color: #FFFFFF;
     background-color: #333333;
     padding: 29px 0;
-    margin-bottom: 2px;
+    border-bottom: 2px solid #F5F5F5;
 }
 .rate__description {
     color: rgba(255, 255, 255, 0.5);
     background-color: #333333;
     padding: 17px 0;
-    margin-bottom: 2px;
+    border-bottom: 2px solid #F5F5F5;
 }
-.rate__text {
+.rate__list {
     color: #86878B;;
     background-color: #FFFFFF;
-    padding: 17px 0;
-    margin-bottom: 2px;
+    list-style-type: none;
 }
-p.rate__text:last-of-type {
-    margin-bottom: 0;
+.rate__item {
+    padding: 14.5px 0;
+    border-bottom: 2px solid #F5F5F5;
+}
+.rate__item:last-of-type {
+    border-bottom: 0;
 }
 
 /*reviews*/
@@ -202,13 +219,15 @@ p.rate__text:last-of-type {
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    margin-bottom: 40px;
+    text-transform: uppercase;
 }
-.reviews__line {
+.reviews__title::after {
+    content: "";
+    display: block;
     width: 170px;
     height: 1px;
     background-color: #EC7979;
-    margin: 0 auto 40px;
+    margin: 40px auto;
 }
 .reviews__text {
     text-align: center;
@@ -222,6 +241,21 @@ p.rate__text:last-of-type {
 }
 .opinion {
     width: calc((100% - 60px) / 3);
+}
+.opinion__item {
+    position: relative;
+}
+.opinion__item::after {
+    display: block;
+    content: "";
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid #E2E2E2;
+    position: relative;
+    left: 70px;
+    margin-bottom: 46px;
 }
 .opinion__text {
     text-align: center;
@@ -243,12 +277,17 @@ p.rate__text:last-of-type {
 }
 .opinion__img {
     width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 .opinion__avatar {
-    width: 70px;
-    height: 70px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+}
+.opinion__info {
+    width: calc(100% - 100px);
 }
 .opinion__name {
     font-family: 'Open Sans';
