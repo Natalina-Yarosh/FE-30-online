@@ -23,7 +23,9 @@
     margin-bottom: 40px;
 }
 
-.options__line{
+.options__title::after{
+    content: '';
+    display: block;
     border: 1px solid #EC7979;
     max-width: 170px;
     margin: 40px auto;
@@ -56,7 +58,7 @@
 .content__item,.content__header,.content__price,.content__freeforlife {
     list-style-type: none;
     background: #FFFFFF;
-    border: 2px solid #F5F5F5;
+    border-bottom: 2px solid #F5F5F5;
     width: 100%;
     padding: 14px;
     font-family: 'Raleway', sans-serif;
@@ -89,3 +91,8 @@
     font-weight: 400;
     font-size: 18px;
 }
+
+.content__item:last-child{
+border-bottom: none;
+}
+

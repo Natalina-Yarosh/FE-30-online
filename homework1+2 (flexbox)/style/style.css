@@ -92,17 +92,19 @@ font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
 }
 
+.designs__title::after{
+    content: '';
+    display: block;
+    border: 1px solid #EC7979;
+    max-width: 170px;
+    margin: 40px auto;
+}
+
 .designs__description{
     text-align: center;
     color: #86878B;
     margin-bottom: 92px;
     font-family: 'Raleway', sans-serif;
-}
-
-.designs__line{
-    border: 1px solid #EC7979;
-    margin: 0 auto 40px;
-    max-width: 170px;
 }
 
 .designs__block{

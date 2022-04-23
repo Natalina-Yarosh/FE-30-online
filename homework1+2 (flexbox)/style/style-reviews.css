@@ -121,3 +121,11 @@
     height: 70px;
     border-radius: 50px;
 }
+
+.content__items:active {
+    margin-top: -15px;
+}
+
+.content__items-optima:active{
+    margin-top: -30px;
+}
