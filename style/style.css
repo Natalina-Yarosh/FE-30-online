@@ -97,7 +97,17 @@
     text-transform: uppercase;
     margin-bottom:97px;
     color: #FFFFFF;
+    position: relative;
 }
+.banner__title::after {
+    content: '';
+    display: block;
+    width: 170px;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    top: calc(100% + 55px);
+}
+
 
 .banner__text {
     max-width: 270px;
@@ -125,6 +135,7 @@
     background-color: #2c9105;
     cursor: pointer;
 }
+
 
 .tabs {
     margin-bottom: 110px;
