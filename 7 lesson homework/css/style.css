@@ -1,0 +1,602 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header{
+    background-color: #000000;
+    max-width: 1510px;
+    padding:22px 130px 22px ;
+    margin:0 auto;
+}
+
+.header__block{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 570px;
+}
+
+.header__logo{
+    max-width: 86px;
+
+}
+.header__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.header__list{
+    list-style-type: none;
+    display: flex;
+    padding-top:8px
+
+}
+
+.header__link{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0 30px;
+    
+    
+}
+
+
+.banner__wrap{
+    margin: 0 auto;
+    max-width: 1510px;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.banner__wrap::after{
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.banner__block{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 10;
+}
+
+.banner__logo{
+    margin-bottom: 73px;
+}
+
+.banner__title{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color:#fff;
+    max-width:670px;
+    margin-bottom: 97px;
+    position: relative;
+}
+
+.banner__title::after{
+    content: '';
+    position:absolute;
+    width: 170px;
+    border-bottom: 1px solid #fff;
+    top:calc(100% + 55px);
+    left:10%;
+    transform: translateX(-38%);
+
+}
+
+.banner__text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    max-width: 270px;
+    margin-bottom: 42px;
+}
+
+.banner__button{
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+    color: #fff;
+    max-width: 270px;
+    min-height: 57px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+.tabs{
+    margin-bottom:110px;
+    padding-top: 166px;
+}
+
+.container{
+    max-width:1170px ;
+    margin: 0px auto;
+    padding: 0 15px;
+    
+}
+
+.tabs__items{
+display: flex;
+}
+
+.tabs__item{
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    max-width: 203px;
+    width: 100%;
+    min-height: 40px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.tabs__item_active{
+    border:1px solid #C6CBCD;
+    border-bottom: none;
+}
+
+.tabs__item:hover{
+    background-color:#C6CBCD
+}
+
+.tabs__item:active{
+    color:white
+}
+
+
+.tab{
+    border: 1px solid #C6CBCD;
+    display: flex;
+}
+
+.tab__info{
+    padding:50px 30px 50px 100px;
+    width: 60%;
+    
+}
+
+.tab__title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 57px;
+    font-size: 30px;
+}
+
+.tab__text{
+    margin-bottom: 74px;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.tab__text:last-of-type{
+    margin: 0px;
+}
+
+.tab__button{
+    width:100%;
+    max-width: 270px;
+    min-height: 58px;
+    background-color: #EC7979;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    border: none;
+    margin-top:74px;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+
+.tab__button:hover{
+    background-color: #AB4949;
+}
+
+.tab__button:active{
+    background-color: #AB4949;
+}
+
+.tab__wrap{
+    width: 40%;
+    
+}
+
+.tab__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.answer{
+    margin-bottom: 110px;
+
+}
+
+.answer__block{
+    text-align: center;
+    margin-bottom: 92px;
+}
+
+.answer__subject{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+
+.answer__subject::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width:170px;
+    border-bottom: 1px solid #EC7979;
+    top:calc(100% + 40px);
+    left: 50%;
+    transform: translateX(-85px);
+}
+
+.answer__txt{
+    color:#86878B;
+    line-height: 21px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.reason{
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+}
+
+.reason__content{
+    max-width: 370px;
+    text-align: center;
+}
+
+.reason__wrap{
+    border: 1px solid #EC7979 ;
+    width:92px;
+    height:92px;
+    border-radius: 50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 24px;
+}
+
+
+.reason__title{
+    margin-bottom:30px ;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.reason__text{
+    line-height: 21px;
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+
+.options{
+    background-color: #F5F5F5;
+    padding: 82px 0;
+    margin-bottom: 110px;
+    
+}
+
+.options__block{
+    text-align: center;
+    
+    margin-bottom: 92px;
+}
+
+.options__title{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    /* то тут обязательно релатив чтобы двигать*/
+    position: relative;
+    
+}
+
+.options__title::after{
+    /* если здесь абсолют*/
+    position: absolute;
+    content: '';
+    display: block;
+    width:170px;
+    border-bottom: 1px solid #EC7979;
+    /* выравниваем линию и закрепляем ее*/
+    top:calc(100% + 40px);
+    left:50%;                      
+    transform:translateX(-50%) 
+}
+
+.options__txt{
+    color:#86878B;
+    line-height: 21px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    
+}
+
+.block{
+    width: calc((100% - 60px) / 3);
+    text-align: center;
+    cursor: pointer;
+}
+
+.block:hover{
+    margin-top: -20px;
+}
+
+.price__title{
+    background-color: #333333;
+    color: #ffffff;
+    border-bottom: 2px solid #F5F5F5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 12px 0;
+    
+}
+
+.price__cost{
+    background-color: #333333;
+    color: #ffffff;
+    border-bottom: 2px solid #F5F5F5;
+    padding: 25px 0;
+    font-weight: 700;
+    font-size: 36px;
+    
+}
+.price__txt{
+    background-color: #333333;
+    color: #C4C4C4 ;
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.list{
+    list-style-type: none;
+}
+
+.list__block{
+    color: #86878B;
+    border-bottom: 2px solid #F5F5F5;
+    padding:15px 0;
+    background-color: white;
+}
+
+.customers{
+    margin-bottom: 110px;
+}
+
+.customers__block{
+    text-align: center;
+    margin-bottom: 83px;
+}
+
+.customers__title{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.customers__title::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width:170px;
+    border-bottom: 1px solid #EC7979;
+    /* делаем отступ  от тайтла родителя 100 % это вся ширина родителя и 40px это отступ до линии*/
+    top:calc(100% + 40px);
+    /* это отсуп слева на 50% от всей длины родителя от 1140px*/
+    left: 50%;
+    /* это отсуп направа так как минус и отступается от длины линии то есть берем 50% длины линии от 170PX*/
+    transform: translateX(-50%);
+}
+
+
+.customers__txt{
+    color:#86878B;
+    line-height: 21px;
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+
+
+.comments{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    
+}
+
+.comment{
+    max-width: 370px;
+}
+
+.comments__block{
+    border: 1px solid #E2E2E2;
+    min-height: 180px;
+    text-align: center;
+    background-color: #E2E2E2;
+    border-radius: 10px;
+    margin-bottom: 66px;
+    position: relative;
+    }
+
+.comments__block::after{
+    content: '';
+    display:inline-block;
+    position: absolute;
+    left: 50px;
+    /* привязываем по оси X обязательно 100% это если текст будет увеличиваться то отступ все равно будет 100% то есть ширина родителя ,left привязывает по оси Y*/
+    top:100%;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #E2E2E2;
+}
+
+.comments__text{
+    color: #86878B;
+    font-size: 18px;
+    line-height:21px;
+    padding: 38px 25px;
+    bottom: 40px;
+}
+
+.comments__info{
+    display: flex;
+}
+
+.comments__wrap{
+    margin-right: 30px;
+/* это работаем с картинками родителю мы устанавливаем размер картинки то есть 70 на 70 hidden чтобы лишнюю картику прятала и даем радиус*/
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.people__img{
+    /* а тут указывает 100 % ширину и высоту чтобы картинка растянулась на все 70px но 100% и object что она коректно растянулась */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.comments__title{
+    margin-bottom: 18px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+}
+
+.comments__txt{
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.design{
+    position: relative;
+    z-index: 0;
+    
+}
+
+
+.design__wrap{
+    max-width: 1510px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.design__wrap::after{
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 5px;
+    left: 0;
+    z-index: 1;
+}
+
+.design__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.design__block{
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 5;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+.design__title{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.design__title::after{
+    content: '';
+    width: 170px;
+    position: absolute;
+    top:calc(100% + 40px);
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid #fff;
+    
+}
+
+.design__text{
+    margin-bottom: 80px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.design__button{
+    min-height: 58px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    max-width: 370px;
+    color: #ffffff;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    cursor: pointer;
+}
