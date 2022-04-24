@@ -19,6 +19,7 @@ margin: 0 auto;
 .tabs__btn.tabs__btn_active{
     border: 1px solid #c6cbcd;}
 .tabs__btn{
+cursor: pointer;
 font-family: 'Open Sans', sans-serif;
 font-weight: 400;
 max-width: 203px;
@@ -42,7 +43,7 @@ color: #333333;
 }
 .tab__img{
     display: inline-block;
-    width: 39%;}
+    width: 30%;}
     .tab__image{
         width: 100%;
         height: 100%;
@@ -85,20 +86,26 @@ border: 1px solid #EC7979;
 color: #000;}
 
 .awesome__why{
-
-    text-align: center;
-    margin-bottom: 40px;
 font-size: 36px;
 line-height: 42px;
+align-items: center;
+text-align: center;
+margin-bottom: 80px;
+position: relative;
     
 
     }
-.awesome__line { margin: 0 auto;
+.awesome__why::after{
+    content:"";
+    display: block;
     width: 170px;
     height: 0px;
-    border-bottom: 1px solid #EC7979;
-margin-bottom: 40px;}
-
+    border: 1px solid #EC7979;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    top: calc(100% + 40px);
+}
 .awesome__lr {
 
 text-align: center;
@@ -163,7 +170,7 @@ max-width: 1508px;
 width: 100%;
 padding: 0 15px;
 margin: 0 auto;
-background: #F5F5F5
+background: #F5F5F5;
 }
 .container__pricing{
     max-width: 1170px;
@@ -179,15 +186,21 @@ background: #F5F5F5
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+    position: relative;
 
 }
-.pricing__line { margin: 0 auto;
+.pricing__why::after{
+    content:"";
+    display: block;
     width: 170px;
     height: 0px;
-    border-bottom: 1px solid #EC7979;
-margin-bottom: 40px;}
-
+    border: 1px solid #EC7979;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    top: calc(100% + 40px);
+}
 .pricing__lr{
 font-style: normal;
 font-weight: 400;
@@ -214,7 +227,9 @@ margin-top: -20px;}
 .package__block-3{ 
     width: calc((100%-60px) / 3);
     text-align: center;}
-.item{list-style-type: none;}
+.item{
+    list-style-type: none;
+}
 .package__title{
     background: #333333;
 }
@@ -223,13 +238,13 @@ margin-top: -20px;}
     border-bottom: 2px solid #F5F5F5;
     color: #FFFFFF;
     font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 33px;
-align-items: center;
-text-transform: capitalize;
-display: flex;
-justify-content: center
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    align-items: center;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center
     }
 .package__price{
     padding: 38px;
@@ -247,17 +262,86 @@ justify-content: center
     }
     .package__info{
     padding: 15px;
-font-style: normal;
-font-size: 18px;
-line-height: 21px;
-align-items: center;
-justify-content: center;
-color: #ffffff80
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff80
     }
 .item{
     padding: 15px;
     background: #FFFFFF;
-color: #86878B;
-font-size: 18px;
-line-height: 21px
+    color: #86878B;
+    font-size: 18px;
+    line-height: 21px
+}
+.reviews{
+max-width: 1508px;
+width: 100%;
+padding: 0 15px;
+margin: 0 auto;
+}
+
+.container__reviews{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+padding: 107px 0;
+}
+.reviews__title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 80px;
+    
+    color: #000000;}
+.reviews__title::after{
+    content:"";
+    display: block;
+    width: 170px;
+    height: 0px;
+    border: 1px solid #EC7979;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    top: calc(100% + 40px);
+}
+.reviews__lr{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    color: #86878B;
+}
+.reviews__wrap{
+    display: flex;
+    column-gap: 30px;
+    margin-top: 83px;
+}
+.review__block{
+    width: calc((100%-60px) / 3);
+}
+
+
+.review__text{ text-align: center;
+    max-width: 370px;
+    width: 100%;
+    background: #E2E2E2;
+    border-radius: 10px;
+    padding: 37px 25px;
+}
+.review__foto{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
 }
