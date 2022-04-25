@@ -51,13 +51,7 @@
     color: #FFFFFF;
 }
 
-.section__block{
-    margin-top: 92px;
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: space-around;
-}
+
 
 .section__block__vector{
     
@@ -75,16 +69,12 @@
     justify-content: center;
 }
 
-.section__text{
+.container__block__text{
     display: flex;
     justify-content: center;
-    
+    margin-bottom: 60px;
 }
-.section__block__title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .tab__title{
     
@@ -106,28 +96,88 @@
 }
 
 .container__block{
-    margin-top: 82px;
+    max-width: 1170px;
+    margin: 0px auto;
+    padding: 0 15px;
+    
 }
 
 .section__line{
-    margin: 40px 450px;
-    width: 50px;
-    border: .5px solid #EC7979;
-    width: 30%;
+    text-align: center;
+    border: 1px solid #EC7979;
+    margin: 40px 500px;
+    width: 170px;
+}
+.section__block{
+    margin-top: 92px;
+    margin-bottom: 110px;
     display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
-.image{
+.section__block__vector__image{
     width: 92px;
     height: 92px;
     border-radius: 50%;
     border: 1px solid #EC7979;
-    display: flex;
-    justify-content: center;
+    padding: 13px;
+    margin-bottom: 24px ;
+    
 }
 
-section__block__vector{
+.section__block__keyboard__image{
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    border: 1px solid #EC7979;
+    padding: 23px 13px;
+    margin-bottom: 24px;
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+.section__block__lightning__image{
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    border: 1px solid #EC7979;
+    padding: 13px 26px;
+    margin-bottom: 24px;
+}
+.sectin__block__title{
+    margin-bottom: 30px;
+}
+
+.container__tabs{
+    max-width: 1170px;
+    margin: 0px auto;
+    padding: 0 15px;
+    background: #F5F5F5;
+
+}
+.container__tabs__title{
+    text-align: center;
+    margin-top: 82px;
+
+}
+
+.container__tabs__line{
+    text-align: center;
+    border: 1px solid #EC7979;
+    margin: 40px 500px;
+    width: 170px;
+}
+
+.container__tabs__text{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.container__tabs__button{
+    margin-top: 92px;
+    margin-bottom: 110px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    text-align: center;
 }
