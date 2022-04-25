@@ -9,31 +9,16 @@
 .header {
     padding: 23px 0px;
     background-color: #000000;
+}
+
+.header__wrep {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header__logo {
-    margin-left:115px;
-}
-
-.header__logo a {
-    text-decoration: none;
-}
-.header__logo-firstpart {
-    font-size: 31px;
-    color:#fff;
-}
-
-.header__logo-secondpart {
-    font-size: 31px;
-    color:#EC7979;
-    font-weight: 700;
-    text-align: start;
-}
 .header__nav {
-    margin-right: 200px;
+    margin-right: 31px;
 }
 
 .header__list {
@@ -41,6 +26,7 @@
     display: flex;
     flex-direction: row;
 }
+
 .header__item {
     font-family: 'Open Sans';
     font-style: normal;
@@ -48,11 +34,11 @@
     font-size: 14px;
     line-height: 19px;
     text-transform: capitalize;
-    margin-right:70px;
+    margin-right: 70px;
 }
 
 .header__item:last-of-type {
-    margin:0;
+    margin: 0;
 }
 
 .header__item a {
@@ -69,36 +55,24 @@
     background-blend-mode: multiply;
     margin-bottom: 166px;
 }
-.banner__logo {
-    margin-bottom:73px;
-}
-.banner__logo a {
-    text-decoration: none;
-}
-.banner__logo-firstpart {
-    font-size: 55px;
-    color:#fff;
-}
 
-.banner__logo-secondpart {
-    font-size: 55px;
-    color:#EC7979;
-    font-weight: 700;
-    text-align: start;
+.banner__logo {
+    margin-bottom: 73px;
 }
 
 .banner__title {
     max-width: 670px;
-    width:100%;
+    width: 100%;
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
     line-height: 56px;
     text-transform: uppercase;
-    margin-bottom:97px;
+    margin-bottom: 97px;
     color: #FFFFFF;
     position: relative;
 }
+
 .banner__title::after {
     content: '';
     display: block;
@@ -120,6 +94,9 @@
 }
 
 .banner__button {
+    max-width: 270px;
+    width: 100%;
+    padding: 24px;
     color: #FFFFFF;
     font-family: 'Open Sans';
     font-style: normal;
@@ -127,10 +104,10 @@
     font-size: 18px;
     line-height: 25px;
     text-transform: capitalize;
-    padding: 24px 90px;
     background-color: transparent;
     border: 2px solid #fff;
 }
+
 .banner__button:hover {
     background-color: #2c9105;
     cursor: pointer;
@@ -189,6 +166,10 @@
 .tabs__title {
     margin-bottom: 55px;
     font-size: 30px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41px;
 }
 
 .tabs__text {
@@ -232,6 +213,7 @@
     font-size: 36px;
     position: relative;
     line-height: 42px;
+    font-size: 24px;
 }
 
 .advantages__title::after {
@@ -504,7 +486,8 @@
 .design {
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url('../media/night-city.png');
-    padding: 70px 0;;
+    padding: 70px 0;
+    ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -546,7 +529,9 @@
 }
 
 .design__button {
-    padding: 20px 140px;
+    max-width: 370px;
+    width: 100%;
+    padding: 20px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
