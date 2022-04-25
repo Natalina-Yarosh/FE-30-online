@@ -9,7 +9,7 @@
  .conteiner {
      max-width: 1170px;
      margin: 0 auto;
-     padding: 0 auto;
+     padding: 0 15px;
  }
  
  .main_wrapper {
@@ -26,13 +26,6 @@
  }
  
  .servis_wrapper {
-     width: 100%;
-     height: 501px;
-     color: #EC7979;
-     background-color: rgb(255, 255, 255);
-     display: flex;
-     flex-direction: column;
-     align-items: center;
      margin-top: 118px;
  }
  
@@ -60,10 +53,9 @@
  
  .servis_wrapper__blocks {
      display: flex;
-     flex-flow: row wrap-reverse;
-     justify-content: space-around;
      width: 100%;
      background-color: #ffffff;
+     column-gap: 30px;
  }
  
  .servis_wrapper__block {
@@ -116,7 +108,7 @@
  
  .info_wrapper__tabs .tab {
      min-width: 202px;
-     height: 40px;
+     min-height: 40px;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -136,7 +128,6 @@
  .info_wrapper_content {
      width: 100%;
      border: 1px #86878B solid;
-     border-top: 0;
      display: flex;
  }
  
