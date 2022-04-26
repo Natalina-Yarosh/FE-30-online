@@ -11,6 +11,86 @@
     padding: 0 15px;
 }
 
+/*banner*/
+.banner {
+    background-image: url(../media/street.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 116px;
+    padding: 306px 0 185px;
+    position: relative;
+}
+.banner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner__logo {
+    margin-bottom: 73px;
+    width: 165px;
+    height: 55px;
+    display: flex;
+}
+.banner__item {
+    height: 100%;
+    object-fit: contain;
+}
+.banner__item:first-of-type {
+    width: 102px;
+}
+.banner__item:last-of-type {
+    width: 63px;
+}
+.banner__title {
+    color: #FFFFFF;
+    max-width: 670px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+    margin-bottom: 97px;
+    position: relative;
+}
+.banner__title::after {
+    content: "";
+    display: block;
+    width: 170px;
+    border-bottom: 1px solid #FFFFFF;
+    position: absolute;
+    top: calc(100% + 55px);
+}
+.banner__text {
+    color: #FFFFFF;
+    max-width: 270px;
+    width: 100%;
+}
+.banner__btn {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #FFFFFF;
+    max-width: 270px;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    margin-top: 42px;
+    padding: 18.5px 0;
+}
+.banner__btn:hover {
+    color: #EC7979;
+    border: 2px solid #EC7979;
+}
+.banner__btn:active {
+    color: #FFFFFF;
+    background-color: #AB4949;
+    border: 2px solid transparent;
+}
+
 /*tabs*/
 .tabs {
     margin-bottom: 111px;
@@ -31,6 +111,16 @@
 }
 .tabs__item_active {
     border: 1px solid #C6CBCD;
+    position: relative;
+}
+.tabs__item_active::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
 }
 .tabs__block {
     border: 1px solid #C6CBCD;
@@ -306,38 +396,25 @@
 
 /*design*/
 .design {
+    background-image: url(../media/city.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+    color: #FFFFFF;
+    text-align: center;
     position: relative;
 }
-.design__wrap {
-    width: 100%;
-    height: 100%;
-}
-.design__wrap::after {
+.design::after {
     content: "";
-    display: block;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
-}
-.design__picture {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.design__info {
-    max-width: 1170px;
-    width: 100%;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    text-align: center;
+    left: 0;
 }
 .design__title {
-    color: #FFFFFF;
     font-size: 36px;
     line-height: 42px;
     text-transform: uppercase;
@@ -355,21 +432,23 @@
     transform: translateX(-50%);
 }
 .design__text {
-    color: #FFFFFF;
     margin-bottom: 80px;
 }
-.design__button {
-    width: 370px;
+.design__btn {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    max-width: 370px;
+    width: 100%;
     color: #FFFFFF;
     background-color: transparent;
     border: 2px solid #FFFFFF;
     padding: 19px 0;
 }
-.design__button:hover {
+.design__btn:hover {
     color: #EC7979;
     border: 2px solid #EC7979;
 }
-.design__button:active {
+.design__btn:active {
     color: #FFFFFF;
     background-color: #AB4949;
     border: 2px solid transparent;
