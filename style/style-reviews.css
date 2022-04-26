@@ -8,8 +8,8 @@
     padding: 107px 0px 100px;
 }
 
-.contaner__reviews{
-    max-width: 1171px;
+.contaner-reviews{
+    max-width: 1201px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -19,15 +19,19 @@
     text-align: center;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+    position: relative;
 }
 
 .reviews__title::after{
     content: '';
     display: block;
     border: 1px solid #EC7979;
-    max-width: 170px;
-    margin: 40px auto;
+    width: 170px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% + 40px);
 }
 
 .reviews__text{
@@ -40,7 +44,6 @@
 .reviews__columns{
     display: flex;
     column-gap: 30px;
-    justify-content: center;
 }
 
 
@@ -54,51 +57,25 @@
     width: 100%;
     border-radius: 10px;
     margin-bottom: 66px;
+    position: relative;
 }
 
-.reviews__first::after{
+.reviews__subtext::after{
     content: '';
     width: 0;
 	height: 0;
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	border-top: 20px solid #E2E2E2;
-    position: relative;
-    top: -120px;
-    left: 60px;
-}
-
-.reviews__second::after{
-    content: '';
-    width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-top: 20px solid #E2E2E2;
-    position: relative;
-    top: -120px;
-    left: 60px;
-}
-
-.reviews__thethird::after{
-    content: '';
-    width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-top: 20px solid #E2E2E2;
-    position: relative;
-    top: -120px;
-    left: 60px;
+    position: absolute;
+    display: inline-block;
+    top: 100%;
+    left: 40px;
 }
 
 .reviews__icons{
     display: flex;
     column-gap: 30px;
-}
-
-.reviews__items{
-    list-style-type: none;
 }
 
 .reviews__item{
@@ -119,6 +96,7 @@
 .reviews__img{
     width: 70px;
     height: 70px;
+    overflow: hidden;
     border-radius: 50px;
 }
 
@@ -129,3 +107,4 @@
 .content__items-optima:active{
     margin-top: -30px;
 }
+

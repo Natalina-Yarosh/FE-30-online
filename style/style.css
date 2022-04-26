@@ -90,14 +90,19 @@ font-family: 'Open Sans', sans-serif;
     text-align: center;
     margin-bottom: 40px;
     font-family: 'Raleway', sans-serif;
+    position: relative;
+    margin-bottom: 80px;
 }
 
 .designs__title::after{
     content: '';
     display: block;
     border: 1px solid #EC7979;
-    max-width: 170px;
-    margin: 40px auto;
+    width: 170px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% + 40px);
 }
 
 .designs__description{
@@ -110,6 +115,7 @@ font-family: 'Open Sans', sans-serif;
 .designs__block{
     display: flex;
     justify-content: space-between;
+    column-gap: 27px;
 }
 
 .advantage__title{
