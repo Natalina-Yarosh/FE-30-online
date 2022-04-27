@@ -15,10 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header__nav {
-    margin-right: 31px;
+    column-gap: 20px;
 }
 
 .header__list {
