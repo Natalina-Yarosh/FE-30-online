@@ -8,10 +8,13 @@
 .tabs{
     max-width: 1170px;
     width: 100%;
-    min-height: 39px;
     margin-top: 0px;
-    margin: 166px 170px 118px 170px;
-    
+    margin: 166px 118px;
+}
+
+.container__tabs{
+    max-width: 1170px;
+    width: 100%;
 }
 
 .tabs__item{
@@ -29,19 +32,28 @@
     border: 1px solid #c6cbcd;
     border-radius: 5px 5px 0px 0px;
     border-bottom:none ;
+    position: relative;
 }
 
+.tabs__item_active::before{
+    content: '';
+    display: block;
+    background-color: #ffffff;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+}
 .tab{
-    max-width: 1170px;
     width: 100%;
     display: flex;
     border: 1px solid #C6CBCD;
 }
 .tab__info{
     width: 60%;
-    margin-top: 55px;
     vertical-align: top;
-    padding: 0px 30px 0px 100px;
+    padding: 50px 30px 50px 100px;
 }
 .tab__tittle{
     margin-bottom: 57px;
@@ -57,12 +69,8 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     text-align: left;
-    
-    
 }
-.tab__text :last-of-type{
-    margin: 0 auto;
-}
+
 .tab__button{
     max-width: 270px;
     width: 100%;
@@ -73,24 +81,20 @@
     line-height: 25px;
     padding: 17px; 
     font-weight: 600;
-    margin-top: 54px;
+    margin-top: 84px;
 }
 .wrap{
     width: 40%;
     min-height: 500px;
-    display: inline-block;
-    vertical-align: top;
 }
 .tab__icon{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
 
 .advantage{
     margin-bottom: 110px;
-
 }
 
 .container{
@@ -103,7 +107,7 @@
 .inner{
     width: 100%;
     display: flex;
-    justify-content: center;
+    column-gap: 28px;
 }
 
 .advantage__design{
@@ -203,6 +207,9 @@
 
 .pricing{ 
     margin-bottom: 107px;
+    padding-top: 82px;
+    padding-bottom: 83px;
+    background-color:  #F5F5F5 
 }
 
 .options{
@@ -210,7 +217,6 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-    background-color:  #F5F5F5 
 }
 
 .pricing__title{
@@ -221,8 +227,6 @@
     text-align: center;
     color: #000000;
     position: relative;
-    margin-bottom: 80px;
-    padding-top: 82px;
 }
 
 .pricing__title::after{
@@ -256,14 +260,12 @@
 .offers__wrap{
     max-width: 370px;
     width: 100%;
-    margin-bottom: 83px;
-    
 }
 
 .offers__configuration{
     color: #FFFFFF;
     background-color: #333333;
-    border: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
@@ -275,7 +277,7 @@
 .offers__price{
     background-color: #333333;
     color: #FFFFFF;
-    border: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -286,7 +288,7 @@
 .offers__text{
     background-color:#333333 ;
     color: #86878B;
-    border: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -311,208 +313,6 @@
 
 .offers__wrap:nth-child(2n) {
     margin-top: -20px;
-}
-
-.reviews{
-    text-align: center;
-    
-}
-
-.envelope{
-    display: flex;
-    justify-content: center;
-}
-
-.comment{
-    max-width: 1170px; 
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.rewiews__header{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    color: #000000;
-    position: relative;
-    margin-bottom: 80px;
-}
-
-.rewiews__header::after{
-    position: absolute;
-    content: '';
-    display: block;
-    width: 170px;
-    border-bottom: 1px solid #EC7979;
-    margin: 0;
-    left: 50%;
-    top: calc(100% + 40px);
-    transform: translateX(-50%);
-}
-
-.rewiews__text{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    color:  #86878B;
-    margin-bottom: 83px;
-}  
-
-.connection-one{
-    max-width: 370px;
-    width: 100%;
-    background-color: #E2E2E2;
-    padding: 38px 25px 38px 25px;
-    border-radius: 10px;
-    margin-bottom: 65px;
-    position: relative;
-    }
-
-.connection-one::after{
-    content: '';
-    display: inline-block;
-    left: 20px; bottom: -20px;
-    border: 20px solid transparent;
-    border-top: 20px solid #E2E2E2;
-    position: absolute;
-    top: 100%;
-    left: 70px;
-}
-
-    .connection-two{
-    max-width: 370px;
-    width: 100%;
-    background-color: #E2E2E2;
-    padding: 38px 25px 38px 25px;
-    border-radius: 10px;
-    margin-bottom: 65px;
-    position: relative;
-    }
-
-    .connection-two::after{
-    content: '';
-    display: inline-block;
-    left: 20px; bottom: -20px;
-    border: 20px solid transparent;
-    border-top: 20px solid #E2E2E2;
-    position: absolute;
-    top: 100%;
-    left: 70px;
-    }
-
- .connection-three{
-    max-width: 370px;
-    width: 100%;
-    background-color: #E2E2E2;
-    padding: 38px 25px 38px 25px;
-    border-radius: 10px;
-    margin-bottom: 65px;
-    position: relative;
-    }
-
-    .connection-three::after{
-    content: '';
-    display: inline-block;
-    left: 20px; bottom: -20px;
-    border: 20px solid transparent;
-    border-top: 20px solid #E2E2E2;
-    position: absolute;
-    top: 100%;
-    left: 70px;
-    }
-.connection__text{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    color:  #86878B;
-}
-
-
-
-.person__img{
-    position: relative;
-    top: 250px;
-    left: -320px;
-    
-}
-.person__name-one{
-    position: relative;
-    top: 250px;
-    left: -370px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    margin-bottom: 18px;
-}
-
-.person__name-two{
-    position: relative;
-    top: 250px;
-    left: -10px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    margin-bottom: 18px;
-}
-
-.person__name-three{
-    position: relative;
-    top: 250px;
-    left: 360px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    margin-bottom: 18px;
-}
-.person__info{
-    position: absolute;
-}
-
-.person__position-one{
-    position: relative;
-    top: 250px;
-    left: -370px;
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-}
-.person__position-two{
-    position: relative;
-    top: 250px;
-    left: -10px;
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-
-}
-
-.person__position-three{
-    position: relative;
-    top: 250px;
-    left: 360px;
-    text-align: left;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-}
-
-.person__photo{
-    width: 70px;
-    height: 70px;
-    border-radius: -50%;
-    overflow: hidden;
 }
 
 
