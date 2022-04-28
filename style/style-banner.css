@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    padding: 306px 0 185px;
+    background: rgba(0, 0, 0, 0.5);
+    background-image: url(../image/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.container-banner{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.banner__logo{
+    margin-bottom: 73px;
+}
+
+.banner__title{
+    max-width: 670px;
+    min-height: 168px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    margin-bottom: 97px;
+    position: relative;
+}
+
+.banner__title::after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid #FFFFFF;
+    width: 170px;
+    position: absolute;
+    top: calc(100% + 40px);
+}
+
+.banner__text{
+    max-width: 270px;
+    min-height: 42px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 42px;    
+}
+
+.banner__btn{
+    max-width: 270px;
+    min-height: 58px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: none;
+    border: 2px solid #FFFFFF;;
+}
+
