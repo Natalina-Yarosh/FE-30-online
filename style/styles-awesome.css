@@ -41,17 +41,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
+    column-gap: 27px;
+    row-gap: 15px;;
 }
 
 .advantages__item {
     max-width: 371px;
     min-width: 200px;
     width: calc((100% - 56px) / 3);
-    margin-right: 27px;
-}
-
-.advantages__item:last-child {
-    margin-right: 0;
 }
 
 .img__container {
