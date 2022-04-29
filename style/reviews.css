@@ -1,0 +1,112 @@
+.conteiner {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main_wrapper__reviews_wrapper {
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 1170px;
+    margin-top: 107px;
+}
+
+.reviews_wrapper__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.main_wrapper__reviews_wrapper p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 59px;
+}
+
+.text_review {
+    display: flex;
+    text-align: center;
+    max-width: 370px;
+    flex-direction: column;
+    align-items: center;
+    background: #E2E2E2;
+    border-radius: 10px;
+    padding: 38px 25px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 66px;
+}
+
+.text_review::before {
+    content: "";
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background: #E2E2E2;
+    transform: rotate(-225deg);
+    left: -100px;
+    bottom: -148px;
+}
+
+.text_contact_review {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+    column-gap: 30px;
+}
+
+.reviews_wrapper__contacts_clients {
+    display: flex;
+    justify-content: center;
+}
+
+.contact_client__img_client {
+    width: 70px;
+    height: 70px;
+}
+
+.reviews_wrapper__contact_client {
+    max-width: 370px;
+    display: flex;
+}
+
+.texts_contacts_reviews {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.contact_client__img_client {
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.reviews_wrapper__name_position_client h4 {
+    margin-bottom: 18px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.reviews_wrapper__name_position_client h5 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}

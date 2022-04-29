@@ -1,0 +1,114 @@
+.conteiner {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.pricing_wrapper {
+    margin-top: 110px;
+    padding-top: 82px;
+    background: #F5F5F5;
+}
+
+.pricing_wrapper h2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.pricing_wrapper p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 59px;
+}
+
+.prising_wrapper__tarifs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    column-gap: 30px;
+    padding-bottom: 83px;
+}
+
+.prising_wrapper__tarifs .tarif {
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+}
+
+.prising_wrapper__tarifs .tarif_tipe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 370px;
+    min-height: 60px;
+    background: #333333;
+    border: 2px solid #F5F5F5;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.prising_wrapper__tarifs .price {
+    width: 370px;
+    height: 100px;
+    background: #333333;
+    border: 2px solid #F5F5F5;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.prising_wrapper__tarifs .tariff_condition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 50px;
+    background: #333333;
+    border: 2px solid #F5F5F5;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.prising_wrapper__tarifs .price {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prising_wrapper__tarifs .tariff_condition__traffics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 2px solid #F5F5F5;
+    color: rgba(134, 135, 139, 1);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.tarif:nth-child(2n) {
+    margin-top: -20px;
+}
