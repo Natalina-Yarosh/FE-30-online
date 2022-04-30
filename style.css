@@ -112,7 +112,6 @@
 
 .advantage__design{
     max-width: 370px;
-    display: inline-block;
     text-align: center;
 }
 
@@ -203,6 +202,8 @@
 .advantage__text{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .pricing{ 
@@ -227,6 +228,7 @@
     text-align: center;
     color: #000000;
     position: relative;
+    margin-bottom: 80px;
 }
 
 .pricing__title::after{
@@ -308,11 +310,125 @@
     text-align: center;
     list-style-type: none;
     padding: 10px 0;
-
 }
 
 .offers__wrap:nth-child(2n) {
     margin-top: -20px;
+}
+
+.reviews{
+    margin-bottom: 107px;
+}
+
+.comment{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.rewiews__header{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    margin-bottom: 83px;
+}
+
+.rewiews__header::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 170px;
+    border-bottom: 1px solid #EC7979;
+    margin: 0;
+    left: 50%;
+    top: calc(100% + 40px);
+    transform: translateX(-50%); 
+}
+
+.rewiews__text{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color:  #86878B;
+    margin-bottom: 83px;
+}
+
+.envelope{
+    display: flex;
+    column-gap: 30px;
+}
+
+.connection{
+    max-width: 370px;
+    width: 100%;
+    text-align: center;
+}
+
+.connection__text{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    text-align: center;
+    background-color: #E2E2E2;
+    padding: 38px 25px;
+    position: relative;
+    margin-bottom: 66px;
+    border-radius: 10px;
+}
+
+.connection__text::after{
+    content: '';
+    display: inline-block;
+    border: 20px solid transparent;
+    border-top: 20px solid #E2E2E2;
+    position: absolute;
+    top: 100%;
+    left: 70px;
+}
+
+.person__img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    column-gap: 30px;
+}
+
+.person__photo{
+    width: 100%;
+    height: 100%;
+}
+
+.person__info{
+    display: flex;
+}
+
+.person__name{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 18px;
+    
+}
+
+.person__position{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+}
+
+.person__text{
+    margin-left: 30px;
 }
 
 
