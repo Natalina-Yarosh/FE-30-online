@@ -6,11 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <title>First project</title>
 </head>
 <body>
+    <header class="header">
+        <div class="header__block">
+        <a class="header__logo" href="#">
+            <object class="header__img" data="./media/logo.svg" type="image/svg+xml" ></object>
+        </a>
+        <nav class="header__nav">
+            <ul class="header__list">
+            <li class="header__item"><a class="header__link" href="#">Features</a></li>
+            <li class="header__item"><a class="header__link" href="#">About</a></li>
+            <li class="header__item"><a class="header__link" href="#">Pricing</a></li>
+            <li class="header__item"><a class="header__link" href="#">Reviews</a></li>
+            <li class="header__item"><a class="header__link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="banner__logo">
+                <object class="banner__img" data="./media/logo2.svg" type="image/svg+xml" ></object>
+            </div>
+            <h1 class="banner__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+            <p class="banner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <button class="banner__btn">Download</button>
+        </div>
+    </section>
+
     <div class="tabs">
         <div class="container">
         <div class="tabs__buttons">
@@ -39,21 +67,21 @@
         <div class="extra-information__block">
         <article class="advantage">
             <div class="advantage__wrap">
-                <img class="advantage__img" src="media/bulb.png" alt="bulb">
+                <object class="advantage__img" data="./media/bulb.svg" type="image/svg+xml" ></object>
             </div>
             <h3 class="advantage__title">Thoughtful Design</h3>
                 <p class="advantage__text">Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
         </article>
         <article class="advantage">
             <div class="advantage__wrap">
-                <img class="advantage__img" src="media/keybord.png" alt="keybord">
+                <object class="advantage__img" data="./media/keybord.svg" type="image/svg+xml" ></object>
             </div>
             <h3 class="advantage__title">Thoughtful Design</h3>
                 <p class="advantage__text">Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
         </article>
         <article class="advantage">
             <div class="advantage__wrap">
-                <img class="advantage__img" src="media/lightning.png" alt="lightning">
+                <object class="advantage__img" data="./media/ligthning.svg" type="image/svg+xml" ></object>
             </div>
             <h3 class="advantage__title">Thoughtful Design</h3>
                 <p class="advantage__text">Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
@@ -162,14 +190,9 @@
     </section>
     <section class="design">
         <div class="container">
-            <div class="design__block">
-                <div class="design__wrap">
-                    <img class="design__img" src="media/design.jpg" alt="design">
-                </div>
             <h2 class="design__title">STYLISH AXURE DESIGN</h2>
             <p class="design__text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
             <button class="design__btn">Download</button>
-            </div>
         </div>
     </section>
 </body>

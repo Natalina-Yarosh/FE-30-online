@@ -12,6 +12,91 @@
     margin: 0 auto;
 }
 
+.header {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 22px 0;
+}
+
+.header__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header__list {
+    display: flex;
+    list-style-type: none;
+}
+
+.header__link {
+    color:rgba(255, 255, 255, 1);
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration: none;
+    padding: 0 30px;
+}
+
+.banner {
+    margin-bottom: 166px;
+    padding: 306px 0 185px 0;
+    background-image: url(../media/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    position: relative;
+}
+.banner::after {
+    content: '';
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+.banner__logo {
+    margin-bottom: 72px;
+}
+.banner__title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 97px;
+    max-width: 670px;
+    position: relative;
+}
+.banner__title::after {
+    content: "";
+    display: block;
+    width: 170px;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    position: absolute;
+    top: calc(100% + 55px);
+}
+.banner__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 1);
+    max-width: 270px;
+    margin-bottom: 42px;
+}
+.banner__btn {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 1);
+    padding: 15px 0;
+    max-width: 270px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
 .tabs {
     margin-bottom: 118px;
 }
@@ -28,6 +113,18 @@
     max-width: 203px;
     width: 100%;
     border: 1px solid rgba(198, 203, 205, 1);
+    position: relative;
+
+}
+.tabs__tab.active::before {
+    content: '';
+    display: block;
+    background: #fff;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
 }
 
 .tabs__tab {
@@ -38,6 +135,7 @@
     background-color: #fff;
     border-radius: 5px 5px 0px 0px;
 }
+
 
 .tabs__info {
     border: 1px solid rgba(198, 203, 205, 1);
@@ -142,7 +240,7 @@
 .advantage__img {
     width: 75%;
     height: 75%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .advantage__title {
@@ -311,13 +409,13 @@
     margin-right: 30px;
     max-width: 70px;
     max-height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 .comments__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 1px solid transparent;
-    border-radius: 50%;
 }
 .comments__name {
     margin-bottom: 18px;
@@ -334,20 +432,19 @@
 
 .design {
     margin-bottom: 107px;
-}
-.design__wrap {
-    position: absolute;
-    z-index: -1;
-}
-.design__img {
-    width: 100%;
-    height: 100%;
-
-}
-.design__block {
-    text-align: center;
-    padding: 70px 0;
+    padding: 70px 0 70px 0;
+    background-image: url(../media/design.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
     position: relative;
+}
+.design::after {
+    content: "";
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 5;
 }
 .design__title {
     position: relative;
@@ -356,23 +453,26 @@
     line-height: 42px;
     margin-bottom: 80px;
     color: rgba(255, 255, 255, 1);
+    text-align: center;
 }
 .design__title::after {
     content: "";
     display: block;
     width: 170px;
-    border-bottom: 1px solid rgba(236, 121, 121, 1);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
     position: absolute;
     left: 50%;
     top: calc(100% + 40px);
     transform: translateX(-50%);
 }
+
 .design__text {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: rgba(255, 255, 255, 1);
     margin-bottom: 80px;
+    text-align: center;
 }
 .design__btn{
     max-width: 370px;
@@ -385,4 +485,5 @@
     padding: 15px 0;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 1);
+    text-align: center;
 }
