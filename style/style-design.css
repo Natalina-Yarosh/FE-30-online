@@ -9,7 +9,19 @@
     background-image: url(../image/image.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.design::after{
+    content: '';
+    display: block;
     background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
 
 .contaner-design {
@@ -28,6 +40,7 @@
     margin-bottom: 80px;
     position: relative;
     color: #FFFFFF;
+    z-index: 2;
 }
 
 .design__title::after{
@@ -48,11 +61,13 @@
     line-height: 21px;
     margin-bottom: 80px;
     color: #FFFFFF;
+    position: relative;
+    z-index: 2;
 }
 
 .design__btn {
-    min-height: 58px;
     max-width: 370px;
+    padding: 14px;
     width: 100%;
     border: 2px solid #FFFFFF;
     background: none;
@@ -62,4 +77,6 @@
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
     color: #FFFFFF;
+    position: relative;
+    z-index: 2;
 }

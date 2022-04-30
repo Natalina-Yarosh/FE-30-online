@@ -98,6 +98,7 @@
     height: 70px;
     overflow: hidden;
     border-radius: 50px;
+    display: flex;
 }
 
 .content__items:active {
