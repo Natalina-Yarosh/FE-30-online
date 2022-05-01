@@ -4,6 +4,12 @@
 
     font-family: 'Raleway', sans-serif;
 }
+.header{
+    background-color: #000000;
+}
+.header__link{
+    color: #FFFFFF;
+}
 .tabs{ 
     margin-bottom: 118px;
 }
