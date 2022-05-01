@@ -70,6 +70,7 @@
     position: relative;
 }
 
+
 .banner__title::after {
     content: '';
     display: block;
@@ -106,17 +107,29 @@
 }
 
 .banner__button:hover {
-    background-color: #2c9105;
+    color: #EC7979;
+    border: 2px #EC7979 solid;
     cursor: pointer;
 }
 
+.banner__button:active {
+    background-color: #AB4949;
+    color: #fff;
+}
 
 .tabs {
     margin-bottom: 110px;
 }
 
+.tabs__card::before {
+    
+    content: '';
+    display: block;
+    border-top: 1px #C6CBCD solid;
+}
+
 .tabs__item {
-    max-width: 222px;
+    max-width: 203px;
     width: 100%;
     line-height: 40px;
     border: 1px transparent;
@@ -124,8 +137,9 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.tabs__card {
+.tabs__navigation {
     display: flex;
+    width: 60%;
 }
 
 .tabs__item_active {
@@ -133,6 +147,17 @@
     border-left: 1px #C6CBCD solid;
     border-right: 1px #C6CBCD solid;
     border-radius: 5px 5px 0px 0px;
+    position: relative;
+}
+
+.tabs__item_active::after {
+    content: '';
+    display:block;
+    width: 100%;
+	height: 1px;
+	background: rgb(255, 255, 255);
+    position:absolute;
+    top: 100%;
 }
 
 .tabs__item:hover {
@@ -194,8 +219,14 @@
 }
 
 .tabs__button:hover {
-    background-color: #2c9105;
+    background-color: #AB4949;
+    color:#fff;
     cursor: pointer;
+}
+
+.tabs__button:active {
+    color:#fff;
+    background-color: #EC7979;
 }
 
 .container {
@@ -225,10 +256,8 @@
 }
 
 .advantages {
-    margin-bottom: 82px;
     text-align: center;
 }
-
 
 .advantages__text {
     color: #86878B;
@@ -238,7 +267,7 @@
 
 .advantages__info {
     display: flex;
-    justify-content: space-between;
+    column-gap: 27px;
 }
 
 .advantage {
@@ -261,6 +290,10 @@
     margin-bottom: 40px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+}
+
+.advantage__text {
+    margin-bottom: 179px
 }
 
 .container-block-img {
@@ -314,7 +347,7 @@
     width: 100%;
 }
 
-.offers__wrep-center {
+.offers__wrep:hover {
     margin-top: -17px;
 }
 
@@ -541,6 +574,12 @@
 }
 
 .design__button:hover {
-    background-color: #2c9105;
+    color: #EC7979;
+    border: 2px #EC7979 solid;
     cursor: pointer;
+}
+
+.design__button:active {
+    background-color: #AB4949;
+    color: #fff;
 }
