@@ -434,17 +434,30 @@
 .design{
     padding-top: 70px;
     padding-bottom: 70px;
-    background-color:#000000;
-    background-image: url(media/image.jpg);
+    background-color: #000000;
+    background-image: url(media/image.jpg), url(media/bg.jpg);
     background-size: cover;
+    position: relative;
 }
 
 .container__design{
     max-width: 1170px;
-    width: 100%;
+    width: 100%;    
     margin: 0 auto;
     padding: 0 15px;
     text-align: center;
+}
+
+.design::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.5;
+    z-index: 1;
 }
 
 .design__title{
@@ -456,6 +469,7 @@
     color: #FFFFFF;
     margin-bottom: 80px;
     position: relative;
+    z-index: 2;
 }
 
 .design__title::after{
@@ -478,6 +492,8 @@
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 80px;
+    position: relative;
+    z-index: 2;
 }
 
 .design__button{
@@ -491,6 +507,8 @@
     line-height: 25px;
     text-align: center;
     padding: 17px;
+    position: relative;
+    z-index: 2;
 }
 
 
