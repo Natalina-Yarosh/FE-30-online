@@ -7,9 +7,38 @@
 .header{
     background-color: #000000;
 }
+.header__block{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+.header__logo{
+    object-fit: contain;
+    width: 86px;
+    
+}
 .header__link{
     color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0 28px;
 }
+.header__item{
+    display: inline;
+}
+.header__list{
+    list-style-type: none;
+    padding: 28px 0;
+}
+
 .tabs{ 
     margin-bottom: 118px;
 }
