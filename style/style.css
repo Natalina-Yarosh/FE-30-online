@@ -39,12 +39,10 @@
     width: 32px;
 }
 .nav {
-    max-width: calc(114px * 5);
-    width: 100%;
     display: flex;
+    column-gap: 50px;
 }
 .nav__link {
-    width: calc(100% / 5);
     color: #FFFFFF;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -127,6 +125,7 @@
 .banner__btn:hover {
     color: #EC7979;
     border: 2px solid #EC7979;
+    cursor: pointer;
 }
 .banner__btn:active {
     color: #FFFFFF;
@@ -199,6 +198,7 @@
 }
 .tabs__btn:hover {
     background-color: #AB4949;
+    cursor: pointer;
 }
 .tabs__btn:active {
     background-color: #EC7979;
@@ -259,7 +259,7 @@
     justify-content: center;
     align-items: center;
 }
-.advantage__img {
+.advantage__item {
     width: 65px;
     height: 65px;
     object-fit: contain;
@@ -490,6 +490,7 @@
 .design__btn:hover {
     color: #EC7979;
     border: 2px solid #EC7979;
+    cursor: pointer;
 }
 .design__btn:active {
     color: #FFFFFF;
