@@ -40,7 +40,6 @@
 
 .banner__title{
     max-width: 670px;
-    min-height: 168px;
     font-weight: 500;
     font-size: 48px;
     line-height: 56px;
@@ -62,7 +61,6 @@
 
 .banner__text{
     max-width: 270px;
-    min-height: 42px;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -89,3 +87,13 @@
     z-index: 2;
 }
 
+.banner__btn:hover{
+    color: #EC7979;
+    border: 2px solid #EC7979;
+}
+
+.banner__btn:active{
+    color: #FFFFFF;
+    background-color: #AB4949;
+    border: 2px solid #AB4949;
+}

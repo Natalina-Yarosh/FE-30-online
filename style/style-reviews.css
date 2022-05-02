@@ -98,7 +98,6 @@
     height: 70px;
     overflow: hidden;
     border-radius: 50px;
-    display: flex;
 }
 
 .content__items:active {
@@ -107,5 +106,11 @@
 
 .content__items-optima:active{
     margin-top: -30px;
+}
+
+.reviews__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 

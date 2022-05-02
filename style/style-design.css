@@ -80,3 +80,14 @@
     position: relative;
     z-index: 2;
 }
+
+.design__btn:hover{
+    color: #EC7979;
+    border: 2px solid #EC7979;
+}
+
+.design__btn:active{
+    color: #FFFFFF;
+    background-color: #AB4949;
+    border: 2px solid #AB4949;
+}
