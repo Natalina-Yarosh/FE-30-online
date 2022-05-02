@@ -517,7 +517,6 @@
     background-color: rgba(0, 0, 0, 0.5);
     background-image: url('../media/night-city.png');
     padding: 70px 0;
-    ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -525,6 +524,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
+    margin-bottom: 690px;
 }
 
 .design__title {
@@ -582,4 +582,43 @@
 .design__button:active {
     background-color: #AB4949;
     color: #fff;
+}
+
+.footer {
+    background-color: #000000;
+    padding: 35px 0 27px;
+}
+
+.footer__list {
+    display: flex;
+    column-gap: 33px;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+.footer__item {
+    list-style-type: none;
+}
+
+.footer__link {
+    text-decoration: none;
+}
+
+.footer__wrep {
+    width:54px;
+    height:54px;
+}
+
+.footer__img {
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+.footer__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
 }
