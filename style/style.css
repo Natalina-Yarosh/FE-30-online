@@ -81,6 +81,16 @@ font-family: 'Open Sans', sans-serif;
     color: #FFFFFF;
 }
 
+.tab__btn:hover{
+    background: #AB4949;
+    cursor: pointer;
+}
+
+.tab__btn:active{
+    background: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
+
 .tab__text:last-of-type{
     margin: 0;
 }
@@ -151,6 +161,11 @@ font-family: 'Open Sans', sans-serif;
     height: 75%;
     object-fit: contain;
 }
+
+.advantage__wrap:hover{
+    transform: scale(1.5);
+}
+
 
 .advantage__text{
     font-family: 'Raleway', sans-serif;
