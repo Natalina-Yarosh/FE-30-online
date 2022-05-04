@@ -61,6 +61,7 @@
     max-width: 370px;
     min-width: 200px;
     width: calc((100% - 60px) / 3);
+    cursor: default;
 }
 
 .pricing__item_title {
