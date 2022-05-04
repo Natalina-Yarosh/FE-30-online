@@ -13,7 +13,6 @@
 }
 
 
-
 .header{
     background-color: #000000;
 }
@@ -234,6 +233,18 @@
     padding-bottom: 16px;
 }
 
+.banner__input::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #BDBDBD;
+}
+
+.banner__input:focus{
+    outline: none;
+}
+
 .banner__registration-button{
     background: #EC7979;
     border-radius: 0px 0px 10px 10px;
@@ -246,7 +257,6 @@
     color: #FFFFFF;
     padding: 19px 5px;
     border: 1px solid #EC7979;
-    
     cursor: pointer;
 }
 
@@ -282,7 +292,7 @@
 }
 
 .social__title{
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
@@ -870,11 +880,20 @@ display: flex;
     border: none;
     border-bottom: 1px solid #BDBDBD;
     padding-bottom: 17px;
+    min-height: 38px;
+
+}
+
+.contact__input::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     color: #BDBDBD;
-    min-height: 38px;
+}
 
+.contact__input:focus{
+    outline: none;
 }
 
 .contact__input-comment{
@@ -884,6 +903,18 @@ display: flex;
     resize: none;
     border: none;
     border-bottom: 1px solid #BDBDBD;
+}
+
+.contact__input-comment::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #BDBDBD;
+}
+
+.contact__input-comment:focus{
+    outline: none;
 }
 
 .contact__form-button{
