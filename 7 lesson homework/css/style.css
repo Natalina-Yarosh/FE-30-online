@@ -241,6 +241,10 @@
     color: #BDBDBD;
 }
 
+.banner__input:hover{
+    box-shadow: 2px -2px 13px 0px;
+}
+
 .banner__input:focus{
     outline: none;
 }
@@ -892,6 +896,10 @@ display: flex;
     color: #BDBDBD;
 }
 
+.contact__input:hover{
+    box-shadow: 2px -2px 13px 0px;
+}
+
 .contact__input:focus{
     outline: none;
 }
@@ -911,6 +919,9 @@ display: flex;
     font-size: 14px;
     line-height: 19px;
     color: #BDBDBD;
+}
+.contact__input-comment:hover{
+    box-shadow: 2px -2px 13px 0px;
 }
 
 .contact__input-comment:focus{
