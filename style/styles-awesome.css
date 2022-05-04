@@ -11,18 +11,29 @@
 .awesome__title {
     text-align: center;
     margin-bottom: 40px;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+
 }
 
-.awesome_separator {
+.awesome__title::after {
+    content: "";
+    border-bottom: 1px solid #EC7979;
+    width: 170px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 40px;
+}
+
+/*.awesome_separator {
     border-bottom: 1px solid #EC7979;
     width: 170px;
     margin: 0 auto;
     margin-bottom: 40px;
-}
-
-.awesome__text {
-    text-align: center;
-}
+}*/
 
 .awesome__text {
     color: #86878B;
@@ -31,6 +42,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    text-align: center;
 }
 
 .awesome__container {

@@ -8,6 +8,12 @@
     margin: 0 auto;
 }
 
+.tabs__items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .tabs__item {
     background-color: #fff;
     max-width: 203px;
@@ -18,6 +24,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
+    color: #333333;
 }
 
 .tabs__item_active{
@@ -39,11 +46,14 @@
     max-width: 100%;
     border: 1px solid #C6CBCD;
     display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap; !!!!ВОПРОС 1. Если расскоментировать это
+    свойство элементы внутири flex контейнера не становятся 
+    в строку*/
 }
 
 .tab__wrap {
-    width: 40%;
-    min-height: 500px;
+    min-width: 400px;
 }
 
 .tab__text {
@@ -59,8 +69,8 @@ p.tab__text:last-of-type {
 }
 
 .tab__info {
-    width: 60%;
     padding: 33px 30px 54px 100px;
+    min-width: 400px;
 }
 
 .tab__btn {

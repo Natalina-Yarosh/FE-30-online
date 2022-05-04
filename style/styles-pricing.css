@@ -1,0 +1,118 @@
+.pricing {
+    padding: 0 15px;
+    background: #F5F5F5;
+    padding-top: 82px;
+    padding-bottom: 83px;
+}
+
+.pricing__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 83px;
+    text-align: center;
+}
+
+.pricing__title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+}
+
+.pricing__title::after {
+    content: "";
+    border-bottom: 1px solid #EC7979;
+    width: 170px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 40px;
+}
+
+.pricing__subtitle {
+    color: #86878B;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.pricing__header {
+    margin-bottom: 79px;
+}
+
+.pricing__options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    column-gap: 30px;
+    row-gap: 30px;;
+}
+
+.pricing__list {
+    list-style-type: none;
+}
+
+.pricing__items {
+    max-width: 370px;
+    min-width: 200px;
+    width: calc((100% - 60px) / 3);
+}
+
+.pricing__item_title {
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    padding: 12.5px;
+    color: #FFFFFF;
+}
+
+.pricing__item_cost {
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    padding: 28px;
+    color: #FFFFFF;
+    border-top: 2px solid #F5F5F5;
+    border-bottom: 2px solid #F5F5F5;
+}
+
+.pricing__item_subtitle {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.pricing__item_title, .pricing__item_cost, .pricing__item_subtitle{
+    background: #333333;
+}
+
+.pricing__list {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #86878B
+
+}
+
+.pricing__item_text {
+    padding: 14px;
+    border: 2px solid #F5F5F5;
+    background: #FFFFFF;
+}
+
+.pricing__items:hover {
+    position: relative;
+    top: -20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
