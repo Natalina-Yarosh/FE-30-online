@@ -16,9 +16,8 @@
 <body>
     <header class="header">
         <div class="container header__wrep">
-            <a class="header__logo-link" href=""><object type="image/svg+xml" data="picture.svg">
-                <img src="media/header__logo.svg">
-            </object></a>
+            <a class="header__logo-link" href=""><object data="media/header__logo.svg"
+                    type="image/svg+xml"></object></a>
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item"><a href="">features</a></li>
@@ -31,28 +30,37 @@
         </div>
     </header>
     <section class="banner">
-        <div class="container">
-            <div class="banner__logo">
-                <object type="image/svg+xml" data="picture.svg">
-                        <img src="media/banner__logo.svg">
-                </object>
+        <div class="container container__flex">
+            <div class="banner__wrep">
+                <div class="banner__logo">
+                    <object data="media/banner__logo.svg" type="image/svg+xml"></object>
+                </div>
+                <h1 class="banner__title">
+                    MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+                </h1>
+                <p class="banner__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+                <button class="banner__button-download">
+                    Download
+                </button>
             </div>
-            <h1 class="banner__title">
-                MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
-            </h1>
-            <p class="banner__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </p>
-            <button class="banner__button">
-                Download
-            </button>
+            <div class="banner__form-wrep">
+                <form class="banner__form" action="">
+                    <h4 class="form__title">Try Your <span class="form__title form__text">FREE</span> Trial Today</h4>
+                    <input class="form__input form__input-banner" type="text" placeholder="Name">
+                    <input class="form__input form__input-banner" type="email" placeholder="Email">
+                    <input class="form__input form__input-banner" type="password" placeholder="Password">
+                </form>
+                <button class="banner__button-form">Get Started</button>
+            </div>
         </div>
     </section>
     <section class="media">
         <div class="container container__wrep">
             <div class="media__wrep">
                 <h4 class="media__title">Social Media</h4>
-                <p class="media__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                <p class="media__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenean euismod bibendum laoreet.</p>
             </div>
             <ul class="media__list">
@@ -65,32 +73,32 @@
                     <a class="media__link" href="">
                         <object data="media/footer__img-twitter.svg" type="image/svg+xml"></object>
                     </a>
-                </li> 
+                </li>
                 <li class="media__item">
                     <a class="media__link" href="">
                         <object data="media/footer__img-linkedin.svg" type="image/svg+xml"></object>
                     </a>
-                </li> 
+                </li>
                 <li class="media__item">
                     <a class="media__link" href="">
                         <object data="media/footer__img-pinterest.svg" type="image/svg+xml"></object>
                     </a>
-                </li> 
+                </li>
                 <li class="media__item">
                     <a class="media__link" href="">
                         <object data="media/footer__img-instagram.svg" type="image/svg+xml"></object>
                     </a>
-                </li> 
+                </li>
                 <li class="media__item">
                     <a class="media__link" href="">
                         <object data="media/footer__img-github.svg" type="image/svg+xml"></object>
                     </a>
-                </li> 
+                </li>
                 <li class="media__item">
                     <a class="media__link" href="">
                         <object data="media/footer__img-rss.svg" type="image/svg+xml"></object>
                     </a>
-                </li>             
+                </li>
             </ul>
         </div>
     </section>
@@ -312,6 +320,25 @@
             </p>
             <button class="design__button">
                 Download
+            </button>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container container__contacts">
+            <h2 class="contacts__title">contact us</h2>
+            <p class="contacts__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <form class="contacts__form" action="">
+                <div class="contacts__wrep">
+                    <input class="form__input form__input-contacts" type="text" placeholder="Name">
+                    <input class="form__input form__input-contacts" type="email" placeholder="Email">
+                    <input class="form__input form__input-contacts" type="password" placeholder="Password">
+                </div>
+                <div class="form__message">
+                    <textarea class="form__input form__input-message" type="" placeholder="message"></textarea>
+                </div>
+            </form>
+            <button class="contacts__button">
+                Send Message
             </button>
         </div>
     </section>
