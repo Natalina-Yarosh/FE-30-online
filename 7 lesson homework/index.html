@@ -17,7 +17,7 @@
 
         
             <a class="header__logo-link" href="#">
-                <img class="header__img" src="img/logo.svg" alt="logo">
+                <object class="header__logo" data="img/logo.svg" type="image/svg+xml" ></object>
             </a>
         
             <nav class="header__nav">
@@ -33,16 +33,16 @@
         </div>
     </header>
 
-<main>
+<main class="main">
 
 
 <section class="banner">
 
-    <div class="container">
+    <div class="container__banner">
 
-
+        <div class="banner__block">
             <div class="banner__logo">
-                <img class="banner__logo-img" src="img/logo-banner.svg" alt="logo">
+                <object class="banner__logotype" data="img/logo-banner.svg" type="image/svg+xml" ></object>
             </div>
 
             <h1 class="banner__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
@@ -50,9 +50,76 @@
 
             <button class="banner__button">Download</button>
         </div>
-    </div>
 
+
+        <div class="banner__registration">
+            <h3 class="banner__registration-title">Try Your <span class="banner__registration-select">FREE</span> Trial Today</h3>
+            <form class="banner__action" action="#">
+                <input class="banner__input" type="text" placeholder="Name">
+                <input class="banner__input" type="email" placeholder="Email">
+                <input class="banner__input" type="password" placeholder="Password">
+                <input class="banner__registration-button" type="button" value="Get Started">
+        </form>
+
+        </div>
+
+
+    </div>
+</section>
+
+
+<section class="social">
+    <div class="social__container">
+
+    
+        <div class="social__block">
+            <h2 class="social__title">
+                Social Media
+            </h2>
+            <p class="social__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+            </p>
+        </div>
+
+            <ul class="social__media">
+                <li class="social__img">
+                    <a class="social__link" href="#">
+                        <object class="social__logo" data="img/facebook.svg" type="image/svg+xml" ></object>
+                    </a>
+                </li>
+                <li class="social__img">
+                    <a class="social__link"  href="#">
+                        <object class="social__logo" data="img/twitter.svg" type="image/svg+xml" ></object>
+                    </a>
+                </li>
+                <li class="social__img">
+                    <a class="social__link"  href="#">
+                        <object class="social__logo" data="img/linked.svg" type="image/svg+xml" ></object>
+                    </a>
+                </li>
+                <li class="social__img">
+                    <a class="social__link"  href="#">
+                        <object class="social__logo" data="img/pinterest.svg" type="image/svg+xml" ></object>
+                    </a>
+                </li>
+                <li class="social__img">
+                    <a class="social__link"  href="#">
+                        <object class="social__logo" data="img/instagram.svg" type="image/svg+xml" ></object>
+                    </a>
+                </li>
+                <li class="social__img">
+                    <a class="social__link"  href="#">
+                        <object class="social__logo" data="img/github.svg" type="image/svg+xml" ></object>
+                    </a>
+                </li>
+                <li class="social__img">
+                    <a class="social__link"  href="#">
+                        <object class="social__logo" data="img/rss.svg" type="image/svg+xml" ></object>
+                    </a>
+                </li>
+            </ul>
         
+    </div>
 </section>
 
 
@@ -94,7 +161,7 @@
         <div class="reason">
         <article class="reason__content">
             <div class="reason__wrap">
-                <img class="reason__img-lamp"src="img/Vector.svg" alt="light">
+                <object class="reason__img" data="img/Vector.svg" type="image/svg+xml" ></object>
             </div>
 
                 <h3 class="reason__title">Thoughtful Design</h3>
@@ -106,7 +173,7 @@
 
         <article class="reason__content">
             <div class="reason__wrap">
-                <img class="reason__img-keypad" src="img/Pad.svg" alt="Keypad">
+                <object class="reason__img" data="img/Pad.svg" type="image/svg+xml" ></object>
             </div>
 
                 <h3 class="reason__title">Thoughtful Design</h3>
@@ -118,7 +185,7 @@
 
         <article class="reason__content"> 
             <div class="reason__wrap">
-                <img class="reason__img-thunder" src="img/Thunder.svg" alt="thunder">
+                <object class="reason__img" data="img/Thunder.svg" type="image/svg+xml" ></object>
             </div>
         
         <h3 class="reason__title">Thoughtful Design</h3>
@@ -270,16 +337,95 @@
 
         <section class="design">
         
-                <div class="container">
+                <div class="container__design">
 
                         <h2 class="design__title">STYLISH AXURE DESIGN</h2>
                         <p class="design__text">Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</p>
+                        
                         <button class="design__button">Download</button>
 
                     </div>
 
         </section>
 
-</main>
+        <section class="contact">
+            <div class="container">
+                <div class="contact__block">
+                    <h2 class="contact__title">
+                        Contact us
+                    </h2>
+                    <p class="contact__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+
+                <form class="contact__form" action="#">
+                        <div class="contact__form-list">
+                    <input class="contact__input" type="text" placeholder="Name">
+                    <input class="contact__input" type="email" placeholder="Email">
+                    <input class="contact__input" type="password" placeholder="Password">
+                        </div>
+                        <div class="contact__form-comment">
+                            <textarea class="contact__input-comment" placeholder="Message"></textarea>
+                        </div>
+                </form>
+                <form action="" class="contact__form-button">
+                    <input class="contact__button" type="button" value="Send Message">
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+
+        <footer class="footer">
+            <div class="container">
+                <ul class="footer__media">
+                    <li class="footer__img">
+                        <a class="footer__link" href="#">
+                            <object class="footer__logo" data="img/facebook.svg" type="image/svg+xml" ></object>
+                        </a>
+                        
+                    </li>
+                    <li class="footer__img">
+                        <a class="footer__link" href="#">
+                            <object class="footer__logo" data="img/twitter.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="footer__img">
+                        <a class="footer__link" href="#">
+                            <object class="footer__logo" data="img/linked.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="footer__img">
+                        <a class="footer__link" href="#">
+                            <object class="footer__logo" data="img/pinterest.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="footer__img">
+                        <a class="footer__link" href="#">
+                            <object class="footer__logo" data="img/instagram.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="footer__img">
+                        <a class="footer__link" href="#">
+                            <object class="footer__logo" data="img/github.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="footer__img">
+                        <a class="footer__link" href="#">
+                            <object class="footer__logo" data="img/rss.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="footer__text">
+                    © 2015 Axure Themes
+                </p>
+            </div>
+
+        </footer>
+
+
 </body>
 </html>
