@@ -43,11 +43,10 @@
     font-size: 14px;
     line-height: 19px;
     text-decoration: none;
-    padding: 0 30px;
+    padding: 22px 30px;
 }
 .header__link:hover {
     background-color: rgba(236, 121, 121, 1);
-    color: #fff;
 }
 .header__link:active {
     background-color: rgba(171, 73, 73, 1);
@@ -76,11 +75,12 @@
 }
 .banner__wrap {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .banner__logo {
-    margin-bottom: 72px;
+    margin-bottom: 73px;
 }
 .banner__title {
     font-weight: 500;
@@ -97,6 +97,7 @@
     width: 170px;
     border-bottom: 1px solid rgba(255, 255, 255, 1);
     position: absolute;
+    left: 0;
     top: calc(100% + 55px);
 }
 .banner__text {
@@ -129,8 +130,7 @@
     background-color: rgb(171, 73, 73);
 }
 .form {
-    max-width: 470px;
-    width: 100%;
+    width: calc(100% - 670px - 30px);
     background-color: rgba(255, 255, 255, 1);
     padding-top: 36px;
     border-radius: 10px;
@@ -143,6 +143,9 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 75px;
+}
+.form_title-text {
+    color: rgba(236, 121, 121, 1);
 }
 .form__form {
     display: flex;
@@ -224,6 +227,10 @@
     display: flex;
     column-gap: 30px;
 }
+.social__info {
+    max-width: 470px;
+    width: 100%;
+}
 
 .social__title {
     font-weight: 700;
@@ -236,9 +243,11 @@
     font-size: 18px;
     line-height: 21px;
 }
-.social__wrap {
-    width: calc(100% - 470px - 30px);
+
+.social__list {
+    list-style-type: none;
     display: flex;
+    flex-wrap: nowrap;
     column-gap: 30px;
     align-items: center;
     justify-content: center;
@@ -246,7 +255,6 @@
 .social__link {
     width: 70px;
     height: 70px;
-
 }
 .social__img {
     width: 100%;
@@ -401,6 +409,9 @@
     justify-content: center;
     align-items: center;
 }
+.advantage__wrap:hover {
+    zoom: 2;
+}
 .advantage__img {
     width: 75%;
     height: 75%;
@@ -464,10 +475,11 @@
     width: 100%;
     text-align: center;
 }
-.benefits__column:nth-of-type(2) {
-    position:relative;
-    top: -20px;
+.benefits__column:hover {
+    margin-top: -20px;
+    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
 }
+
 .benefits__title {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(51, 51, 51, 1);
@@ -702,8 +714,14 @@
     column-gap: 30px;
     row-gap: 50px;
 }
-.contact__input {
+.contact__form-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    justify-content: center;
     width: calc((100% - 30px) / 2);
+}
+.contact__input {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -720,7 +738,9 @@
     color: rgba(189, 189, 189, 1);
 }
 .contact__input-message {
-    padding-bottom: 192px;
+    width: calc((100% - 30px) / 2);
+    height: 217px;
+    resize: none;
 }
 
 .contact__btn {
@@ -747,11 +767,14 @@
     background-color: rgba(0, 0, 0, 1);
     padding: 35px 0 27px;
 }
-.footer__wrap {
+.footer__list {
     display: flex;
     column-gap: 33px;
     justify-content: center;
     align-items: center;
+    list-style-type: none;
+}
+.footer__wrap {
     margin-bottom: 28px;
 }
 .footer__text {

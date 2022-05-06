@@ -32,9 +32,7 @@
         <div class="container dark">
             <div class="banner__wrap">
                 <div class="banner__info">
-                <div class="banner__logo">
-                    <object class="banner__img" data="./media/logo2.svg" type="image/svg+xml" ></object>
-                </div>
+                <object class="banner__logo" data="./media/logo2.svg" type="image/svg+xml" ></object>
                 <h1 class="banner__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
                 <p class="banner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                 <button class="banner__btn">Download</button>
@@ -56,19 +54,47 @@
         <div class="container">
             <div class="social__block">
                 <div class="social__info">
-                <h3 class="social__title">Social Media</h3>
-                <p class="social__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    <h3 class="social__title">Social Media</h3>
+                    <p class="social__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Aenean euismod bibendum laoreet.</p>
                 </div>
-                <div class="social__wrap">
-                    <a class="social__link" href="#"><object class="social__img" data="./media/facebook.svg" type="image/svg+xml" ></object></a>
-                    <a class="social__link" href="#"><object class="social__img" data="./media/twitter.svg" type="image/svg+xml" ></object></a>
-                    <a class="social__link" href="#"><object class="social__img" data="./media/linkedin.svg" type="image/svg+xml" ></object></a>
-                    <a class="social__link" href="#"><object class="social__img" data="./media/pinterest.svg" type="image/svg+xml" ></object></a>
-                    <a class="social__link" href="#"><object class="social__img" data="./media/instagram.svg" type="image/svg+xml" ></object></a>
-                    <a class="social__link" href="#"><object class="social__img" data="./media/github.svg" type="image/svg+xml" ></object></a>
-                    <a class="social__link" href="#"><object class="social__img" data="./media/rss.svg" type="image/svg+xml" ></object></a>
-                </div>
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <object class="social__img" data="./media/facebook.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <object class="social__img" data="./media/twitter.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <object class="social__img" data="./media/linkedin.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <object class="social__img" data="./media/pinterest.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <object class="social__img" data="./media/instagram.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <object class="social__img" data="./media/github.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="#">
+                            <object class="social__img" data="./media/rss.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -236,10 +262,12 @@
         <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div class="contact__block">
             <form class="contact__form" action="#">
+                <div class="contact__form-wrap">
                 <input class="contact__input" type="text" placeholder="Name">
                 <input class="contact__input contact__input-email" type="email" placeholder="Email">
                 <input class="contact__input contact__input-password" type="password" placeholder="Password">
-                <input class="contact__input contact__input-message" type="text" placeholder="Message">
+                </div>
+                <textarea class="contact__input contact__input-message" name="message" placeholder="Message"></textarea>
                 <button class="contact__btn">Send Message</button>
             </form>
         </div>
@@ -248,13 +276,43 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__wrap">
-                <object class="footer__img" data="./media/facebook.svg" type="image/svg+xml" ></object>
-                <object class="footer__img" data="./media/twitter.svg" type="image/svg+xml" ></object>
-                <object class="footer__img" data="./media/linkedin.svg" type="image/svg+xml" ></object>
-                <object class="footer__img" data="./media/pinterest.svg" type="image/svg+xml" ></object>
-                <object class="footer__img" data="./media/instagram.svg" type="image/svg+xml" ></object>
-                <object class="footer__img" data="./media/github.svg" type="image/svg+xml" ></object>
-                <object class="footer__img" data="./media/rss.svg" type="image/svg+xml" ></object>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            <object class="footer__img" data="./media/facebook.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            <object class="footer__img" data="./media/twitter.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            <object class="footer__img" data="./media/linkedin.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            <object class="footer__img" data="./media/pinterest.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            <object class="footer__img" data="./media/instagram.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            <object class="footer__img" data="./media/github.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">
+                            <object class="footer__img" data="./media/rss.svg" type="image/svg+xml" ></object>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <p class="footer__text">© 2015 Axure Themes</p>
         </div>
