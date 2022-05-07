@@ -16,14 +16,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 19px;
     margin: 0 auto;
 }
 
 .header__items{
     display: flex;
     list-style-type: none;
-    column-gap: 60px;
+    column-gap: 30px;
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
@@ -31,5 +30,22 @@
 }
 
 .header__atem{
+    padding: 28px;
+    background: none;
+    border: none;
+}
+
+.header__atem:hover{
+    color: #ffffff;
+    background: #EC7979;
+    cursor: pointer;
+}
+
+.header__atem:active{
+    background: #AB4949;
+    color: #ffffff;
+}
+
+.header__link{
     color: #ffffff;
 }
