@@ -228,16 +228,20 @@
         <h2 class="contact__title">contact us</h2>
         <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div class="contact__wrap">
-                <form class="contact__form-input" action="#">
-                    <input class="contact__input" placeholder="Name" type="text">
-                    <input class="contact__input" placeholder="Email" type="email">
-                    <input class="contact__input" placeholder="Password" type="password">
-                </form>
-                <form class="contact__form-textarea" action="#">
-                <textarea class="contact__textarea" placeholder="Message" name="comment"></textarea>
+                <form class="contact__form" action="#">
+                    <div class="contact__form-input">
+                        <input class="contact__input" placeholder="Name" type="text">
+                        <input class="contact__input" placeholder="Email" type="email">
+                        <input class="contact__input" placeholder="Password" type="password">
+                    </div>
+                    <div class="contact__form-textarea">
+                        <textarea class="contact__textarea" placeholder="Message" name="comment"></textarea>
+                    </div>
+                    <div class="contact__form-btn">
+                        <input class="contact__btn" type="button" value="Send Message">
+                    </div>
                 </form>
             </div>
-        <button class="contact__btn">Send Message</button>
     </div>
 </section>
 

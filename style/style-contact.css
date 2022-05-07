@@ -42,14 +42,14 @@
     font-size: 18px;
     line-height: 21px;
     color: #86878B;
-    padding-bottom: 70px;
+    margin-bottom: 70px;
 }
 
-.contact__wrap{
+.contact__form{
     display: flex;
+    flex-wrap: wrap;
     column-gap: 30px;
-    padding-bottom: 50px;
-}
+} 
 
 .contact__form-input{
     display: flex;
@@ -78,12 +78,17 @@
     border: none;
     border-bottom: 1px solid #BDBDBD;
     font-family: 'Open Sans', sans-serif;
+    resize: none;
 }
 
 .contact__textarea:focus{
     outline: none;
     border: none;
     border-bottom: 1px solid #BDBDBD;
+}
+
+.contact__form-btn{
+    padding: 50px 0 0 400px;
 }
 
 .contact__btn{
@@ -93,8 +98,7 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    max-width: 370px;
-    width: 100%;
+    width: 370px;
     color: #FFFFFF;
     padding: 17px;
 }
