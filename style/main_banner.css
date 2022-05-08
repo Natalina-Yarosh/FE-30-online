@@ -1,0 +1,61 @@
+.main_banner {
+    min-height: 1026px;
+}
+
+.main_wrapper__main_banner {
+    background-image: url(../image/mainbanner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo_big {
+    margin-top: 306px;
+    margin-bottom: 73px;
+}
+
+.main_banner {
+    max-width: 670px;
+}
+
+.main_banner__info h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 55px;
+    color: #FFFFFF;
+}
+
+.main_banner__info h1::after {
+    display: block;
+    content: "";
+    width: 170px;
+    border: 1px solid #FFFFFF;
+    margin-top: 55px;
+}
+
+.main_banner__info h5 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.main_banner__info__btm {
+    max-width: 270px;
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 42px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+    border: 2px solid #FFFFFF;
+}
