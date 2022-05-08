@@ -1,20 +1,32 @@
 .main_banner {
-    min-height: 1026px;
+    max-height: 1510px;
+    padding-bottom: 185px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 101px;
 }
 
 .main_wrapper__main_banner {
     background-image: url(../image/mainbanner.png);
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: initial;
     background-position: center;
+    background-size: 100%;
+}
+
+.main_banner__background {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.main_banner__info {
+    max-width: 670px;
 }
 
 .logo_big {
     margin-top: 306px;
     margin-bottom: 73px;
-}
-
-.main_banner {
-    max-width: 670px;
 }
 
 .main_banner__info h1 {
@@ -42,6 +54,7 @@
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
+    max-width: 270px;
 }
 
 .main_banner__info__btm {
@@ -58,4 +71,61 @@
     line-height: 25px;
     color: #ffffff;
     border: 2px solid #FFFFFF;
+    background: none;
+    cursor: pointer;
+    padding: 0 70px;
+}
+
+.main_banner__registration {
+    padding: 18px 50px 0;
+    background: #FFFFFF;
+    max-width: 470px;
+    max-height: 450px;
+    margin-top: 333px;
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 75px;
+}
+
+.main_banner__registration__form h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: uppercase;
+    margin-bottom: 75px;
+}
+
+.color_text_red {
+    color: #EC7979;
+}
+
+.registration__input {
+    width: 100%;
+    height: 50px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    background: rgba(189, 189, 189, 1);
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    margin-bottom: 31px;
+}
+
+.main_banner__registration__button {
+    width: 470px;
+    height: 50px;
+    background: #EC7979;
+    border-radius: 0px 0px 10px 10px;
+    border-color: #EC7979;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
 }

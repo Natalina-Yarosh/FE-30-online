@@ -19,15 +19,11 @@
 }
 
 .logo_small a {
-    background-color: aquamarine;
     display: block;
-    position: relative;
-    z-index: 10;
 }
 
 .img__logo_small {
-    position: relative;
-    z-index: 1;
+    pointer-events: none;
 }
 
 .header__navigation {
@@ -47,3 +43,9 @@
     color: #FFFFFF;
     text-decoration: none;
 }
+
+.main_banner__registration {}
+
+.main_banner__registration__form {}
+
+main_banner__registration button {}
