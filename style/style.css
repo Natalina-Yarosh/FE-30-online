@@ -4,3 +4,155 @@
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
 }
+
+.container {
+    max-width: 1170px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 170px;
+    border-bottom: 1px solid #EC7979;
+    margin: 40px auto;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #86878B;
+}
+
+.tab__buttoms {
+    display: flex;
+}
+
+.tab_item {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 203px;
+    width: 100%;
+    line-height: 38px;
+    background-color: #fff;
+    color: #333333;
+    width: 100%;
+    border: none;
+    border-radius: 5px 5px 0px 0px;
+
+}
+
+.tab_item_active {
+    border: 1px solid #C6CBCD;
+    border-bottom: none;
+}
+
+.tabs__content {
+    border: 1px solid #C6CBCD;
+    display: flex;
+    height: 500px;
+
+}
+
+.tabs_img_wrap {
+    height: 100%;
+    width: 470px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+
+.tabs__desc_title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    line-height: 100%;
+    text-align: left;
+    vertical-align: auto;
+    margin-bottom: 57px;
+}
+
+.tabs_desc_text {
+    margin-bottom: 26px;
+}
+
+.tabs__buttom_download {
+    max-width: 270px;
+    padding: 17px 0;
+    width: 100%;
+    background: #EC7979;
+    border: 1px solid #EC7979;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.tabs__buttom_download:hover {
+    background: #AB4949;
+}
+
+.tabs__buttom_download:active {
+    background: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
+
+.tabs_desc_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 55px 29px 57px 101px;
+    align-self: stretch;
+}
+
+
+
+
+
+
+.advantages {
+    padding: 110px 0;
+}
+
+.advantages_list {
+    display: flex;
+    gap: 30px;
+}
+
+.advantage_block {
+    text-align: center;
+}
+
+.advantage_image {
+    width: 92px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #EC7979;
+    overflow: hidden;
+    margin: 0 auto 24px;
+
+}
+
+.advantage_block_title {
+    margin-bottom: 30px;
+}
+
+.advantages_title_wrap {
+    margin-bottom: 92px;
+}
