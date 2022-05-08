@@ -1,13 +1,8 @@
-.conteiner {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 .pricing_wrapper {
     margin-top: 110px;
     padding-top: 82px;
     background: #F5F5F5;
+    padding-bottom: 83px;
 }
 
 .pricing_wrapper h2 {
@@ -20,6 +15,14 @@
     text-align: center;
     margin-bottom: 40px;
     text-transform: uppercase;
+}
+
+.pricing_wrapper h2::after {
+    display: block;
+    content: "";
+    width: 170px;
+    border: 1px solid #EC7979;
+    margin: 40px auto 0;
 }
 
 .pricing_wrapper p {
@@ -37,7 +40,6 @@
     justify-content: center;
     width: 100%;
     column-gap: 30px;
-    padding-bottom: 83px;
 }
 
 .prising_wrapper__tarifs .tarif {
@@ -63,8 +65,8 @@
 }
 
 .prising_wrapper__tarifs .price {
-    width: 370px;
-    height: 100px;
+    max-width: 370px;
+    padding: 32px 0;
     background: #333333;
     border: 2px solid #F5F5F5;
     font-weight: 700;

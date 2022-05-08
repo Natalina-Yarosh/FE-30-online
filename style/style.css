@@ -1,6 +1,8 @@
  @import url("./fonts.css");
  @import url("./sprising.css");
  @import url("./reviews.css");
+ @import url("./header.css");
+ @import url("./main_banner.css");
  * {
      padding: 0;
      margin: 0;
@@ -11,12 +13,6 @@
      max-width: 1170px;
      margin: 0 auto;
      padding: 0 15px;
- }
- 
- .main_wrapper {
-     margin-left: 15px;
-     margin-right: 15px;
-     max-width: 1170px;
  }
  
  .line {
@@ -38,7 +34,15 @@
      line-height: 42px;
      text-align: center;
      color: #000000;
-     margin-bottom: 40px;
+     margin-bottom: 80px;
+ }
+ 
+ .servis_wrapper__title::after {
+     display: block;
+     content: "";
+     width: 170px;
+     border: 1px solid #EC7979;
+     margin: 40px auto 0;
  }
  
  .servis_wrapper__discription {
@@ -108,17 +112,14 @@
  }
  
  .info_wrapper__tabs .tab {
-     min-width: 202px;
+     max-width: 202px;
+     width: 100%;
      min-height: 40px;
      display: flex;
      align-items: center;
      justify-content: center;
-     border-bottom: #86878B 1px solid;
+     border-bottom: 1px;
      border-radius: 5px 5px 0px 0px;
- }
- 
- .info_wrapper__tabs .tab:last-child {
-     width: 100%;
  }
  
  .info_wrapper__tabs .active_tab {

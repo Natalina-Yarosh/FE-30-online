@@ -1,13 +1,4 @@
-.conteiner {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 .main_wrapper__reviews_wrapper {
-    margin-left: 15px;
-    margin-right: 15px;
-    max-width: 1170px;
     margin-top: 107px;
 }
 
@@ -20,6 +11,15 @@
     text-align: center;
     color: #000000;
     margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.reviews_wrapper__title::after {
+    display: block;
+    content: "";
+    width: 170px;
+    border: 1px solid #EC7979;
+    margin: 40px auto 0;
 }
 
 .main_wrapper__reviews_wrapper p {
@@ -33,6 +33,7 @@
 }
 
 .text_review {
+    position: relative;
     display: flex;
     text-align: center;
     max-width: 370px;
@@ -51,13 +52,13 @@
 
 .text_review::before {
     content: "";
-    position: relative;
+    position: absolute;
     width: 30px;
     height: 20px;
     background: #E2E2E2;
     transform: rotate(-225deg);
-    left: -100px;
-    bottom: -148px;
+    left: 30px;
+    bottom: -5px;
 }
 
 .text_contact_review {
@@ -76,6 +77,13 @@
 .contact_client__img_client {
     width: 70px;
     height: 70px;
+    overflow: hidden;
+}
+
+.contact_client__img_client img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .reviews_wrapper__contact_client {
@@ -94,7 +102,7 @@
     margin-right: 30px;
 }
 
-.reviews_wrapper__name_position_client h4 {
+.reviews_wrapper__name_position_client h2 {
     margin-bottom: 18px;
     font-family: 'Open Sans';
     font-style: normal;
@@ -103,10 +111,11 @@
     line-height: 30px;
 }
 
-.reviews_wrapper__name_position_client h5 {
+.reviews_wrapper__name_position_client p {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    text-align: left;
 }
