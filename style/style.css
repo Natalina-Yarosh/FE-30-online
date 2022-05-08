@@ -120,6 +120,60 @@ margin-bottom: 42px;
     position: absolute;
     top: calc(100% + 55px);
 }
+.social{
+    background: #F8EFEF
+}
+.container__social{
+    max-width: 1170px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.social__info{
+max-width: 470px;
+
+}
+.social__title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    align-items: center;
+    color: #333333;
+    padding: 13px 0;
+    margin-bottom: 18px;
+}
+.social__text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    align-items: center;
+    color: #86878B;
+    margin-bottom: 18px;
+}
+.social__nav{
+    display: flex;
+    max-width: 700px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    column-gap: 35px;
+}
+.social__link{
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social__icon{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 .tabs{ 
@@ -135,7 +189,19 @@ margin: 0 auto;
     display: flex;
 }
 .tabs__btn.tabs__btn_active{
-    border: 1px solid #c6cbcd;}
+    border: 1px solid #c6cbcd;
+position: relative;
+}
+.tabs__btn_active::after{
+content: "";
+width: 100%;
+height: 5px;
+display: block;
+position: absolute;
+background-color: #FFFFFF;
+left: 0;
+bottom: -3px;
+}
 .tabs__btn{
 cursor: pointer;
 font-family: 'Open Sans', sans-serif;
@@ -574,3 +640,40 @@ cursor: pointer;
 margin: 0 auto;
 display: block;
 }
+
+.footer{
+    background: #000000
+}
+.container__footer{
+    max-width: 1170px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+    }
+    .footer__nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 35px;
+    }
+    .footer__link{
+        width: 53px;
+        height: 53px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__icon{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .footer__text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        align-items: center;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+    }
