@@ -28,7 +28,6 @@
 .header__list {
     list-style-type: none;
     display: flex;
-    flex-direction: row;
 }
 
 .header__item {
@@ -149,8 +148,8 @@
 .banner__form {
     max-width: 470px;
     background-color: #FFFFFF;
-    border-radius: 10px 10px 0 0;
-    padding: 36px 50px 25px 50px;
+    border-radius: 10px 10px;
+    padding-top: 36px;
 }
 
 .form__title {
@@ -172,8 +171,12 @@
 .form__input-banner {
     max-width: 370px;
     width: 100%;
-    margin-bottom: 31px;
+    margin: 31px 50px 0 50px;
     padding-bottom: 19px;
+}
+
+.form__input-banner:first-of-type {
+    margin-top: 0;
 }
 
 .form__input {
@@ -207,6 +210,7 @@
     font-size: 15px;
     line-height: 20px;
     color: #FFFFFF;
+    margin-top: 75px;
 }
 
 .banner__button-form:hover {
@@ -745,7 +749,7 @@
 }
 
 .contacts {
-    padding: 67px 0 66px;
+    padding-top: 67px ;
 }
 
 .container__contacts {
@@ -788,7 +792,6 @@
 .contacts__form {
     display: flex;
     column-gap: 30px;
-    margin-bottom: 50px;
     width: 100%;
 }
 
@@ -801,10 +804,6 @@
     width: 100%;
     margin-bottom: 50px;
     padding-bottom: 19px;
-}
-
-.form__input-contacts:last-of-type {
-    margin: 0;
 }
 
 .form__input-message {
@@ -830,6 +829,8 @@
     width: 100%;
     padding: 22px 22px;
     border: transparent;
+    margin-left:68%;
+    margin-bottom: 67px;
 }
 
 .contacts__button:hover {
