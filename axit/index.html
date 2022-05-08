@@ -20,11 +20,10 @@
   <body>
     <header class="header">
       <div class="container header_container">
-        <div class="header__logo">
-          <a href="" title="Mane page" class="header__logo__link"> </a>
-        <img src="img/AX.svg" alt="Logo Axit" class="header__logo__axit">
-        <img src="img/IT.svg" alt="Logo Axit" class="header__logo__axit">
-        </div>
+        <a href="" title="Mane page" class="header__logo"> 
+        <object data="img/AX.svg" class="header__logo__axit" type="image/svg+xml"></object>
+        <object data="img/IT.svg" class="header__logo__axit" type="image/svg+xml"></object>
+        </a>
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__items"> <a href="" title="Features" class="navigation__link">Features</a> </li>
@@ -39,14 +38,42 @@
 
     <section class="mane">
       <div class="container container_mane">
-          <div class="mane__logo">
-          <a href="" title="Mane page" class="mane__logo__link"></a>
-        <img src="img/AX(55px).svg" alt="Logo Axit" class="mane__logo__axit">
-        <img src="img/IT(55px).svg" alt="Logo Axit" class="mane__logo__axit mane__logo__axit__IT">
-          </div>
+        <div class="mane__content">
+        <a href="" title="Mane page" class="mane__logo">
+        <object data="img/AX(55px).svg" class="mane__logo__axit" type="image/svg+xml"></object>
+        <object data="img/IT(55px).svg" class="mane__logo__axit" type="image/svg+xml"></object>
+        </a>
         <h1 class="mane__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
         <p class="mane__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         <button class="mane__button">Download</button>
+      </div>
+      <form action="" class="mane__form">
+        <div class="mane__form__content">
+        <h4 class="mane__form__title">Try Your <span class="mane__form__colortext"> FREE</span> Trial Today</h4>
+        <input type="text" class="mane__form__item" name="name"  placeholder="Name" >
+        <input type="email" class="mane__form__item" name="email"  placeholder="Email">
+        <input type="password" class="mane__form__item" name="password" placeholder="Password">
+        </div>
+        <button class="mane__form__btn">Get Started</button>
+      </form>
+      </div>
+    </section>
+
+    <section class="social">
+      <div class="container container_social">
+        <div class="social__content">
+          <h4 class="social__title">Social Media</h4>
+          <p class="social__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+        </div>
+        <div class="social__links">
+          <a href="" class="social__link"><object class="social__icon" data="img/facebook.svg" type="image/svg+xml"></object></a>
+          <a href="" class="social__link"><object class="social__icon" data="img/twitter.svg" type="image/svg+xml"></object></a>
+          <a href=""class="social__link"><object class="social__icon" data="img/linkedin.svg" type="image/svg+xml"></object></a>
+          <a href="" class="social__link"><object class="social__icon" data="img/pinterest.svg" type="image/svg+xml"></object></a>
+          <a href="" class="social__link"><object class="social__icon" data="img/instagram_icon.svg" type="image/svg+xml"></object></a>
+          <a href="" class="social__link"><object class="social__icon" data="img/git.svg" type="image/svg+xml"></object></a>
+          <a href="" class="social__link"><object class="social__icon" data="img/rss_icon.svg" type="image/svg+xml"></object></a>
+        </div>
       </div>
     </section>
 
@@ -56,7 +83,6 @@
           <button class="tabs__item tabs__item_active">TAB 1</button>
           <button class="tabs__item">TAB 2</button>
           <button class="tabs__item">TAB 3</button>
-          <!-- <div class="tabs__buttons__line"></div> -->
         </div>
         <article class="tabs__content">
           <div class="tabs__content__text">
@@ -87,7 +113,6 @@
     <section class="awesome">
       <div class="container">
         <h2 class="awesome__title">Why this is awesome</h2>
-        <!-- <div class="awesome__line"></div> -->
         <p class="awesome__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
@@ -95,11 +120,7 @@
         <div class="awesome__articles">
           <article class="awesome__article">
             <div class="awesome__article__logo">
-              <img
-                src="img/Vector.svg"
-                alt="bulb"
-                class="awesome__article__img bulb"
-              />
+              <object data="img/Vector.svg" class="awesome__article__img"> </object>
             </div>
             <h3 class="awesome__article__title">Thoughtful Design</h3>
             <p class="awesome__article__text">
@@ -111,11 +132,7 @@
 
           <article class="awesome__article">
             <div class="awesome__article__logo">
-              <img
-                src="img/Vector1.svg"
-                alt="keyboard"
-                class="awesome__article__img keyboard"
-              />
+              <object data="img/Vector1.svg" class="awesome__article__img"> </object>
             </div>
             <h3 class="awesome__article__title">Thoughtful Design</h3>
             <p class="awesome__article__text">
@@ -125,13 +142,9 @@
             </p>
           </article>
 
-          <article class="awesome__article third_article">
+          <article class="awesome__article">
             <div class="awesome__article__logo">
-              <img
-                src="img/Vector2.svg"
-                alt="lightning"
-                class="awesome__article__img lightning"
-              />
+              <object data="img/Vector2.svg" class="awesome__article__img"> </object>
             </div>
             <h3 class="awesome__article__title">Thoughtful Design</h3>
             <p class="awesome__article__text">
@@ -147,7 +160,6 @@
     <section class="prices">
       <div class="container">
         <h2 class="prices__title">Pricing options</h2>
-        <!-- <div class="prices__line"></div> -->
         <p class="prices__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
@@ -194,6 +206,7 @@
         </div>
       </div>
     </section>
+
     <section class="customers">
       <div class="container">
         <h2 class="customers__title">what our customers are saying</h2>
@@ -210,7 +223,9 @@
                 quo suscipit.</p>
             </div>
             <div class="review__author">
+              <div class="review__author__wrap">
               <img src="img/customer1.png" alt="keyboard" class="review__author__img"/>
+              </div>
               <div class="review__author__data">
               <h4 class="review__author__name">Davis Rhiel Madsen</h4>
               <p class="review__author__profession">Manager</p>
@@ -226,7 +241,9 @@
                 quo suscipit.</p>
             </div>
             <div class="review__author">
+              <div class="review__author__wrap">
               <img src="img/customer2.png" alt="keyboard" class="review__author__img"/>
+              </div>
               <div class="review__author__data">
               <h4 class="review__author__name">Jaydon Rosser</h4>
               <p class="review__author__profession">Manager</p>
@@ -242,7 +259,9 @@
                 quo suscipit.</p>
             </div>
             <div class="review__author">
+              <div class="review__author__wrap">
               <img src="img/customer3.png" alt="keyboard" class="review__author__img"/>
+              </div>
               <div class="review__author__data">
               <h4 class="review__author__name">Cooper Dorwart</h4>
               <p class="review__author__profession">Manager</p>
@@ -252,6 +271,7 @@
         </div>
       </div>
     </section>
+
     <section class="design">
       <div class="container container_design">
         <h2 class="design__title">STYLISH AXURE DESIGN</h2>
@@ -259,5 +279,38 @@
         <button class="design__button">Download</button>
       </div>
     </section>
+
+    <section class="contact">
+      <div class="container">
+        <h2 class="contact__title">contact us</h2>
+        <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <form action="" class="contact__form">
+          <div class="contact__form__content">
+            <div class="contact__form__inputs">
+              <input type="text" class="contact__form__item" name="name"  placeholder="Name" >
+              <input type="email" class="contact__form__item" name="email"  placeholder="Email">
+              <input type="password" class="contact__form__item" name="password" placeholder="Password">
+            </div>
+              <textarea name="Message" placeholder="Message" class="contact__form__item contact__form__textarea"></textarea>
+          </div>
+              <button class="contact__button">Download</button>
+      </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__links">
+          <a href="" class="footer__link"><object class="footer__icon" data="img/facebook_icon35.svg" type="image/svg+xml"></object></a>
+          <a href="" class="footer__link"><object class="footer__icon" data="img/twitter_icon35.svg" type="image/svg+xml"></object></a>
+          <a href="" class="footer__link"><object class="footer__icon" data="img/linkedin_icon35.svg" type="image/svg+xml"></object></a>
+          <a href="" class="footer__link"><object class="footer__icon" data="img/pinterest_icon35.svg" type="image/svg+xml"></object></a>
+          <a href="" class="footer__link"><object class="footer__icon" data="img/instagram_icon35.svg" type="image/svg+xml"></object></a>
+          <a href="" class="footer__link"><object class="footer__icon" data="img/github_icon35.svg" type="image/svg+xml"></object></a>
+          <a href="" class="footer__link"><object class="footer__icon" data="img/rss_icon35.svg" type="image/svg+xml"></object></a>
+        </div>
+        <p class="footer__text">© 2015 Axure Themes</p>
+      </div>
+    </footer>
   </body>
 </html>
