@@ -11,7 +11,6 @@
 .main_wrapper__main_banner {
     background-image: url(../image/mainbanner.png);
     background-size: contain;
-    background-repeat: initial;
     background-position: center;
     background-size: 100%;
 }
@@ -128,4 +127,46 @@
     line-height: 20px;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+.wrapper__main_media {
+    width: 100%;
+    background: #F8EFEF;
+    padding: 32px 0 46px;
+    margin-bottom: 100px;
+}
+
+.main_media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.media__text h4 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 16px;
+}
+
+.media__text p {
+    max-width: 470px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.media_icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.media_icon .icon {
+    max-height: 59px;
+    min-width: 59px;
+    margin: 22px;
 }
