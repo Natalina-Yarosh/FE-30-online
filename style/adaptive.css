@@ -300,16 +300,13 @@
 
     .tabs__item-red::before {
         content: '';
-        display: block;
         position: absolute;
         width:100%;
         border-top: 4px solid #F38281;
         top: 0;
         left: 0;
     }
-    
     .tabs__item span {
         display: none;
     }
-    
 }
