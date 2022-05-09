@@ -76,6 +76,7 @@ left: 0;
     position: relative;
     z-index: 1;
     display: flex;
+    column-gap: 30px;
 }
 
 .banner__title{
@@ -220,7 +221,8 @@ margin-bottom: 42px;
     border-radius: 0px 0px 10px 10px;
 }
 .title__color{
-color: #EC7979;}
+color: #EC7979;
+}
 .social{
     background: #F8EFEF;
     margin-bottom: 99px;
@@ -827,7 +829,7 @@ padding: 50px 0;
 
 
 .contact__form{
-    max-width: 1170px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
@@ -835,7 +837,6 @@ padding: 50px 0;
 }
 
 .contact__input{
-width: 50%;
 font-family: 'Open Sans';
 font-style: normal;
 font-weight: 400;
@@ -845,7 +846,8 @@ align-items: center;
 color: #BDBDBD;
 padding: 16px 0;
 border: none;
-border-bottom : 1px solid #BDBDBD
+border-bottom : 1px solid #BDBDBD;
+width:100%;
 }
 .contact__input::placeholder{
 font-family: 'Open Sans';
@@ -857,14 +859,18 @@ align-items: center;
 color: #BDBDBD;
 }
 .contact__message{
+    width: calc((100%-30px) / 2);
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     align-items: center;
-    color: #BDBDBD;
+    color: #050505;
     resize: none;
+    padding: 16px 0;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
 
 }
 .contact__message::placeholder{
