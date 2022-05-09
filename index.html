@@ -17,11 +17,11 @@
             </a>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#">Features</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Pricing</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Reviews</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#features">Features</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#pricing">Pricing</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#reviews">Reviews</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -39,12 +39,10 @@
                     <button class="banner__btn">Download</button>
                 </div>
                 <form class="banner__form" action="#">
-                    <div class="banner__wrap">
-                        <p class="banner__name">Try your <span class="banner__name banner__name-color">free</span> trial today</p>
-                        <input class="banner__input" type="text" placeholder="Name">
-                        <input class="banner__input" type="email" placeholder="Email">
-                        <input class="banner__input" type="password" placeholder="Prassword">
-                    </div>
+                    <h2 class="banner__title-form">Try your <span class="banner__title-form banner__title-color">free</span> trial today</h2>
+                    <input class="banner__input" type="text" placeholder="Name">
+                    <input class="banner__input" type="email" placeholder="Email">
+                    <input class="banner__input" type="password" placeholder="Prassword">
                     <button class="banner__btn-form">Get Started</button>
                 </form>
             </div>
@@ -84,7 +82,7 @@
             </div>
         </section>
 
-        <section class="tabs">
+        <section class="tabs" id="features">
             <div class="container">
                 <div class="tabs__nav">
                     <button class="tabs__item tabs__item_active">TAB 1</button>
@@ -106,7 +104,7 @@
             </div>
         </section>
 
-        <section class="awesome">
+        <section class="awesome" id="about">
             <div class="container">
                 <h2 class="awesome__title">Why this is awesome</h2>
                 <p class="awesome__text">Lorem ipsum dolor sit amet, consectetur adipiscing  elit.</p>
@@ -136,7 +134,7 @@
             </div>
         </section>
 
-        <section class="pricing">
+        <section class="pricing" id="pricing">
             <div class="container">
                 <h2 class="pricing__title">Pricing option</h2>
                 <p class="pricing__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -184,7 +182,7 @@
             </div>
         </section>
 
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="container">
                 <h2 class="reviews__title">What our customers are saying</h2>
                 <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -237,18 +235,18 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <h2 class="contact__title">Contact us</h2>
                 <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <form class="contact__form" action="#">
-                    <div class="contact__block">
+                    <div class="contact__blok">
                         <div class="contact__wrap">
                             <input class="contact__input" type="text" placeholder="Name">
                             <input class="contact__input" type="email" placeholder="Email">
                             <input class="contact__input" type="password" placeholder="Prassword">
                         </div>
-                        <textarea class="contact__massage" placeholder="Message"></textarea>
+                        <textarea class="contact__input contact__massage" placeholder="Message"></textarea>
                     </div>
                     <button class="contact__btn">Send Message</button>
                 </form>
