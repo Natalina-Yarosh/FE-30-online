@@ -827,7 +827,8 @@ padding: 50px 0;
     display: flex;
     column-gap: 30px;
     row-gap: 34px;
-    flex-wrap: wrap;}
+    flex-wrap: wrap;
+}
 .contact__input{
 width: 50%;
 font-family: 'Open Sans';
@@ -851,6 +852,7 @@ align-items: center;
 color: #BDBDBD;
 }
 .contact__message{
+    width: 48%;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -859,9 +861,9 @@ color: #BDBDBD;
     align-items: center;
     color: #BDBDBD;
     resize: none;
-    width: 48%;
-    
+
 }
+
 .contact__btn{
     font-family: 'Open Sans';
     font-style: normal;
