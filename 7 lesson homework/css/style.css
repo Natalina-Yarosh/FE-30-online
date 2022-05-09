@@ -225,11 +225,10 @@
 
 .banner__input{
     max-width: 370px;
-    height: 40px;
     width: 100%;
     border: none;
     border-bottom: 1px solid #BDBDBD;
-    padding-bottom: 17px;
+    padding: 3px 0 17px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -269,11 +268,13 @@
 
 .banner__registration-button:hover{
     background: #AB4949;
+    border:1px solid transparent;
 }
 
 .banner__registration-button:active{
     background: #EC7979;
-    box-shadow: inset 0px 0px 10px #AB4949
+    box-shadow: inset 0px 0px 10px #AB4949;
+    border:1px solid transparent;
 }
 
 
@@ -317,28 +318,28 @@
 }
 
 .social__media{
-    width: calc(100% - 470px - 30px);
     display: flex;
-    column-gap: 45px;
+    column-gap: 30px;
     list-style-type: none;
+    justify-content: center;
+    align-items: center;
     
 }
 
-.social__img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.social__link{
     height: 70px;
     width: 70px;
+    display: block;
+    
 }
 
 .social__logo{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    pointer-events: none;
     transform: scale(1.2);
     transition: 1s;
+    pointer-events: none;
 }
 
 
@@ -865,19 +866,18 @@ display: flex;
 }
 
 .contact__form{
-    display: flex;
+    display:flex;
+    flex-wrap: wrap;
     column-gap: 30px;
-    justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
+    row-gap: 50px;
 }
 
 .contact__form-list{
     display: flex;
     flex-direction: column;
-    max-width: 570px;
-    width: 100%;
     row-gap: 50px;
+    justify-content: center;
+    width: calc((100% - 30px) / 2);
 }
 
 .contact__form-comment{
@@ -913,9 +913,7 @@ display: flex;
 }
 
 .contact__input-comment{
-    max-width: 570px;
-    width: 100%;
-    height: 215px;
+    width: calc((100% - 30px) / 2);
     resize: none;
     border: none;
     border-bottom: 1px solid #BDBDBD;
@@ -936,12 +934,8 @@ display: flex;
     outline: none;
 }
 
-.contact__form-button{
-    text-align: center;
-    margin-top: 50px;
-}
-
 .contact__button{
+    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 18px;
@@ -954,6 +948,7 @@ display: flex;
     width: 100%;
     padding: 15px 5px ;
     cursor: pointer;
+    display: block;
 }
 
 .contact__button:hover{
