@@ -172,7 +172,7 @@
     max-width: 370px;
     width: 100%;
     margin: 31px 50px 0 50px;
-    padding-bottom: 19px;
+    padding: 8.5px 0;
 }
 
 .form__input-banner:first-of-type {
@@ -210,6 +210,7 @@
     line-height: 20px;
     color: #FFFFFF;
     margin-top: 75px;
+    cursor: pointer;
 }
 
 .banner__button-form:hover {
@@ -798,20 +799,20 @@
 
 .contacts__form {
     display: flex;
-    justify-content: space-between;
+    column-gap: 30px;
     width: 100%;
     flex-wrap: wrap;
 }
 
 .contacts__wrap {
-    width: 49%;
+    width: calc((100% - 30px) / 2);
 }
 
 .form__input-contacts {
     max-width: 571px;
     width: 100%;
     margin-bottom: 50px;
-    padding-bottom: 19px;
+    padding: 8.5px 0;
 }
 
 .form__input-message {
@@ -822,7 +823,7 @@
 }
 
 .form__message {
-    width: 49%;
+    width: calc((100% - 30px) / 2);
 }
 
 .contacts__button {
@@ -837,8 +838,9 @@
     width: 100%;
     padding: 22px 22px;
     border: transparent;
-    margin-left:34%;
+    margin: 0 auto;
     margin-bottom: 67px;
+    cursor: pointer;
 }
 
 .contacts__button:hover {
