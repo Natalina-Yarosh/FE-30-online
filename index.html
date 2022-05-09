@@ -48,16 +48,15 @@
             <button class="banner__btn">Download</button>
         </div>
         <div class="banner__registration">
-            <div class="registration">
         <h4 class="registration__title" >Try Your <span class="title__color">FREE</span> Trial Today</h4>
         <form class="registration__form" action="#">
             <input class="registration__input" placeholder="Name" type="name">
             <input class="registration__input" placeholder="Email" type="email">
-            <input class="registration__input" placeholder="Password" type="password">
-            
+            <input class="registration__input registration__input-password" placeholder="Password" type="password">
+            <button class="registration__btn">Get Started</button>
         </form>
-            </div>
-        <button class="registration__btn">Get Started</button>
+        
+        
         </div>
     </div>
 </section>
@@ -125,7 +124,7 @@
         <div class="block-info">
             <article class="block-info__1">
                 <div class="block-info__wrap">
-                    <img class="block-info__img" src="img/bubl.svg" alt="bulb">
+                    <object class="block-info__img" data="img/bubl.svg" type="image/svg+xml"></object>
                 </div>
                 <h3 class="block-info__title">Thoughtful Design
                 </h3>
@@ -134,7 +133,7 @@
             </article>
             <article class="block-info__2">
                 <div class="block-info__wrap">
-                    <img class="block-info__img" src="img/keyboard.svg" alt="keyboard">
+                    <object class="block-info__img" data="img/keyboard.svg" type="image/svg+xml"></object>
                     </div>
                     <h3 class="block-info__title">Thoughtful Design
                 </h3>
@@ -143,7 +142,7 @@
             </article>
             <article class="block-info__3">
                 <div class="block-info__wrap">
-                <img class="block-info__img" src="img/lightning.svg" alt="lightning">
+                <object class="block-info__img" data="img/lightning.svg" type="image/svg+xml"></object>
             </div>
             <h3 class="block-info__title">Thoughtful Design
             </h3>
@@ -282,9 +281,8 @@
                 <input class="contact__input" placeholder="Email" type="email">
                 <input class="contact__input" placeholder="Password" type="password">
                 <textarea class="contact__message" placeholder="Message" name="Message" id=""></textarea>
+                <button class="contact__btn">Send Message</button>
             </form>
-        
-            <button class="contact__btn">Send Message</button>
 
         </div>
     </section>

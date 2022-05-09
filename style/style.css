@@ -147,11 +147,7 @@ margin-bottom: 42px;
     max-width: 470px;
     height: 450px;
 }
-.registration{
-padding: 0 50px;
-margin-bottom: 75px;
 
-}
 .registration__title{
     font-family: 'Open Sans';
     font-style: normal;
@@ -173,11 +169,16 @@ margin-bottom: 75px;
     line-height: 19px;
     align-items: center;
     color: #BDBDBD;
-    width: 100%;
+    width: 370px;
     padding: 15px 0;
-    position: relative;
+    margin: 0 auto;
+    display: block;
     border: none;
     border-bottom : 1px solid #BDBDBD;
+
+}
+.registration__input-password{
+    margin-bottom: 31px;
 }
 .registration__form{
     display: flex;
@@ -826,9 +827,7 @@ padding: 50px 0;
     display: flex;
     column-gap: 30px;
     row-gap: 34px;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-}
+    flex-wrap: wrap;}
 .contact__input{
 width: 50%;
 font-family: 'Open Sans';
@@ -841,7 +840,15 @@ color: #BDBDBD;
 padding: 16px 0;
 border: none;
 border-bottom : 1px solid #BDBDBD
-
+}
+.contact__input::placeholder{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+align-items: center;
+color: #BDBDBD;
 }
 .contact__message{
     font-family: 'Open Sans';
@@ -852,6 +859,7 @@ border-bottom : 1px solid #BDBDBD
     align-items: center;
     color: #BDBDBD;
     resize: none;
+    width: 48%;
     
 }
 .contact__btn{
