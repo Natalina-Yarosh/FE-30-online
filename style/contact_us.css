@@ -26,10 +26,11 @@
     margin-bottom: 89px;
 }
 
-.main_wrapper__contact_us .wrapper_input {
+.main_wrapper__contact_us {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 67px 0;
 }
 
 .contact_us__input {
@@ -82,4 +83,18 @@
     background: #EC7979;
     cursor: pointer;
     padding: 0 70px;
+}
+
+.main_wrapper__contact_us button:hover {
+    background: #AB4949;
+}
+
+.main_wrapper__contact_us button:active {
+    background: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
+
+.main_wrapper_contact_us__input__btm {
+    display: flex;
+    justify-content: center;
 }

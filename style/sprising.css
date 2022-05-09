@@ -42,10 +42,15 @@
     column-gap: 30px;
 }
 
+.prising_wrapper__tarifs button:hover {
+    transform: -110px;
+}
+
 .prising_wrapper__tarifs .tarif {
     text-align: center;
     font-family: 'Raleway';
     font-style: normal;
+    border: none;
 }
 
 .prising_wrapper__tarifs .tarif_tipe {

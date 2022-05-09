@@ -6,7 +6,6 @@
     justify-content: center;
     flex-direction: column;
     padding: 70px 0;
-    margin-bottom: 67px;
 }
 
 .main_wrapper__banner_design {
@@ -52,6 +51,22 @@
 .wrapper__design_banner__btm {
     display: flex;
     justify-content: center;
+}
+
+.banner_design button:hover {
+    border: 2px solid #EC7979;
+    color: #EC7979;
+}
+
+.banner_design button:active {
+    background: #AB4949;
+    border: 2px solid #AB4949;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
 }
 
 .design_banner__btm {

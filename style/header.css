@@ -43,3 +43,19 @@
     color: #FFFFFF;
     text-decoration: none;
 }
+
+.footer_media {
+    display: flex;
+    justify-content: center;
+    padding: 41px 0 27px 0;
+}
+
+.footer_media h5 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}

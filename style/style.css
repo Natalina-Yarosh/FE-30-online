@@ -5,6 +5,7 @@
  @import url("./main_banner.css");
  @import url("./design_banner.css");
  @import url("./contact_us.css");
+ @import url("./footer.css");
  * {
      padding: 0;
      margin: 0;
@@ -168,20 +169,32 @@
      margin-bottom: 0px;
  }
  
- .info_wrapper__btn {
+ .info_wrapper_content_text button {
      max-width: 270px;
      min-height: 58px;
-     background: #EC7979;
      display: flex;
      align-items: center;
      justify-content: center;
-     margin-top: 84px;
+     margin-top: 42px;
      font-family: 'Open Sans';
      font-style: normal;
      font-weight: 600;
      font-size: 18px;
      line-height: 25px;
      color: #ffffff;
+     border: 2px solid #FFFFFF;
+     background: #EC7979;
+     cursor: pointer;
+     padding: 0 70px;
+ }
+ 
+ .info_wrapper_content_text button:hover {
+     background: #AB4949;
+ }
+ 
+ .info_wrapper_content_text button:active {
+     background: #EC7979;
+     box-shadow: inset 0px 0px 10px #AB4949;
  }
  
  .info_wrapper__h2 {

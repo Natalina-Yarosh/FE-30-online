@@ -114,7 +114,7 @@
     margin-bottom: 31px;
 }
 
-.main_banner__registration__button {
+.main_banner__registration__button button {
     width: 470px;
     height: 50px;
     background: #EC7979;
@@ -127,6 +127,32 @@
     line-height: 20px;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+.main_banner button:hover {
+    border: 2px solid #EC7979;
+    color: #EC7979;
+}
+
+.main_banner__info button:active {
+    background: #AB4949;
+    border: 2px solid #AB4949;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.main_banner__registration__button button:hover {
+    color: rgb(255, 255, 255);
+    background: #AB4949;
+}
+
+.main_banner__registration__button button:active {
+    background: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
 }
 
 .wrapper__main_media {
