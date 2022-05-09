@@ -243,7 +243,7 @@
     height: 70px;
 }
 .social__link:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 .social__picture {
     width: 100%;
@@ -647,7 +647,7 @@
     color: #86878B;
     margin-bottom: 89px;
 }
-.contact__blok {
+.contact__block {
     display: flex;
     column-gap: 30px;
 }
@@ -725,7 +725,7 @@
     height: 44px;
 }
 .footer__link:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 .footer__picture {
     width: 100%;
