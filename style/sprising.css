@@ -119,3 +119,9 @@
 .tarif:nth-child(2n) {
     margin-top: -20px;
 }
+
+.prising_wrapper__tarifs button:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
