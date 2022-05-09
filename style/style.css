@@ -263,6 +263,7 @@ max-width: 470px;
     align-items: center;
     justify-content: center;
     column-gap: 35px;
+    flex-wrap: wrap;
 }
 .social__link{
     width: 58px;
@@ -823,12 +824,16 @@ padding: 50px 0;
     color: #86878B;
     margin-bottom: 73px;
 }
+
+
 .contact__form{
+    max-width: 1170px;
     display: flex;
+    flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 34px;
-    flex-wrap: wrap;
 }
+
 .contact__input{
 width: 50%;
 font-family: 'Open Sans';
@@ -852,7 +857,6 @@ align-items: center;
 color: #BDBDBD;
 }
 .contact__message{
-    width: 48%;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -862,6 +866,15 @@ color: #BDBDBD;
     color: #BDBDBD;
     resize: none;
 
+}
+.contact__message::placeholder{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    align-items: center;
+    color: #BDBDBD
 }
 
 .contact__btn{
