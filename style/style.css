@@ -933,6 +933,7 @@ color: #BDBDBD;
         display: flex;
         align-items: center;
         justify-content: center;
+        
     }
     .footer__link:hover{
         background: #EC7979;
