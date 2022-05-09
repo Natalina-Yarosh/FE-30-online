@@ -165,7 +165,7 @@ margin-bottom: 75px;
     padding: 28px 0;
     margin-bottom: 30px;
 }
-.registration__unput{
+.registration__input{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -184,7 +184,7 @@ margin-bottom: 75px;
     flex-wrap: wrap;
     row-gap: 30px;
 }
-.registration__unput::placeholder{
+.registration__input::placeholder{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -208,6 +208,7 @@ margin-bottom: 75px;
     border-radius: 0px 0px 10px 10px;
     padding: 20px;
     cursor: pointer;
+    border: none;
 }
 .registration__btn:hover{
     background: #AB4949;
@@ -818,10 +819,66 @@ padding: 50px 0;
     line-height: 21px;
     align-items: center;
     text-align: center;
-    color: #86878B
+    color: #86878B;
+    margin-bottom: 73px;
 }
 .contact__form{
-display: flex;
+    display: flex;
+    column-gap: 30px;
+    row-gap: 34px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.contact__input{
+width: 50%;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+align-items: center;
+color: #BDBDBD;
+padding: 16px 0;
+border: none;
+border-bottom : 1px solid #BDBDBD
+
+}
+.contact__message{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    align-items: center;
+    color: #BDBDBD;
+    resize: none;
+    
+}
+.contact__btn{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background: #EC7979;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    max-width: 370px;
+    width: 100%;
+    padding: 16px;
+    border: none;
+}
+.contact__btn:hover{
+    background: #AB4949
+}
+.contact__btn:active{
+    background: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
 }
 .footer{
     background: #000000;
