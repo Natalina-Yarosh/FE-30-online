@@ -59,7 +59,10 @@
     text-align: center;
 }
 
-.content__item,.content__header,.content__price,.content__freeforlife {
+.content__item,
+.content__header,
+.content__price,
+.content__freeforlife {
     list-style-type: none;
     background: #FFFFFF;
     border-bottom: 2px solid #F5F5F5;
@@ -100,3 +103,14 @@
 border-bottom: none;
 }
 
+.content__items:hover {
+    margin-top: -15px;
+    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+
+}
+
+.content__items-optima:hover{
+    margin-top: -30px;
+    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+
+}

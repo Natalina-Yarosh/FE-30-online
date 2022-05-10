@@ -100,14 +100,6 @@
     border-radius: 50px;
 }
 
-.content__items:active {
-    margin-top: -15px;
-}
-
-.content__items-optima:active{
-    margin-top: -30px;
-}
-
 .reviews__image{
     width: 100%;
     height: 100%;
