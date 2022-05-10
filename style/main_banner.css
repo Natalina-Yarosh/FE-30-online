@@ -188,11 +188,19 @@
 
 .media_icon {
     display: flex;
-    flex-direction: row;
+    cursor: pointer;
+    position: relative;
 }
 
 .media_icon .icon {
     max-height: 59px;
     min-width: 59px;
     margin: 22px;
+}
+
+.media_icon .icon:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    background: no-repeat;
 }

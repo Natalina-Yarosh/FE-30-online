@@ -34,7 +34,7 @@
 
 .header__navigation a {
     width: 114px;
-    height: 19px;
+    height: 100%;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
@@ -42,6 +42,17 @@
     line-height: 19px;
     color: #FFFFFF;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__navigation a:hover {
+    background: #EC7979;
+}
+
+.header__navigation a:active {
+    background: #AB4949;
 }
 
 .footer_media {
