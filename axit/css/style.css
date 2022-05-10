@@ -22,6 +22,11 @@
 }
 .header__logo {
   margin: 22px 20px 22px 0;
+  display: block;
+}
+.header__logo__axit {
+  width: 87px;
+  height: 31px;
 }
 .navigation__list {
   list-style-type: none;
@@ -81,6 +86,7 @@
 }
 .mane__logo {
   margin-bottom: 73px;
+  display: block;
 }
 .mane__title {
   font-weight: 500;
@@ -120,6 +126,7 @@
   width: 100%;
   padding: 14.5px;
   max-width: 270px;
+  cursor: pointer;
 }
 .mane__button:hover {
   border: 2px solid #EC7979;
@@ -139,9 +146,6 @@
 .mane__form__content{
   margin: 36px 50px 0;
 }
-.mane__form__item {
-  width: 100%;
-}
 .mane__form__title {
   font-family: "OpenSans", sans-serif;
   font-weight: 700;
@@ -155,6 +159,7 @@
   color: #ec7979;
 }
 .mane__form__item {
+  width: 100%;
   font-family: "OpenSans", sans-serif;
   color: #000;
   font-weight: 400;
@@ -171,6 +176,15 @@
 .mane__form__item:last-child{
   margin-bottom: 0px;
 }
+.mane__form__item:focus {
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.mane__form__item:active {
+  border: none;
+  border-bottom: 1px solid #000;
+  transform: scale(1.1);
+}
 .mane__form__btn {
   margin-top: 75px;
   width: 100%;
@@ -183,6 +197,7 @@
   font-size: 15px;
   line-height: 20px;
   padding: 20px 0;
+  cursor: pointer;
 }
 .mane__form__btn:hover {
   background: #AB4949;
@@ -216,17 +231,23 @@
 }
 .social__links {
   display: flex;
+  list-style-type: none;
 }
-.social__link {
-  width: 70px;
-  height: 70px;
+.social__item {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 30px;
 }
-.social__link:last-child{
+.social__item:last-child{
   margin-right: 0px;
+}
+.social__link {
+  display: block;
+}
+.social__icon {
+  width: 70px;
+  height: 70px;
 }
 
 .tabs {
@@ -420,8 +441,9 @@
   width: calc((100% - 60px) / 3);
   text-align: center;
 }
-.prices__option_active {
-  margin-top: -20px;
+.prices__option:hover {
+  box-shadow:  drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+  margin-top: -30px;
 }
 .prices__option__title {
   font-size: 24px;
@@ -601,6 +623,7 @@
   width: 100%;
   padding: 14.5px;
   max-width: 270px;
+  cursor: pointer;
 }
 .design__button:hover {
   border: 2px solid #EC7979;
@@ -664,9 +687,27 @@
 .contact__form__item:last-child {
   margin-bottom: 0px;
 }
+.contact__form__item:focus {
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.contact__form__item:active {
+  border: none;
+  border-bottom: 1px solid #000;
+  transform: scale(1.1);
+}
 .contact__form__textarea {
   resize: none;
   width: calc((100%-30px)/2);
+}
+.contact__form__textarea:focus {
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.contact__form__textarea:active {
+  border: none;
+  border-bottom: 1px solid #000;
+  transform: scale(1.1);
 }
 .contact__button {
   margin: 50px 0 66px;
@@ -680,6 +721,7 @@
   font-size: 18px;
   line-height: 25px;
   padding: 17px 0;
+  cursor: pointer;
 }
 .contact__button:hover {
   background: #AB4949;
@@ -694,19 +736,25 @@
 }
 .footer__links {
   display: flex;
-  justify-content: center;
-  margin-bottom: 28px;
+  list-style-type: none;
+  margin: 0px auto 28px;
+  width: fit-content;
 }
-.footer__link {
-  width: 53px;
-  height: 53px;
+.footer__item {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 30px;
+  margin-right: 35px;
 }
-.footer__link:last-child{
+.footer__item:last-child{
   margin-right: 0px;
+}
+.footer__link {
+  display: block;
+}
+.footer__icon {
+  width: 53px;
+  height: 53px;
 }
 .footer__text {
   color: #fff;
