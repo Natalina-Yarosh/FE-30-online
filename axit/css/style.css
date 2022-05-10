@@ -12,16 +12,13 @@
 
 .header {
   background-color: #000;
-  max-height: 75px;
 }
 .header_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 22px 0; */
 }
 .header__logo {
-  margin: 22px 20px 22px 0;
   display: block;
 }
 .header__logo__axit {
@@ -36,19 +33,19 @@
 .navigation__link{
   text-decoration: none;
   color: #fff;
+  padding: 28px 20px ;
+  display: block;
 }
 .navigation__items {
   font-family: "OpenSans", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  height: 100%;
-  padding: 28px 20px ;
 }
-.navigation__items:hover{
+.navigation__link:hover{
   background-color: #EC7979;
 }
-.navigation__items:active {
+.navigation__link:active {
   background-color: #AB4949;
 }
 .mane {
@@ -60,7 +57,7 @@
   position: relative;
   color: #fff;
   z-index: 1;
-  /* padding: 306px 0 185px 155px ; */
+  padding: 306px 0 185px;
 }
 .mane::after {
   content: "";
@@ -75,7 +72,6 @@
   z-index: 2;
 }
 .container_mane {
-  padding: 306px 0 185px;
   position: relative;
   z-index: 3;
   display: flex;
@@ -144,7 +140,7 @@
   border-radius: 10px;
 }
 .mane__form__content{
-  margin: 36px 50px 0;
+  padding: 36px 50px 0;
 }
 .mane__form__title {
   font-family: "OpenSans", sans-serif;
@@ -156,6 +152,8 @@
   text-align: center;
 }
 .mane__form__colortext {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 700;
   color: #ec7979;
 }
 .mane__form__item {
@@ -176,12 +174,12 @@
 .mane__form__item:last-child{
   margin-bottom: 0px;
 }
-.mane__form__item:focus {
+.mane__form__item:hover {
   border: none;
   border-bottom: 1px solid #000;
 }
-.mane__form__item:active {
-  border: none;
+.mane__form__item:focus {
+  outline: none;
   border-bottom: 1px solid #000;
   transform: scale(1.1);
 }
@@ -209,6 +207,7 @@
 .social {
   background-color: #F8EFEF;
   margin-bottom: 100px;
+  padding: 32px 0 18px;
 } 
 .container_social {
   display: flex;
@@ -216,7 +215,6 @@
 }
 .social__content {
   max-width: 470px;
-  padding: 32px 0 18px;
   margin-right: 30px;
 }
 .social__title {
@@ -232,6 +230,7 @@
 .social__links {
   display: flex;
   list-style-type: none;
+  
 }
 .social__item {
   display: flex;
@@ -244,10 +243,17 @@
 }
 .social__link {
   display: block;
-}
-.social__icon {
   width: 70px;
   height: 70px;
+}
+.social__link:hover {
+  transform: scale(1.1);
+}
+.social__icon {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: contain;
 }
 
 .tabs {
@@ -442,7 +448,7 @@
   text-align: center;
 }
 .prices__option:hover {
-  box-shadow:  drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+  filter:  drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
   margin-top: -30px;
 }
 .prices__option__title {
@@ -480,6 +486,10 @@
   border-bottom: 2px solid #f5f5f5;
   background-color: #fff;
 }
+.prices__option__value:last-child {
+  border: none;
+}
+
 .customers {
   padding: 107px 0;
 }
@@ -547,6 +557,11 @@
   width: 70px;
   margin-right: 30px;
   border-radius: 50%;
+}
+.review__author__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .review__author__name {
   font-family: "OpenSans", sans-serif;
@@ -636,6 +651,7 @@
 }
 .contact {
   text-align: center;
+  margin-bottom: 66px;
 }
 .contact__title {
   font-weight: 400;
@@ -687,30 +703,24 @@
 .contact__form__item:last-child {
   margin-bottom: 0px;
 }
-.contact__form__item:focus {
+.contact__form__item:hover,
+.contact__form__item:focus  {
+  outline: none;
   border: none;
   border-bottom: 1px solid #000;
-}
-.contact__form__item:active {
-  border: none;
-  border-bottom: 1px solid #000;
-  transform: scale(1.1);
 }
 .contact__form__textarea {
   resize: none;
   width: calc((100%-30px)/2);
 }
-.contact__form__textarea:focus {
+.contact__form__textarea:focus ,
+.contact__form__textarea:active  {
+  outline: none;
   border: none;
   border-bottom: 1px solid #000;
-}
-.contact__form__textarea:active {
-  border: none;
-  border-bottom: 1px solid #000;
-  transform: scale(1.1);
 }
 .contact__button {
-  margin: 50px 0 66px;
+  margin-top: 50px;
   width: 100%;
   max-width: 370px;
   background: #EC7979;
@@ -751,10 +761,17 @@
 }
 .footer__link {
   display: block;
-}
-.footer__icon {
   width: 53px;
   height: 53px;
+}
+.footer__link:hover {
+  transform: scale(1.1);
+}
+.footer__icon {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: contain;
 }
 .footer__text {
   color: #fff;
