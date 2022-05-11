@@ -865,7 +865,9 @@ border-bottom : 1px solid #BDBDBD;
 width:100%;
 margin-bottom: 34px;
 }
-
+.contact__input:last-child{
+    margin-bottom:0;
+}
 
 .contact__input:hover{
     background: #6594e0;
