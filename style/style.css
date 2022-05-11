@@ -681,6 +681,7 @@
 .contact__massage {
     width: calc((100% - 30px) / 2);
     resize: none;
+    padding: 10px 0;
 }
 .contact__btn {
     display: block;
