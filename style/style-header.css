@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .header__items{
@@ -47,4 +48,8 @@
 
 .header__link{
     color: #ffffff;
+}
+
+.header__logo{
+    pointer-events: none;
 }

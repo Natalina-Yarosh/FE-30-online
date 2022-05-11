@@ -57,8 +57,7 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
-    max-width: 571px;
-    width: 100%;
+    width: calc((100% - 30px) / 2);
 }
 
 .contact__input{
@@ -68,6 +67,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.contact__input:hover{
+    border-bottom: 1px solid #EC7979;
+}
+
 .contact__input:focus{
     outline: none;
     border: none;
@@ -75,12 +78,15 @@
 }
 
 .contact__textarea{
-    width: 569px;
-    height: 100%;
+    width: calc((100% - 30px) / 2);
     border: none;
     border-bottom: 1px solid #BDBDBD;
     font-family: 'Open Sans', sans-serif;
     resize: none;
+}
+
+.contact__textarea:hover{
+    border-bottom: 1px solid #EC7979;
 }
 
 .contact__textarea:focus{

@@ -30,6 +30,7 @@ font-family: 'Open Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     border-bottom: none;
     position: relative;
+    border-radius: 5px;
 }
 
 .tabs__nav-btnactive::before{
@@ -44,7 +45,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .tabs{
-    margin: 100px 0 118px;
+    margin-bottom: 118px;
 }
 
 .tab{
