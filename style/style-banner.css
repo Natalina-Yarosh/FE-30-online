@@ -58,7 +58,7 @@
 .banner__input{
     max-width: 370px;
     width: 100%;
-    padding: 12px;
+    padding: 12px 0;
     border: none;
     border-bottom: 1px solid #BDBDBD;
 }
