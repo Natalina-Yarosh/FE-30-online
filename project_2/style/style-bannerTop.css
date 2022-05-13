@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bannerTop {
+  background: #252B49;
+  mix-blend-mode: normal;
+  background-image: url(../image/background_image_headerTop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bannerTop::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: #252B49;
+  opacity: 0.8;
+}
+
+.bannerTop__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+  padding: 230px 0 31px;
+  text-transform: uppercase;
+  z-index: 2;
+  position: relative;
+}
+
+.bannerTop__text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 82px;
+  z-index: 2;
+  position: relative;
+}
+
+.bannerTop__btn {
+  width: 370px;
+  background-color: #FF4343;
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 24px 0;
+  border: none;
+  margin-bottom: 120px;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+}
+
+.bannerTop__btn:hover {
+  background-color: #E71414;
+}
+
+.bannerTop__btn:active {
+  background-color: #FF4343;
+  -webkit-box-shadow: 4px 4px 30px #FF4343;
+          box-shadow: 4px 4px 30px #FF4343;
+}
+
+.container__bannerTop {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+/*# sourceMappingURL=style-bannerTop.css.map */

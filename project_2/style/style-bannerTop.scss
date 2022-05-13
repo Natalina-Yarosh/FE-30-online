@@ -1,0 +1,90 @@
+$colorWhite: #FFFFFF;
+$colorBtnBannerTop: #FF4343;
+$colorBtnBannerTopHover: #E71414;
+$colorBackgroundBannerTop: #252B49;
+$fontFamilyPrimary: 'Raleway', sans-serif;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bannerTop{
+    background: $colorBackgroundBannerTop;
+    mix-blend-mode: normal;
+    background-image: url(../image/background_image_headerTop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        background-color: $colorBackgroundBannerTop;
+        opacity: 0.8;
+    }
+
+    &__title{
+        font-family: $fontFamilyPrimary;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 75px;
+        color: $colorWhite;
+        padding: 230px 0 31px;
+        text-transform: uppercase;
+        z-index: 2;
+        position: relative;
+    }
+    
+    &__text{
+        font-family: $fontFamilyPrimary;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: $colorWhite;
+        margin-bottom: 82px;
+        z-index: 2;
+        position: relative;
+    }
+
+    &__btn{
+        width: 370px;
+        background-color: $colorBtnBannerTop;
+        color: $colorWhite;
+        font-family: $fontFamilyPrimary;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        padding: 24px 0;
+        border: none;
+        margin-bottom: 120px;
+        cursor: pointer;
+        z-index: 2;
+        position: relative;
+    }
+
+    &__btn:hover{
+        background-color: $colorBtnBannerTopHover;
+    }
+
+    &__btn:active{
+        background-color: $colorBtnBannerTop;
+        box-shadow: 4px 4px 30px $colorBtnBannerTop;
+    }
+}
+
+.container__bannerTop{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
