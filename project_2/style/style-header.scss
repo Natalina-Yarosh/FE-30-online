@@ -1,4 +1,5 @@
 $colorWhite: #FFFFFF;
+$colorDecoration: #BABBC5;
 $fontFamilyPrimary: 'Raleway', sans-serif;
 
 * {
@@ -27,11 +28,11 @@ $fontFamilyPrimary: 'Raleway', sans-serif;
     }
 
     &__item:hover{
-        border-bottom: 3px solid #BABBC5;
+        border-bottom: 3px solid $colorDecoration;
     }
 
     &__item:active{
-        border-bottom: 3px solid #BABBC5;
+        border-bottom: 3px solid $colorDecoration;
     }
 
     &__link{
@@ -52,4 +53,13 @@ $fontFamilyPrimary: 'Raleway', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &::after{
+        content: '';
+        display: block;
+        border: 1px solid $colorDecoration;
+        width: 1170px;
+        position: absolute;
+        bottom: 0px;
+    }
 }
