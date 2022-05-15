@@ -11,63 +11,63 @@ $fontFamilyPrimary: 'Raleway', sans-serif;
 }
 
 .bannerTop{
+    position: relative;
     background: $colorBackgroundBannerTop;
     mix-blend-mode: normal;
     background-image: url(../image/background_image_headerTop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 
     &::after{
         content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
         position: absolute;
         top: 0;
         z-index: 1;
+        display: block;
+        width: 100%;
+        height: 100%;
         background-color: $colorBackgroundBannerTop;
         opacity: 0.8;
     }
 
     &__title{
-        font-family: $fontFamilyPrimary;
+        position: relative;
+        z-index: 2;
+        padding: 230px 0 31px;
         font-weight: 900;
         font-size: 64px;
         line-height: 75px;
-        color: $colorWhite;
-        padding: 230px 0 31px;
+        font-family: $fontFamilyPrimary;
         text-transform: uppercase;
-        z-index: 2;
-        position: relative;
+        color: $colorWhite;
     }
     
     &__text{
-        font-family: $fontFamilyPrimary;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 82px;
         font-weight: 400;
         font-size: 24px;
         line-height: 28px;
+        font-family: $fontFamilyPrimary;
         color: $colorWhite;
-        margin-bottom: 82px;
-        z-index: 2;
-        position: relative;
     }
 
     &__btn{
+        position: relative;
+        z-index: 2;
+        margin-bottom: 120px;
         width: 370px;
-        background-color: $colorBtnBannerTop;
-        color: $colorWhite;
-        font-family: $fontFamilyPrimary;
+        padding: 24px 0;
         font-weight: 900;
         font-size: 24px;
         line-height: 28px;
-        padding: 24px 0;
+        font-family: $fontFamilyPrimary;
+        background-color: $colorBtnBannerTop;
+        color: $colorWhite;
         border: none;
-        margin-bottom: 120px;
         cursor: pointer;
-        z-index: 2;
-        position: relative;
     }
 
     &__btn:hover{

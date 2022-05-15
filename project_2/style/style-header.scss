@@ -10,13 +10,13 @@ $fontFamilyPrimary: 'Raleway', sans-serif;
 
 .header{
     position: fixed;
-    width: 100%;
     z-index: 2;
+    width: 100%;
 
     &__items{
         display: flex;
-        list-style-type: none;
         column-gap: 20px;
+        list-style-type: none;
         text-transform: uppercase;
         font-weight: 700;
         font-size: 13px;
@@ -36,30 +36,36 @@ $fontFamilyPrimary: 'Raleway', sans-serif;
     }
 
     &__link{
-        color: $colorWhite;
-        text-decoration: none;
         font-family: $fontFamilyPrimary;
+        text-decoration: none;
         font-weight: 700;
         font-size: 13px;
         line-height: 15px;
+        color: $colorWhite;
+    }
+
+    &__linkLogo{
+        width: 185px;
+        height: 100px;
     }
 }
 
 .container__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
 
     &::after{
         content: '';
-        display: block;
-        border: 1px solid $colorDecoration;
-        width: 1170px;
         position: absolute;
         bottom: 0px;
+        display: block;
+        width: 1170px;
+        border: 1px solid $colorDecoration;
     }
 }

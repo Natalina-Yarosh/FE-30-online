@@ -7,17 +7,17 @@
 
 .header {
   position: fixed;
-  width: 100%;
   z-index: 2;
+  width: 100%;
 }
 
 .header__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style-type: none;
   -webkit-column-gap: 20px;
           column-gap: 20px;
+  list-style-type: none;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 13px;
@@ -37,19 +37,20 @@
 }
 
 .header__link {
-  color: #FFFFFF;
-  text-decoration: none;
   font-family: "Raleway", sans-serif;
+  text-decoration: none;
   font-weight: 700;
   font-size: 13px;
   line-height: 15px;
+  color: #FFFFFF;
+}
+
+.header__linkLogo {
+  width: 185px;
+  height: 100px;
 }
 
 .container__header {
-  max-width: 1170px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,14 +60,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .container__header::after {
   content: '';
-  display: block;
-  border: 1px solid #BABBC5;
-  width: 1170px;
   position: absolute;
   bottom: 0px;
+  display: block;
+  width: 1170px;
+  border: 1px solid #BABBC5;
 }
 /*# sourceMappingURL=style-header.css.map */
