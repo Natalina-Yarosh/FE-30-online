@@ -11,7 +11,7 @@
 
 .footer__items{
     display: flex;
-    column-gap: 45px;
+    column-gap: 32px;
     justify-content: center;
     margin-bottom: 30px;
 }

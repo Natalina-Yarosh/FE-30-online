@@ -61,7 +61,7 @@
 }
 
 .contact__input{
-    height: 35px;
+    padding: 11px;
     border: none;
     border-bottom: 1px solid #BDBDBD;
     font-family: 'Open Sans', sans-serif;

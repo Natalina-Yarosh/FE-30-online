@@ -107,6 +107,9 @@ font-family: 'Open Sans', sans-serif;
 .tab__title{
     margin-bottom: 57px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
 }
 
 .designs__title{
