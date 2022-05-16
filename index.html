@@ -16,9 +16,10 @@
 
 <body>
     <header class="header">
-        <div class="header_menu">
-            <a class="header_logo" href="#"></a>
-            <object class="logo_img" data="img/logo.svg" type="image/svg+xml"></object>
+        <div class="container header__menu">
+            <a class="header__logo" href="#">
+                <object class="logo__img" data="img/logo.svg" type="image/svg+xml"></object>
+            </a>
             <nav class="navigation">
                 <ul class="nav__menu">
                     <li class="nav__item"><a class="nav__link" href="#">Features</a></li>
@@ -30,80 +31,299 @@
             </nav>
         </div>
     </header>
-    <div class="tabs">
-        <div class="container">
-            <div class="tab__buttoms">
-                <button type="buttom" class="tab_item tab_item_active">TAB1</button>
-                <button type="buttom" class="tab_item">TAB2</button>
-                <button type="buttom" class="tab_item">TAB3</button>
+    <main>
+        <section class="banner">
+            <div class="container banner__container">
+                <div class="banner__info">
+                    <object class="banner__logo" data="img/banner_logo.svg" type="image/svg+xml"></object>
+                    <h1 class="banner__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                    <p class="banner__text">Lorem ipsum dolor sit amet consectetur.</p>
+                    <button class="banner__btn">Download</button>
+                </div>
+                <div class="banner__wrap-form">
+                    <h2 class="banner__wrap-title">Try Your <span
+                            class="banner__wrap-title banner__wrap-text">FREE</span>
+                        Trial
+                        Today</h2>
+                    <form class="banner__form" action="#">
+                        <input class="banner__form-item" type="text" placeholder="Name">
+                        <input class="banner__form-item" type="email" placeholder="Email">
+                        <input class="banner__form-item" type="password" placeholder="Password">
+                        <button class="banner__form-btn">Get Started</button>
+                    </form>
+
+                </div>
             </div>
-            <article class="tabs__content">
-                <div class="tabs_desc_wrap">
-                    <div class="tabs_desc">
-                        <h1 class="tabs__desc_title">Tabs whith soft transitioning effect</h1>
-                        <p class="tabs_desc_text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis totam quidem cum dolores
-                            deleniti magni nihil nemo excepturi, quasi nobis at recusandae quaerat eaque eum officia
-                            aliquam
-                            animi quas ab.
+        </section>
+        <section class="social">
+            <div class="container container__social-block">
+                <div class="social__info">
+                    <h2 class="social__title">Social Media</h2>
+                    <p class="social__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+                        tempore provident odit.</p>
+                </div>
+                <ul class="social__block">
+                    <li class="social__item">
+                        <a class="social__link" href="">
+                            <object class="social__img" data="./img/facebook.svg" type="image/svg+xml"></object>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="">
+                            <object class="social__img" data="./img/twitter.svg" type="image/svg+xml"></object>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="">
+                            <object class="social__img" data="./img/linkedin.svg" type="image/svg+xml"></object>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="">
+                            <object class="social__img" data="./img/pinterest.svg" type="image/svg+xml"></object>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="">
+                            <object class="social__img" data="./img/instagram.svg" type="image/svg+xml"></object>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="">
+                            <object class="social__img" data="./img/github.svg" type="image/svg+xml"></object>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="">
+                            <object class="social__img" data="./img/rss.svg" type="image/svg+xml"></object>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="tabs">
+            <div class="container">
+                <div class="tab__buttoms">
+                    <button type="buttom" class="tab_item tab_item_active">TAB1</button>
+                    <button type="buttom" class="tab_item">TAB2</button>
+                    <button type="buttom" class="tab_item">TAB3</button>
+                </div>
+                <article class="tabs__content">
+                    <div class="tabs_desc_wrap">
+                        <div class="tabs_desc">
+                            <h2 class="tabs__desc_title">Tabs whith soft transitioning effect</h2>
+                            <p class="tabs_desc_text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis totam quidem cum
+                                dolores
+                                deleniti magni nihil nemo excepturi, quasi nobis at recusandae quaerat eaque eum officia
+                                aliquam
+                                animi quas ab.
+
+                            </p>
+                            <p class="tabs_desc_text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis odit magni voluptate!
+                            </p>
+                        </div>
+                        <div class="tabs_buttom">
+                            <button class="tabs__buttom_download">Download</button>
+                        </div>
+                    </div>
+
+                    <img class="tabs__img" src="img/Rectangle 111.png" alt="Статуя свободы">
+
+                </article>
+            </div>
+        </div>
+        <section class="advantages">
+            <div class="container">
+                <div class="title_wrap advantages_title_wrap">
+                    <h1 class="title">WHY THIS IS AWESOME</h1>
+                    <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="advantages_list">
+                    <article class="advantage_block">
+                        <div class="advantage_image">
+                            <img class="advantage_img" src="img/Vector.jpg" alt="bulb">
+                        </div>
+                        <h2 class="advantage_block_title">Thogthtful Design</h2>
+                        <p class="advantage_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+                            quaerat
+                            maxime aperiam similique debitis tempora molestiae quod. Nulla, consectetur repellat. Vel
+                            dignissimos veritatis accusantium ipsam unde, consequatur fugiat doloribus fugit?
+                        </p>
+                    </article>
+                    <article class="advantage_block">
+                        <div class="advantage_image">
+                            <img class="advantage_img" src="img/Vector2.png" alt="keyboard">
+                        </div>
+                        <h2 class="advantage_block_title">Thogthtful Design</h2>
+                        <p class="advantage_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                            obcaecati suscipit sit dolore nemo adipisci quisquam, ut voluptatibus, molestiae officiis
+                            voluptates cupiditate earum officia rem placeat est quod non laudantium!
 
                         </p>
-                        <p class="tabs_desc_text">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis odit magni voluptate!
+                    </article>
+                    <article class="advantage_block">
+                        <div class="advantage_image">
+                            <img class="advantage_img" src="img/Vector3.png" alt="thunder">
+                        </div>
+                        <h2 class="advantage_block_title">Thogthtful Design</h2>
+                        <p class="advantage_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At nemo
+                            voluptate quibusdam voluptatum! Expedita delectus aspernatur, quibusdam sed libero veniam
+                            ratione quod soluta aut praesentium adipisci, labore inventore id error.
+
                         </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="price-list">
+            <div class="container">
+                <h2 class="price-list__title">PRICING OPTIONS</h2>
+                <p class="price-list__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <div class="price-list__packages">
+                    <ul class="price-list__menu">
+                        <li class="price-list__package">Basic</li>
+                        <li class="price-list__price">10$</li>
+                        <li class="price-list__txt">Free for life</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                    </ul>
+                    <ul class="price-list__menu">
+                        <li class="price-list__package">Optima</li>
+                        <li class="price-list__price">20$</li>
+                        <li class="price-list__txt">Free for life</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                    </ul>
+                    <ul class="price-list__menu">
+                        <li class="price-list__package">Pro</li>
+                        <li class="price-list__price">30$</li>
+                        <li class="price-list__txt">Free for life</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                        <li class="price-list__choice">1 gb of space</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h2 class="reviews__title">what our customers are saying</h2>
+                <p class="reviews__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="comments__block">
+                    <div class="comments">
+                        <p class="comment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
+                            nemo
+                            cum repudiandae minima quae dicta optio accusamus nostrum officiis expedita!</p>
+                        <div class="customer__block">
+                            <div class="customer__foto">
+                                <img class="img_foto" src="img/Davis.jpg" alt="Davis">
+                            </div>
+                            <div class="customer__info">
+                                <h3 class="customer__name">Davis Rhiel Madsen</h3>
+                                <p class="customer__text">Manager</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tabs_buttom">
-                        <button class="tabs__buttom_download">Download</button>
+                    <div class="comments">
+                        <p class="comment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
+                            nemo
+                            cum repudiandae minima quae dicta optio accusamus nostrum officiis expedita!</p>
+                        <div class="customer__block">
+                            <div class="customer__foto">
+                                <img class="img_foto" src="img/Jaydon.jpg" alt="Jaydon">
+                            </div>
+                            <div class="customer__info">
+                                <h3 class="customer__name">Jaydon Rosser</h3>
+                                <p class="customer__text">Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <p class="comment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
+                            nemo
+                            cum repudiandae minima quae dicta optio accusamus nostrum officiis expedita!</p>
+                        <div class="customer__block">
+                            <div class="customer__foto">
+                                <img class="img_foto" src="img/Cooper.jpg" alt="Cooper">
+                            </div>
+                            <div class="customer__info">
+                                <h3 class="customer__name">Cooper Dorwart</h3>
+                                <p class="customer__text">Manager</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="tabs_img_wrap">
-                    <img class="tabs_img" src="img/Rectangle 111.png" alt="Статуя свободы">
-                </div>
-            </article>
-        </div>
-    </div>
-    <section class="advantages">
-        <div class="container">
-            <div class="title_wrap advantages_title_wrap">
-                <h1 class="title">WHY THIS IS AWESOME</h1>
-                <p class="subtitle">Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="advantages_list">
-                <article class="advantage_block">
-                    <div class="advantage_image">
-                        <img class="advantage_img" src="img/Vector.jpg" alt="bulb">
-                    </div>
-                    <h2 class="advantage_block_title">Thogthtful Design</h2>
-                    <p class="advantage_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quaerat
-                        maxime aperiam similique debitis tempora molestiae quod. Nulla, consectetur repellat. Vel
-                        dignissimos veritatis accusantium ipsam unde, consequatur fugiat doloribus fugit?
-                    </p>
-                </article>
-                <article class="advantage_block">
-                    <div class="advantage_image">
-                        <img class="advantage_img" src="img/Vector2.png" alt="keyboard">
-                    </div>
-                    <h2 class="advantage_block_title">Thogthtful Design</h2>
-                    <p class="advantage_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-                        obcaecati suscipit sit dolore nemo adipisci quisquam, ut voluptatibus, molestiae officiis
-                        voluptates cupiditate earum officia rem placeat est quod non laudantium!
-
-                    </p>
-                </article>
-                <article class="advantage_block">
-                    <div class="advantage_image">
-                        <img class="advantage_img" src="img/Vector3.png" alt="thunder">
-                    </div>
-                    <h2 class="advantage_block_title">Thogthtful Design</h2>
-                    <p class="advantage_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At nemo
-                        voluptate quibusdam voluptatum! Expedita delectus aspernatur, quibusdam sed libero veniam
-                        ratione quod soluta aut praesentium adipisci, labore inventore id error.
-
-                    </p>
-                </article>
+        </section>
+        <section class="design">
+            <div class="container container__design">
+                <h2 class="design__title">Stylish axure design</h2>
+                <p class="design__text">Use the sections you need, remove the ones you don't. Create gorgeous prototypes
+                    faster than ever!</p>
+                <button class="design__btn">Download</button>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="contact">
+            <div class="container container_back">
+                <h2 class="contact__title">contact us</h2>
+                <p class="contact__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <form class="contact__form" action="#">
+                    <div class="contact__form_wrap">
+                        <input class="contact__form-item" type="text" placeholder="Name">
+                        <input class="contact__form-item" type="email" placeholder="Email">
+                        <input class="contact__form-item" type="password" placeholder="Password">
+                    </div>
+                    <textarea class="contact__form-item contact__form-message" name="Message"
+                        placeholder="Message"></textarea>
+                    <button class="contact__form-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="#">
+                            <object class="footer__picture" data="img/facebook.svg" type="image/svg+xml"></object>
+                        </a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">
+                            <object class="footer__picture" data="img/twitter.svg" type="image/svg+xml"></object>
+                        </a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">
+                            <object class="footer__picture" data="img/linkedin.svg" type="image/svg+xml"></object>
+                        </a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">
+                            <object class="footer__picture" data="img/pinterest.svg" type="image/svg+xml"></object>
+                        </a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">
+                            <object class="footer__picture" data="img/instagram.svg" type="image/svg+xml"></object>
+                        </a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">
+                            <object class="footer__picture" data="img/github.svg" type="image/svg+xml"></object>
+                        </a></li>
+                    <li class="footer__item"><a class="footer__link" href="#rsspage">
+                            <object class="footer__picture" data="img/rss.svg" type="image/svg+xml"></object>
+                        </a></li>
+                </ul>
+                <p class="footer__text">© 2015 Axure Themes</p>
+            </div>
+    </main>
+    </footer>
 </body>
 
 </html>
