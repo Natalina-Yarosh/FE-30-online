@@ -641,7 +641,7 @@
 }
 
 .customer__name {
-    ont-family: 'Open Sans';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
