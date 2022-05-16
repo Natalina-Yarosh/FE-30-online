@@ -6,9 +6,7 @@
 }
 
 .tabs{
-    max-width: 1170px;
-    width: 100%;
-    margin: 100px auto 118px 168px;
+    margin: 100px 118px;
 }
 
 .container__tabs{
@@ -723,7 +721,8 @@
     border-left: none;
     border-right: none;
     border-bottom: 1px solid rgba(189, 189, 189, 1);
-    padding-bottom: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
     margin-bottom: 33px;
 }
 
@@ -740,17 +739,18 @@
     border-left: none;
     border-right: none;
     border-bottom: 1px solid rgba(189, 189, 189, 1);
-    padding-bottom: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
 }
 
 .form__input-password:focus{
     color: #EC7979;
-    cursor: pointer;
+    outline: none;
 }
 
 .form__input-password:hover{
-    cursor: pointer;
     border-bottom: 1px solid #EC7979;
+    cursor: pointer;
 }
 
 .form__input:focus{
@@ -776,6 +776,7 @@
     line-height: 20px;
     border-radius: 0px 0px 10px 10px;
     border: none;
+    cursor: pointer;
 }
 
 .form__button:hover{
@@ -890,17 +891,11 @@
     margin-bottom: 89px;
 }
 
-.contact__form{
-    padding: 0 15px;
-}
+
 
 .contact__wrapper{
-    max-width: 1170px;
-    width: 100%;
     display: flex;
-    row-gap: 30px;
     column-gap: 30px;
-    position: relative;
 }
 
 .contact__wrap{
@@ -925,7 +920,8 @@
     border-right: none;
     border-bottom: 1px solid rgba(189, 189, 189, 1);
     margin-bottom: 50px;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
 }
 
 .contact__input:hover{
@@ -935,7 +931,11 @@
 
 .contact__input:focus{
     color: #EC7979;
-    cursor: pointer;
+    outline: none;
+}
+
+.contact__input:last-child{
+    margin-bottom: 0;
 }
 
 .contact__message{
@@ -956,7 +956,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    padding-bottom: 169px;
+    resize: none;
     color: #BDBDBD;
 }
 
@@ -967,7 +967,7 @@
 
 .input__message:focus{
     color: #EC7979;
-    cursor: pointer;
+    outline: none;
 }
 
 
@@ -984,6 +984,7 @@
     padding: 17px;
     justify-content: center;
     cursor: pointer;
+    margin-top: 50px;
 }
 
 .contact__button:hover{
