@@ -147,6 +147,7 @@ $colorBackgroundBannerTop: #252B49;
     width: 100%;
     padding: 0 15px;
     text-align: center;
+    margin: 0 auto;
 }
 
 //Это секция приоритеты
@@ -185,10 +186,10 @@ $colorBackgroundBannerTop: #252B49;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    grid-column-gap: 26px;
-    grid-row-gap: 87px;
+    grid-column-gap: 22px;
+    grid-row-gap: 85px;
     justify-content: center;
-    max-width: 1170px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
