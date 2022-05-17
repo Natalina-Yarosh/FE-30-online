@@ -1,105 +1,113 @@
-.contact_us h2::after {
-    display: block;
-    content: "";
-    width: 170px;
-    border: 1px solid #EC7979;
-    margin: 40px auto 40px;
-}
-
-.contact_us h2 {
-    text-align: center;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
-    text-transform: uppercase;
-}
-
-.contact_us p {
-    text-align: center;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    margin-bottom: 89px;
-}
-
-.main_wrapper__contact_us {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 67px 0;
-}
-
-.contact_us__input {
-    width: 100%;
-    height: 50px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    background: rgba(189, 189, 189, 1);
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #BDBDBD;
-    margin-bottom: 31px;
-}
-
-.wrapper_contact_us__input {
-    display: flex;
-    column-gap: 30px;
-}
-
-.wrapper_contact_us__input .input_left {
-    width: 100%;
-}
-
-.wrapper_contact_us__input .input_right {
-    width: 100%;
-}
-
-.input_right .contact_us__input {
-    padding-bottom: 192px;
-    padding-top: 19px;
-    margin: 0;
-}
-
-.wrapper_contact_us__input__btm {
-    max-width: 270px;
-    min-height: 58px;
-    display: flex;
-    align-items: center;
-    margin-top: 42px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    color: #ffffff;
-    border: 2px solid #FFFFFF;
-    background: #EC7979;
-    cursor: pointer;
-    padding: 0 70px;
-}
-
-.main_wrapper__contact_us button:hover {
-    background: #AB4949;
-}
-
-.main_wrapper__contact_us button:active {
-    background: #EC7979;
-    box-shadow: inset 0px 0px 10px #AB4949;
-}
-
-.main_wrapper_contact_us__input__btm {
-    display: flex;
-    justify-content: center;
-}
-
-.input_right textarea {
-    overflow: hidden;
-    resize: none;
-}
+    .title__contact_us::after {
+        display: block;
+        content: "";
+        width: 170px;
+        border: 1px solid #EC7979;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -40px;
+    }
+    
+    .contact_us h2 {
+        position: relative;
+        text-align: center;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        text-transform: uppercase;
+        margin-bottom: 80px;
+    }
+    
+    .contact_us p {
+        text-align: center;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 89px;
+    }
+    
+    .main_wrapper__contact_us {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 67px 0;
+    }
+    
+    .contact_us__input {
+        width: 100%;
+        padding: 16px 0;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        background: rgba(189, 189, 189, 1);
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #BDBDBD;
+        margin-bottom: 31px;
+    }
+    
+    .contact_us__input:last-child {
+        margin: 0;
+    }
+    
+    .wrapper_contact_us__input {
+        display: flex;
+        column-gap: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .wrapper_contact_us__input .input_left {
+        width: 100%;
+    }
+    
+    .contact_us__input_message {
+        padding-top: 19px;
+        margin: 0;
+        overflow: hidden;
+        resize: none;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #BDBDBD;
+        align-items: stretch;
+        padding: 10px;
+    }
+    
+    .wrapper_contact_us__input__btm {
+        max-width: 270px;
+        min-height: 58px;
+        display: flex;
+        align-items: center;
+        margin-top: 42px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+        border: 2px solid #FFFFFF;
+        background: #EC7979;
+        cursor: pointer;
+        padding: 0 70px;
+        margin: 0 auto;
+    }
+    
+    .main_wrapper__contact_us button:hover {
+        background: #AB4949;
+    }
+    
+    .main_wrapper__contact_us button:active {
+        background: #EC7979;
+        box-shadow: inset 0px 0px 10px #AB4949;
+    }
+    
+    .main_wrapper_contact_us__input__btm {
+        display: flex;
+        justify-content: center;
+    }

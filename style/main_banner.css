@@ -1,31 +1,24 @@
-.main_banner {
-    max-height: 1510px;
-    padding-bottom: 185px;
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    column-gap: 101px;
-}
-
-.main_wrapper__main_banner {
+.banner {
     background-image: url(../image/mainbanner.png);
-    background-size: contain;
     background-position: center;
     background-size: 100%;
+    position: relative;
+    padding: 306px 0 185px 0;
 }
 
-.main_banner__background {
+.banner::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .main_banner__info {
     max-width: 670px;
-}
-
-.logo_big {
-    margin-top: 306px;
-    margin-bottom: 73px;
 }
 
 .main_banner__info h1 {
@@ -34,7 +27,7 @@
     font-weight: 500;
     font-size: 48px;
     line-height: 56px;
-    margin-bottom: 55px;
+    margin-bottom: 98px;
     color: #FFFFFF;
 }
 
@@ -43,10 +36,13 @@
     content: "";
     width: 170px;
     border: 1px solid #FFFFFF;
-    margin-top: 55px;
+    position: relative;
+    left: 0;
+    bottom: -55px;
+    margin-bottom: 42px;
 }
 
-.main_banner__info h5 {
+.info__text {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -54,6 +50,7 @@
     line-height: 21px;
     color: #FFFFFF;
     max-width: 270px;
+    margin-bottom: 42px;
 }
 
 .main_banner__info__btm {
@@ -62,7 +59,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 42px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
@@ -75,17 +71,29 @@
     padding: 0 70px;
 }
 
-.main_banner__registration {
-    padding: 18px 50px 0;
-    background: #FFFFFF;
-    max-width: 470px;
-    max-height: 450px;
-    margin-top: 333px;
-    border-radius: 10px 10px 0 0;
-    padding-bottom: 75px;
+.main_banner__info__btm:hover {
+    color: #EC7979;
+    border: 2px solid #EC7979;
 }
 
-.main_banner__registration__form h2 {
+.logo_big {
+    display: block;
+    width: 170px;
+    height: 55px;
+    margin-top: -27px;
+    margin-bottom: 73px;
+}
+
+.main_banner__registration {
+    padding: 18px 0 0;
+    background: #FFFFFF;
+    max-width: 470px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main_banner__registration h2 {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -93,15 +101,19 @@
     line-height: 33px;
     text-transform: uppercase;
     margin-bottom: 75px;
+    text-align: center;
 }
 
 .color_text_red {
     color: #EC7979;
 }
 
+.main_banner__registration input {
+    max-width: 370px;
+}
+
 .registration__input {
-    width: 100%;
-    height: 50px;
+    padding: 33px 0 16px 0;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -111,12 +123,22 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #BDBDBD;
-    margin-bottom: 31px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.registration__input:hover {
+    color: #000000;
+    background-color: rgb(236, 236, 236);
+}
+
+.registration__input:focus {
+    background: linear-gradient(#ffffff, #b1b1b1, #ffffff);
 }
 
 .main_banner__registration__button button {
-    width: 470px;
-    height: 50px;
+    width: 100%;
     background: #EC7979;
     border-radius: 0px 0px 10px 10px;
     border-color: #EC7979;
@@ -127,6 +149,8 @@
     line-height: 20px;
     color: #FFFFFF;
     cursor: pointer;
+    margin-top: 75px;
+    padding: 20px;
 }
 
 .main_banner button:hover {
@@ -168,7 +192,7 @@
     justify-content: space-between;
 }
 
-.media__text h4 {
+.media__text__text {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -186,16 +210,26 @@
     line-height: 21px;
 }
 
+.object_icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .media_icon {
     display: flex;
     cursor: pointer;
     position: relative;
+    align-items: center;
+    column-gap: 20px;
 }
 
 .media_icon .icon {
-    max-height: 59px;
-    min-width: 59px;
-    margin: 22px;
+    height: 59px;
+    width: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .media_icon .icon:hover {
@@ -203,4 +237,11 @@
     -ms-transform: scale(1.2);
     transform: scale(1.2);
     background: no-repeat;
+}
+
+.banner__conteiner {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    align-items: center;
 }

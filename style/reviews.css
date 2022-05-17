@@ -1,5 +1,6 @@
 .main_wrapper__reviews_wrapper {
     margin-top: 107px;
+    margin-bottom: 59px;
 }
 
 .reviews_wrapper__title {
@@ -22,7 +23,7 @@
     margin: 40px auto 0;
 }
 
-.main_wrapper__reviews_wrapper p {
+.main_wrapper__reviews_wrapper .text {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -78,6 +79,7 @@
     width: 70px;
     height: 70px;
     overflow: hidden;
+    margin-right: 30px;
 }
 
 .contact_client__img_client img {
@@ -97,12 +99,7 @@
     column-gap: 30px;
 }
 
-.contact_client__img_client {
-    border-radius: 50%;
-    margin-right: 30px;
-}
-
-.reviews_wrapper__name_position_client h2 {
+.reviews_wrapper__name_position_client h3 {
     margin-bottom: 18px;
     font-family: 'Open Sans';
     font-style: normal;

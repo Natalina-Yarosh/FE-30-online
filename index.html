@@ -15,7 +15,7 @@
 <body>
     <header>
         <section class="header">
-            <div class="header__main">
+            <div class="conteiner header__main">
                 <div class="logo_small">
                     <a href="#">
                         <object class="img__logo_small" data="image/logo-axit-small.svg" type="">
@@ -23,39 +23,33 @@
                     </a>
                 </div>
                 <div class="header__navigation">
-                    <a href="#Features">Features</a>
-                    <a href="#About">About</a>
-                    <a href="#prising">Pricing</a>
-                    <a href="#Reviews">Reviews</a>
-                    <a href="#Contact">Contact</a>
+                    <a class="header__features" href="#Features">Features</a>
+                    <a class="header__about" href="#About">About</a>
+                    <a class="header__prising" href="#prising">Pricing</a>
+                    <a class="header__reviews" href="#Reviews">Reviews</a>
+                    <a class="header__contact" href="#Contact">Contact</a>
                 </div>
             </div>
         </section>
     </header>
-    <section class="main_wrapper__main_banner">
+    <section class="banner">
         <div class="main_banner__background">
-            <div class="conteiner">
-                <div class="main_banner">
-                    <div class="main_banner__info">
-                        <img class="logo_big" src="./image/logo-axid-big.svg" alt="">
-                        <h1>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h5>
-                        <button class="main_banner__info__btm">Download</button>
-                    </div>
-                    <div class="wrapper__main_banner__registration">
-                        <div class="main_banner__registration">
-                            <div class="main_banner__registration__form">
-                                <h2>Try Your <span class="color_text_red">FREE</span> Trial Today</h2>
-                                <input class="registration__input" placeholder="Name" type="text">
-                                <input class="registration__input" placeholder="Email" type="email">
-                                <input class="registration__input" placeholder="Password" type="password">
-                            </div>
-                        </div>
-                        <div class="main_banner__registration__button">
-                            <button>Get Started</button>
-                        </div>
-                    </div>
+            <div class="conteiner banner__conteiner">
+                <div class="main_banner__info">
+                    <object class="logo_big" data="./image/logo-axid-big.svg" type=""></object>
+                    <h1>MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                    <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <button class="main_banner__info__btm">Download</button>
                 </div>
+                <form class="main_banner__registration">
+                    <h2>Try Your <span class="color_text_red">FREE</span> Trial Today</h2>
+                    <input class="registration__input" placeholder="Name" type="text">
+                    <input class="registration__input" placeholder="Email" type="email">
+                    <input class="registration__input" placeholder="Password" type="password">
+                    <div class="main_banner__registration__button">
+                        <button>Get Started</button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -63,36 +57,36 @@
         <div class="conteiner">
             <div class="main_media">
                 <div class="media__text">
-                    <h4>Social Media</h4>
+                    <h2 class="media__text__text">Social Media</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                 </div>
                 <div class="media_icon">
-                    <div class="icon">
-                        <object data="image/facebook_icon.svg" type=""></object>
-                    </div>
-                    <div class="icon">
-                        <object data="image/twitter_icon.svg" type=""></object>
-                    </div>
-                    <div class="icon">
-                        <object data="image/linkedin_icon.svg" type=""></object>
-                    </div>
-                    <div class="icon">
-                        <object data="image/pinterest_icon.svg" type=""></object>
-                    </div>
-                    <div class="icon">
-                        <object data="image/instagram_icon.svg" type=""></object>
-                    </div>
-                    <div class="icon">
-                        <object data="image/github_icon.svg" type=""></object>
-                    </div>
-                    <div class="icon">
-                        <object data="image/rss_icon.svg" type=""></object>
-                    </div>
+                    <a class="icon">
+                        <object class="object_icon" data="image/facebook_icon.svg" type=""></object>
+                    </a>
+                    <a class="icon">
+                        <object class="object_icon" data="image/twitter_icon.svg" type=""></object>
+                    </a>
+                    <a class="icon">
+                        <object class="object_icon" data="image/linkedin_icon.svg" type=""></object>
+                    </a>
+                    <a class="icon">
+                        <object class="object_icon" data="image/pinterest_icon.svg" type=""></object>
+                    </a>
+                    <a class="icon">
+                        <object class="object_icon" data="image/instagram_icon.svg" type=""></object>
+                    </a>
+                    <a class="icon">
+                        <object class="object_icon" data="image/github_icon.svg" type=""></object>
+                    </a>
+                    <a class="icon">
+                        <object class="object_icon" data="image/rss_icon.svg" type=""></object>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <section id="About" class="main_wrapper info_wrapper">
+    <section id="About" class="main_wrappe__info_wrapper">
         <div class="conteiner">
             <div class="info_wrapper__tabs">
                 <div class="tab active_tab">TAB 1</div>
@@ -151,7 +145,7 @@
             <h2>pricing options</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="prising_wrapper__tarifs">
-                <button class="tarif">
+                <div class="tarif">
                     <div class="tarif_tipe">Basic</div>
                     <div class="price">$10</div>
                     <div class="tariff_condition">Free for life</div>
@@ -161,8 +155,8 @@
                     <div class="tariff_condition__traffics">1 Gb Of Space</div>
                     <div class="tariff_condition__traffics">1 Gb Of Space</div>
                     <div class="tariff_condition__traffics">1 Gb Of Space</div>
-                </button>
-                <button class="tarif">
+                </div>
+                <div class="tarif">
                     <div class="tarif_tipe">Optima</div>
                     <div class="price">$20</div>
                     <div class="tariff_condition">Free for life</div>
@@ -172,8 +166,8 @@
                     <div class="tariff_condition__traffics">1 Gb Of Space</div>
                     <div class="tariff_condition__traffics">1 Gb Of Space</div>
                     <div class="tariff_condition__traffics">1 Gb Of Space</div>
-                </button>
-                <button class="tarif">
+                </div>
+                <div class="tarif">
                     <div class="tarif_tipe">Pro</div>
                     <div class="price">$30</div>
                     <div class="tariff_condition">Free for life</div>
@@ -183,13 +177,13 @@
                     <div class="tariff_condition__traffics">1 Gb Of Space</div>
                     <div class="tariff_condition__traffics">1 Gb Of Space</div>
                     <div class="tariff_condition__traffics">1 Gb Of Space</div>
-                </button>
+                </div>
             </div>
         </div>
     </section>
-    <section class="main_wrapper__reviews_wrapper">
+    <section id="Reviews" class="main_wrapper__reviews_wrapper">
         <div class="conteiner">
-            <h2 class="reviews_wrapper__title">what our customers are saying</h2>
+            <h3 class="reviews_wrapper__title">what our customers are saying</h3>
             <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="texts_contacts_reviews">
                 <div class="text_contact_review">
@@ -231,71 +225,59 @@
             </div>
         </div>
     </section>
-    <section id="Reviews" class="main_wrapper__banner_design">
-        <div class="banner_design__background">
-            <div class="conteiner">
-                <div class="banner_design">
-                    <h2>STYLISH AXURE DESIGN</h2>
-                    <p>Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</p>
-                    <div class="wrapper__design_banner__btm">
-                        <button class="design_banner__btm">Download</button>
-                    </div>
-                </div>
-            </div>
+    <section class="main_wrapper__banner_design">
+        <div class="conteiner">
+            <h2 class="banner_design__h2">STYLISH AXURE DESIGN</h2>
+            <p class="banner_design__p">Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!</p>
+            <button class="design_banner__btm">Download</button>
         </div>
     </section>
     <Section id="Contact" class="main_wrapper__contact_us">
         <div class="conteiner">
             <div class="contact_us">
-                <h2>contact us</h2>
+                <h2 class="title__contact_us">contact us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <div class="wrapper_contact_us__input">
-                <div class="input_left">
-                    <input class="contact_us__input" placeholder="Name" type="text">
-                    <input class="contact_us__input" placeholder="Email" type="email">
-                    <input class="contact_us__input" placeholder="Password" type="password">
+            <form class="contact_us__form" action="">
+                <div class="wrapper_contact_us__input">
+                    <div class="input_left">
+                        <input class="contact_us__input" placeholder="Name" type="text">
+                        <input class="contact_us__input" placeholder="Email" type="email">
+                        <input class="contact_us__input" placeholder="Password" type="password">
+                    </div>
+                    <textarea class="contact_us__input_message" placeholder="Message" type=""></textarea>
                 </div>
-                <div class="input_right">
-                    <textarea class="contact_us__input" placeholder="Message" type=""></textarea>
-                </div>
-            </div>
-            <div class="main_wrapper_contact_us__input__btm">
                 <button class="wrapper_contact_us__input__btm">
                 Send Message</button>
-            </div>
+            </form>
         </div>
     </Section>
 </body>
-<footer>
-    <div class="footer_media">
-        <div class="conteiner">
-            <div>
-                <div class="media_icon">
-                    <div class="icon">
-                        <object data="image/facebook_icon.svg" type=""></object>
-                    </div>
-                    <div class="icon">
-                        <object data="image/twitter_icon.svg" type=""></object>
-                    </div>
-                    <div class="icon">
-                        <object data="image/linkedin_icon.svg" type=""></object>
-                    </div>
-                    <div class="icon">
-                        <object data="image/pinterest_icon.svg" type=""></object>
-                    </div>
-                    <div class="icon">
-                        <object data="image/instagram_icon.svg" type=""></object>
-                    </div>
-                    <div class="icon">
-                        <object data="image/github_icon.svg" type=""></object>
-                    </div>
-                    <div class="icon">
-                        <object data="image/rss_icon.svg" type=""></object>
-                    </div>
-                </div>
-            </div>
-            <h5>© 2015 Axure Themes</h5>
+<footer class="wrapper_footer">
+    <div class="conteiner">
+        <div class="media_icon">
+            <a class="icon">
+                <object data="image/facebook_icon.svg" type=""></object>
+            </a>
+            <a class="icon">
+                <object data="image/twitter_icon.svg" type=""></object>
+            </a>
+            <a class="icon">
+                <object data="image/linkedin_icon.svg" type=""></object>
+            </a>
+            <a class="icon">
+                <object data="image/pinterest_icon.svg" type=""></object>
+            </a>
+            <a class="icon">
+                <object data="image/instagram_icon.svg" type=""></object>
+            </a>
+            <a class="icon">
+                <object data="image/github_icon.svg" type=""></object>
+            </a>
+            <a class="icon">
+                <object data="image/rss_icon.svg" type=""></object>
+            </a>
         </div>
+        <p class="Axure_Themes">© 2015 Axure Themes</p>
     </div>
 </footer>

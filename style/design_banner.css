@@ -1,25 +1,32 @@
-.banner_design {
-    min-height: 425px;
+.main_wrapper__banner_design .conteiner {
+    max-height: 1510px;
     position: relative;
     z-index: 2;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 70px 0;
 }
 
 .main_wrapper__banner_design {
     background-image: url(../image/banner_DESIGN.png);
-    background-size: contain;
     background-position: center;
     background-size: 100%;
+    position: relative;
+    padding: 70px 0;
 }
 
-.banner_design__background {
+.main_wrapper__banner_design::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.banner_design h2 {
+.banner_design__h2 {
     color: #FFFFFF;
     font-family: 'Raleway';
     font-style: normal;
@@ -29,7 +36,7 @@
     text-align: center;
 }
 
-.banner_design h2::after {
+.banner_design__h2::after {
     display: block;
     content: "";
     width: 170px;
@@ -37,7 +44,7 @@
     margin: 40px auto 40px;
 }
 
-.banner_design p {
+.banner_design__p {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -48,17 +55,12 @@
     margin-bottom: 80px;
 }
 
-.wrapper__design_banner__btm {
-    display: flex;
-    justify-content: center;
-}
-
-.banner_design button:hover {
+.design_banner__btm:hover {
     border: 2px solid #EC7979;
     color: #EC7979;
 }
 
-.banner_design button:active {
+.design_banner__btm:active {
     background: #AB4949;
     border: 2px solid #AB4949;
     font-family: 'Open Sans';
@@ -71,8 +73,8 @@
 
 .design_banner__btm {
     max-width: 270px;
-    min-height: 58px;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-top: 42px;
     font-family: 'Open Sans';
@@ -84,5 +86,6 @@
     border: 2px solid #FFFFFF;
     background: none;
     cursor: pointer;
-    padding: 0 70px;
+    padding: 16px 70px;
+    margin: 0 auto;
 }
