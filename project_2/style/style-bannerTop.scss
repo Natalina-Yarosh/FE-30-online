@@ -18,6 +18,7 @@ $fontFamilyPrimary: 'Raleway', sans-serif;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 230px 0 120px;
 
     &::after{
         content: '';
@@ -32,20 +33,16 @@ $fontFamilyPrimary: 'Raleway', sans-serif;
     }
 
     &__title{
-        position: relative;
-        z-index: 2;
-        padding: 230px 0 31px;
         font-weight: 900;
         font-size: 64px;
         line-height: 75px;
         font-family: $fontFamilyPrimary;
         text-transform: uppercase;
         color: $colorWhite;
+        margin-bottom: 32px;
     }
     
     &__text{
-        position: relative;
-        z-index: 2;
         margin-bottom: 82px;
         font-weight: 400;
         font-size: 24px;
@@ -55,10 +52,8 @@ $fontFamilyPrimary: 'Raleway', sans-serif;
     }
 
     &__btn{
-        position: relative;
-        z-index: 2;
-        margin-bottom: 120px;
-        width: 370px;
+        max-width: 370px;
+        width: 100%;
         padding: 24px 0;
         font-weight: 900;
         font-size: 24px;
@@ -86,5 +81,7 @@ $fontFamilyPrimary: 'Raleway', sans-serif;
     margin: 0 auto;
     padding: 0 15px;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
