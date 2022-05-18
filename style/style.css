@@ -21,6 +21,7 @@
     width: 86px;
     height: 31px;
     cursor: pointer;
+    pointer-events: none;
 }
 .header__link{
     color: #FFFFFF;
@@ -148,6 +149,7 @@ margin-bottom: 42px;
     border-radius: 10px;
     max-width: 470px;
     width: 100%;
+    padding-top: 28px;
 }
 
 .registration__title{
@@ -160,8 +162,7 @@ margin-bottom: 42px;
     text-align: center;
     text-transform: uppercase;
     color: #333333;
-    padding: 28px 0;
-    margin-bottom: 30px;
+    margin-bottom: 58px;
 }
 .registration__input{
     font-family: 'Open Sans';
@@ -171,10 +172,11 @@ margin-bottom: 42px;
     line-height: 19px;
     align-items: center;
     color: #040404;
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     padding: 15px 0;
     margin: 0 auto;
-    display: block;
+    display: block; 
     border: none;
     border-bottom : 1px solid #BDBDBD;
     margin-bottom: 30px;
@@ -191,6 +193,7 @@ background: #6594e0;
 }
 .registration__input:focus{
 background: #12995a;
+outline: none;
 }
 .registration__form{
     display: flex;
@@ -207,7 +210,6 @@ background: #12995a;
     color: #BDBDBD;
 }
 .registration__btn{
-    max-width: 470px;
     width: 100%;
     font-family: 'Open Sans';
     font-style: normal;
@@ -237,10 +239,11 @@ color: #EC7979;
 .social{
     background: #F8EFEF;
     margin-bottom: 99px;
+    padding: 13px 0 18px;
 }
 .container__social{
     max-width: 1170px;
-    padding: 13px 15px 18px;
+    padding: 0 15px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -273,12 +276,12 @@ max-width: 470px;
     width: 100%;
     align-items: center;
     justify-content: center;
-    column-gap: 35px;
+    column-gap: 30px;
     flex-wrap: wrap;
 }
 .social__link{
-    width: 58px;
-    height: 58px;
+    width: 70px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -720,7 +723,8 @@ color: #000000
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 20px solid #E2E2E2;
-    transform: translateX(70px);
+    left: 70px;
+    top: 100%;
 }
 .stylish{
     padding: 70px 0 70px;
@@ -874,6 +878,7 @@ margin-bottom: 34px;
     }
 .contact__input:focus{
     background: #12995a;
+    outline: none;
 }
 .contact__input::placeholder{
 font-family: 'Open Sans';
@@ -980,6 +985,7 @@ color: #BDBDBD;
         width: 100%;
         height: 100%;
         object-fit: cover;
+        pointer-events: none;
     }
     .footer__text{
         font-style: normal;
