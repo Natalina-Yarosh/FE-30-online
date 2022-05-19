@@ -344,9 +344,6 @@
     overflow: hidden;
 }
 
-.brand {
-    margin-bottom: 116px;
-}
 .brand__nav {
     background: #000000;
 }
@@ -358,10 +355,10 @@
     flex-direction:row ;
     justify-content: space-between;
     column-gap: 20px;
+    align-items: center;
 }
 
 .brand__logo-link {
-    padding: 22px 0;
     width: 90px;
     height: 31px;
 }
@@ -627,6 +624,7 @@
 .social {
     background-color: #F8EFEF;
     padding: 32px 0 18px;
+    margin-bottom: 116px;
 }
 .social__container {
     max-width: 1190px;
@@ -658,6 +656,7 @@
     display: flex;
     flex-direction: row;
     column-gap: 30px;
+    align-items: center;
 }
 .social__icon {
     display: block;
@@ -719,7 +718,6 @@
     flex-direction: row;
     column-gap: 30px;
     row-gap: 50px;
-    margin-bottom: 34px;
 }
 .contact__info {
     display: flex;
