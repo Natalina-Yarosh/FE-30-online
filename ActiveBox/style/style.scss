@@ -1,0 +1,482 @@
+$colorBtn: #FF4343;
+$colorTextAndIcons: #FF4343;
+$colorBtnHover: #E71414;
+$maneFont: 'Raleway', sans-serif;
+$additionalFont: 'Cardo', serif;
+$linkHover: #FF4343CC;
+$linkActive: #B90C0CCC;
+
+@mixin h1Style {
+    font-family: $maneFont;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+}
+@mixin h2Style {
+    font-family: $maneFont;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+@mixin h3Style {
+    font-family: $maneFont;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+}
+@mixin h4Style {
+    font-family: $maneFont;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+}
+@mixin pStyle {
+    font-family: $maneFont;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+@mixin container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    @include container();
+}
+.header {
+    margin-bottom: 130px;
+&_container {
+    @include container();
+    padding: 0px;
+    border-bottom: 1px solid #BABBC5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+&__logo__link {
+    display: block;
+}
+&__logo {
+    height: 26px;
+    width: 184px;
+}
+}
+.navigation {
+    &__list {
+        display: flex;
+        list-style-type: none;
+    }
+    &__item {
+        font-family: $maneFont;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+        width: 134px;
+        text-transform: uppercase;
+    }
+    &__link  {
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        padding: 42.5px 0;
+        text-align: center;
+        position: relative;
+        &:hover::after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 134px;
+            background-color: #BABBC5;
+            top: calc(100% - 2px);
+            left: 0px;
+        } &:active {
+            color: $colorBtnHover;
+        }
+        &:active::after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 134px;
+            background-color: $colorBtnHover;
+            top: calc(100% - 2px);
+            left: 0px;
+        }
+}
+
+}
+
+.banner {
+    background-image: url(../img/maneImg.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    padding: 0 170px 120px ;
+    z-index: 0;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #252B49;
+        opacity: 80%;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+    &__container {
+        position: relative;
+        z-index: 2;
+        text-align: center
+    }
+    &__title {
+        @include h1Style();
+        margin-bottom: 31px;
+    }
+    &__text {
+        @include h4Style ();
+        font-weight: 400;
+    }
+    &__btn{
+        @include h4Style();
+        color: #fff;
+        border: none;
+        padding: 25px;
+        width: 100%;
+        max-width: 369px;
+        background-color: $colorBtn;
+        margin: 82px auto 0;
+        cursor: pointer;
+    }
+    &__btn:hover{
+        background-color: $colorBtnHover;
+    }
+    &__btn:active {
+        background-color: $colorBtn;
+        box-shadow: 4px 4px 30px $colorBtn;
+    }
+}
+.features {
+    padding-top: 127px;
+
+    &__container{
+        padding: 0;
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: calc((100% - 60px)/3);
+        margin-bottom: 88px;
+
+        &__svg {
+            max-width: 100px;
+            max-height: 100px;
+            margin: 0 auto 29px;
+            display: block;
+        }
+        &__title {
+            margin-bottom: 20px;
+            font-weight: 900px;
+            font-size: 24px;
+            text-align: center;
+            line-height: 28px;
+            padding: 22px 0;
+        }
+        &__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+        }
+    }
+}
+.works {
+    &__container{
+        max-width: 1510px;
+        padding: 0;
+        padding-top: 45px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 50% 50%;
+        gap: 0;
+    }
+    &__item {
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        color: transparent;
+        display: block;
+        &__wrap {
+            position: relative;
+            overflow: hidden;
+        }
+        &__img {
+            border: 1px solid #fff ;
+            object-fit: cover;
+        }
+        &__text {
+            position: absolute;
+            top: 110px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        &__title {
+            @include h4Style();
+            margin-bottom: 20px;
+        }
+        &__comment {
+            @include pStyle();
+        }
+        &:hover {
+            position: relative;
+            color: #fff;
+        }
+        &:hover::after {
+            content: "";
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: $linkHover;
+            z-index: 0;
+        }
+        &:active {
+            position: relative;
+            color: #fff;
+        }
+        &:active::after {
+            content: "";
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: $linkActive;
+            z-index: 0;
+        }
+    }
+}
+.team {
+    padding: 114px 0;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        width: calc((100% - 90px) / 4);
+
+        &__wraper{
+            width: 100%;
+            max-height: 270px;
+            margin-bottom: 30px;
+            overflow: hidden; 
+        }
+        &__img {
+            object-fit: cover;
+        }
+        &__name{
+            @include h4Style();
+            font-weight: 700;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+        }
+        &__position{
+            @include pStyle();
+            color: $colorTextAndIcons;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+        &__text {
+            @include pStyle();
+            margin-bottom: 38px;
+        }
+    // не получается сделать ховер и эктив
+    &__socials{
+            display: flex;
+            margin: auto 0 0 0;
+            align-self: flex-end;
+        } 
+    }
+    &__socials__link {
+        display: block;
+        margin-right: 6px;
+        height: 39px;
+        width: 39px;
+        cursor: pointer;
+    }
+    &__socials__svg {
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+    }
+    &__socials__link:hover {
+        color: $linkHover;
+    }
+    &__socials__link:active {
+        color: $linkActive;
+    }
+}
+.testimonials {
+    &__container {
+        max-width: 1510px;
+        padding: 0;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-around;
+    }
+    // почему-то появляется отсутп между блоками при изменении размера и как их сделать 1 размера?
+    &__img__wrap {
+        width: 50%;
+        overflow: hidden; 
+    }
+    &__img {
+    object-fit: cover;
+    }
+    &__content {
+        width: 50%;
+        background-color: #5C3249;
+        padding: 116px 129px 0;
+        color: #fff;
+    }
+    &__title {
+        font: $additionalFont;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 49px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        max-width: 470px;
+    }
+    &__comment {
+        font: $maneFont;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+}
+.download {
+    padding: 114px 0;
+    text-align: center;
+    &__title {
+        @include h3Style();
+        margin-bottom: 22px;
+    }
+    &__text{
+        @include pStyle();
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+    &__btn{
+        @include h4Style();
+        color: #fff;
+        border: none;
+        padding: 25px;
+        width: 100%;
+        max-width: 369px;
+        background-color: $colorBtn;
+        cursor: pointer;
+    }
+    &__btn:hover{
+        background-color: $colorBtnHover;
+    }
+    &__btn:active {
+        background-color: $colorBtn;
+        box-shadow: 4px 4px 30px $colorBtn;
+    }
+}
+.footer {
+
+    &__top {
+    background-color: #353C65;
+    padding: 71px 0 67px;
+
+        &__container {
+        display: flex;
+        justify-content: space-between;
+        }
+    }
+    &__block {
+        width: calc((100% - 60px) / 3);
+        text-align: center;
+        color: #fff;
+        text-transform: capitalize;
+    }
+    &__title {
+        @include pStyle();
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 29px;
+    }
+    &__text {
+        @include pStyle();
+    }
+    // не получается сделать ховер и эктив
+    &__socials {
+        display: flex;
+        justify-content:center;
+    
+        &__link {
+            display: block;
+            margin-right: 6px;
+            height: 39px;
+            width: 39px;
+            cursor: pointer;
+        }
+        &__svg {
+            height: 100%;
+            width: 100%;
+            pointer-events: none;
+            }
+        &__link:hover{
+            fiil: $linkHover;
+        }
+        &__link:active {
+            color: $linkActive;
+        }
+    }
+    &__bottom {
+        background-color: #2C3154;
+        padding: 24px 0;
+
+        &__text {
+            
+            @include pStyle();
+            color: #808080;
+            text-transform: capitalize;
+            text-align: center;
+            max-width: 370px;
+            margin: 0 auto;
+        }
+        &__text_white {
+            color: #fff;
+        }
+    }
+}
