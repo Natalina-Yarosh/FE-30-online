@@ -2,6 +2,7 @@
 $colorWhite: #FFFFFF;
 $colorDecoration: #BABBC5;
 $fontFamilyPrimary: 'Raleway', sans-serif;
+$fontFamilySecondary: 'Cardo', serif;
 
 //Это от баннера
 $colorWhite: #FFFFFF;
@@ -281,5 +282,175 @@ $colorBackgroundBannerTop: #252B49;
 
     &__socialsSvg:last-child{
         margin-right: 0;
+    }
+}
+
+//Слайдер
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 129px;
+    background-color: #5C3249;
+
+    &__imageWrap{
+        width: 741px;
+        height: 490px;
+    }
+
+    &__image{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__box{
+        max-width: 471px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__title{
+        font-family: $fontFamilySecondary;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 49px;
+        margin-bottom: 20px;
+    }
+
+    &__text{
+        font-family: $fontFamilyPrimary;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+    }
+}
+
+//Секция скачать
+
+.download{
+    padding: 155px 0 114px;
+
+    &__title{
+    font-family: $fontFamilyPrimary;
+    color: #000000;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    }
+
+    &__text{
+        font-family: $fontFamilyPrimary;
+        color: #000000;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 50px;
+    }
+
+    &__btn{
+        max-width: 370px;
+        width: 100%;
+        padding: 25px;
+        color: #FFFFFF;
+        font-family: $fontFamilyPrimary;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        border: none;
+        cursor: pointer;
+        background-color: #FF4343;
+    }
+
+    &__btn:hover{
+        background-color: #E71414;
+    }
+
+    &__btn:active{
+        background-color: #FF4343;;
+        box-shadow: 4px 4px 30px #FF4343;
+    }
+}
+
+.container__download{
+    padding: 0 15px;
+    text-align: center;
+}
+
+//Футер
+
+.container__footerLight{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.container__footerDark{
+    text-align: center;
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer{
+
+    &__light{
+        background-color: #353C65;
+        padding: 71px 0 71px;
+    }
+
+    &__dark{
+        background-color: #2C3154;
+        padding: 24px;
+    }
+
+    &__wrap{
+        max-width: 370px;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__title{
+        font-family: $fontFamilyPrimary;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 29px;
+    }
+
+    &__text{
+        font-family: $fontFamilyPrimary;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px
+    }
+
+    &__socials{
+        display: flex;
+        column-gap: 27px;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 48px;
+    }
+
+    &__copyright{
+        font-family: $fontFamilyPrimary;
+        color: #808080;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    &__copyrightWhite{
+        color: #FFFFFF;
     }
 }
