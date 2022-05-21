@@ -105,7 +105,7 @@ $linkActive: #B90C0CCC;
 }
 &__menu{
     display: none ;
-    @media (max-width: 320px ) {
+    @media (max-width: 768px ) {
         display: block;
     }
     &__link {
@@ -171,8 +171,7 @@ $linkActive: #B90C0CCC;
                 }
         }
     } 
-    // Почему-то блок не скрывается
-    @media (max-width: 320px ) {
+    @media (max-width: 768px ) {
         display: none;
     }
 }
@@ -247,6 +246,7 @@ $linkActive: #B90C0CCC;
         max-width: 369px;
         background-color: $colorBtn;
         margin: 82px auto 0;
+        text-transform: uppercase;
         cursor: pointer;
         @media (max-width: 1024px ) {
             width: 100%;
@@ -294,6 +294,10 @@ $linkActive: #B90C0CCC;
         @media (max-width: 1024px ) {
             margin-bottom: 50px;
             width: calc((100% - 40px)/3);
+        }
+        @media (max-width: 768px ) {
+            margin-bottom: 50px;
+            width: calc((100% - 30px)/2);
         }
         @media (max-width: 320px ) {
             margin-bottom: 50px;
@@ -466,19 +470,38 @@ $linkActive: #B90C0CCC;
     @media (max-width: 1024px ) {
         padding: 78px 0;
         }
+    @media (max-width: 768px ) {
+        padding-bottom: 28px;
+        }
+    @media (max-width: 320px ) {
+        padding: 35px 0;
+        }
     &__items {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__item {
         display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
+        flex-wrap:wrap;
+        // align-content: flex-start;
         width: calc((100% - 90px) / 4);
         @media (max-width: 1024px ) {
             width: calc((100% - 75px) / 4);
+            
         }
-
+        @media (max-width: 768px ) {
+            width: calc((100% - 30px) / 2);
+            margin-bottom: 50px;
+        }
+        @media (max-width: 320px ) {
+            width: 100%;
+            margin-bottom: 49.5px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        
         &__wraper{
             width: 100%;
             margin-bottom: 30px;
@@ -489,12 +512,14 @@ $linkActive: #B90C0CCC;
         }
         &__img {
             object-fit: cover;
+            object-position: center;
         }
         &__name{
             @include h4Style();
             font-weight: 700;
             text-transform: capitalize;
             margin-bottom: 5px;
+            display: block;
             @media (max-width: 1024px ) {
                 @include pStyle();
                 font-weight: 700;
@@ -503,12 +528,17 @@ $linkActive: #B90C0CCC;
         }
         &__position{
             @include pStyle();
+            display: block;
             color: $colorTextAndIcons;
             text-transform: uppercase;
             margin-bottom: 18px;
+            width: 100%;
             @media (max-width: 1024px ) {
                 @include pStyleAdaptive();
                 margin-bottom: 22.5px;
+            }
+            @media (max-width: 320px ) {
+                margin-bottom: 38.5px;
             }
         }
         &__text {
@@ -517,6 +547,9 @@ $linkActive: #B90C0CCC;
             @media (max-width: 1024px ) {
                 @include pStyleAdaptive();
                 margin-bottom: 39px;
+            }
+            @media (max-width: 320px ) {
+                margin-bottom: 55px;
             }
         }
     // не получается сделать ховер и эктив
@@ -532,6 +565,14 @@ $linkActive: #B90C0CCC;
         height: 39px;
         width: 39px;
         cursor: pointer;
+        @media (max-width: 1024px ) {
+            height: 33px;
+            width: 33px;
+        }
+        @media (max-width: 320px ) {
+            height: 39px;
+            width: 39px;
+        }
     }
     &__socials__svg {
         height: 100%;
@@ -550,23 +591,37 @@ $linkActive: #B90C0CCC;
         max-width: 1510px;
         padding: 0;
         @media (max-width: 1024px ) {
-            @include container();
+            width: 100%;
             padding: 0px;
             }
     }
     &__wrapper{
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
-    // почему-то появляется отсутп между блоками при изменении размера и как их сделать 1 размера?
     &__img__wrap {
         width: 50%;
-        overflow: hidden; 
+        overflow: hidden;
+        position: relative; 
+        &::after{
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+        @media (max-width: 320px ) {
+            width: 100%;
+        }
     }
     &__img {
     // картинка все равно обрезается справа
         object-position: right;
         object-fit: cover;
+        position: absolute;
+        top: 0;
+        width: 0;
+        width: 100%;
+        height: 100%;
     }
     &__content {
         width: 50%;
@@ -575,6 +630,13 @@ $linkActive: #B90C0CCC;
         color: #fff;
         @media (max-width: 1024px ) {
             padding: 47px 20px 0 88px ;
+        }
+        @media (max-width: 768px ) {
+            padding: 35px 20px 0 35px;
+        }
+        @media (max-width: 320px ) {
+            width: 100%;
+            padding: 35px 0 95px;
         }
     }
     &__title {
@@ -591,6 +653,12 @@ $linkActive: #B90C0CCC;
             line-height: 32px;
             max-width: 300px;
         }
+        @media (max-width: 320px ) {
+            max-width: 275px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 35px;
+        }
     }
     &__comment {
         font: $maneFont;
@@ -603,6 +671,11 @@ $linkActive: #B90C0CCC;
             line-height: 14px;
             max-width: 300px;
         }
+        @media (max-width: 320px ) {
+            max-width: 275px;
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 }
 .download {
@@ -610,6 +683,9 @@ $linkActive: #B90C0CCC;
     text-align: center;
     @media (max-width: 1024px ) {
         padding: 77.5px 0;
+        }
+    @media (max-width: 1024px ) {
+        padding: 34.5px 0 45px;
         }
     &__title {
         @include h3Style();
@@ -621,6 +697,16 @@ $linkActive: #B90C0CCC;
             margin-bottom: 4px;
             padding: 16px 0;
             }
+        @media (max-width: 768px ) {
+            max-width: 350px;
+            margin: 0 auto;
+            }
+        @media (max-width: 320px ) {
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 3px;
+            padding: 19px 0;
+            }
     }
     &__text{
         @include pStyle();
@@ -628,6 +714,12 @@ $linkActive: #B90C0CCC;
         @media (max-width: 1024px ) {
             @include pStyleAdaptive();
             font-weight: 700;
+            }
+        @media (max-width: 320px ) {
+            font-size: 13px;
+            line-height: 15px;
+            max-width: 250px;
+            margin: 0 auto;
             }
     }
     &__btn{
@@ -640,10 +732,18 @@ $linkActive: #B90C0CCC;
         background-color: $colorBtn;
         margin: 50px auto 0;
         cursor: pointer;
+        text-transform: uppercase;
         @media (max-width: 1024px ) {
             width: 100%;
             max-width: 313px;
             margin: 45px auto 0;
+            }
+        @media (max-width: 320px ) {
+            font-size: 18px;
+            line-height: 21px;
+            width: 100%;
+            max-width: 279px;
+            margin: 13.5px auto 0;
             }
     }
     &__btn:hover{
@@ -655,16 +755,19 @@ $linkActive: #B90C0CCC;
     }
 }
 .footer {
-
     &__top {
     background-color: #353C65;
     padding: 71px 0 67px;
     @media (max-width: 1024px ) {
         padding: 47px 0 41px;
     }
+    @media (max-width: 320px ) {
+        padding: 34px 0 33px;
+    }
         &__container {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         }
     }
     &__block {
@@ -674,6 +777,13 @@ $linkActive: #B90C0CCC;
         text-transform: capitalize;
         @media (max-width: 1024px ) {
             width: calc((100% - 40px) / 3);
+        }
+        @media (max-width: 480px ) {
+            width: 100%;
+            margin-bottom: 60px;
+            &:last-child{
+                margin-bottom: 0;
+            }
         }
     }
     &__title {
@@ -685,6 +795,12 @@ $linkActive: #B90C0CCC;
             @include pStyleAdaptive();
             font-weight: 700;
             margin-bottom: 17px;
+        }
+        @media (max-width: 480px ) {
+            margin-bottom: 34px;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
     &__text {
@@ -701,6 +817,9 @@ $linkActive: #B90C0CCC;
         @media (max-width: 1024px ) {
             padding-top: 15px;
         }
+        @media (max-width: 480px ) {
+            padding-top: 0;
+        }
     
         &__link {
             display: block;
@@ -712,6 +831,11 @@ $linkActive: #B90C0CCC;
                 margin-right: 22px;
                 height: 33px;
                 width: 33px;
+            }
+            @media (max-width: 480px ) {
+                margin-right: 16px;
+                height: 39px;
+                width: 39px;
             }
         }
         &__link:last-child{
@@ -733,6 +857,9 @@ $linkActive: #B90C0CCC;
     &__bottom {
         background-color: #2C3154;
         padding: 24px 0;
+        @media (max-width: 320px ) {
+            padding: 29px 0;
+        }
 
         &__text {
             @include pStyle();
@@ -744,6 +871,9 @@ $linkActive: #B90C0CCC;
             @media (max-width: 1024px ) {
                 @include pStyleAdaptive();
                 max-width: 314px;
+            }
+            @media (max-width: 320px ) {
+                max-width: 280px;
             }
         }
         &__text_white {
