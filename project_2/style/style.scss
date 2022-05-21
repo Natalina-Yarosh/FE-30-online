@@ -1,14 +1,21 @@
 //Ээто от хедера
-$colorWhite: #FFFFFF;
-$colorDecoration: #BABBC5;
+$palettePrimary: #FFFFFF;
+$paletteSecondary: #6C7279;
+$paletteTertiary: #2D3033;
+$colorDecorationHeader: #BABBC5;
+$colorBtnAndActive: #FF4343;
+$colorTeamSubtitle: #FF4343;
+$colorBtnHover: #E71414;
+$colorNavActive: #E71414;
+$colorBackgroundBannerTop: #252B49;
+$colorBackgroundSlider: #5C3249;
+$colorBackgroundFooterLight: #353C65;
+$colorBackgroundFooterDark: #2C3154;
+$colorDownloadPrimary: #000000;
+$colorDarkFooterPrimary: #808080;
+
 $fontFamilyPrimary: 'Raleway', sans-serif;
 $fontFamilySecondary: 'Cardo', serif;
-
-//Это от баннера
-$colorWhite: #FFFFFF;
-$colorBtnBannerTop: #FF4343;
-$colorBtnBannerTopHover: #E71414;
-$colorBackgroundBannerTop: #252B49;
 
 * {
     margin: 0;
@@ -36,18 +43,18 @@ $colorBackgroundBannerTop: #252B49;
     }
 
     &__link{
-        color: $colorWhite;
+        color: $palettePrimary;
         text-decoration: none;
         padding: 42px 15px;
     }
 
     &__link:hover{
-        border-bottom: 3px solid $colorDecoration;
+        border-bottom: 3px solid $colorDecorationHeader;
     }
 
     &__link:active{
-        border-bottom: 3px solid #E71414;
-        color: #E71414;
+        border-bottom: 3px solid $colorNavActive;
+        color: $colorNavActive;
     }
     
     &__linkLogo{
@@ -71,7 +78,7 @@ $colorBackgroundBannerTop: #252B49;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-    border-bottom: 1px solid $colorDecoration;
+    border-bottom: 1px solid $colorDecorationHeader;
 }
 
 //Это баннер
@@ -104,7 +111,7 @@ $colorBackgroundBannerTop: #252B49;
         line-height: 75px;
         font-family: $fontFamilyPrimary;
         text-transform: uppercase;
-        color: $colorWhite;
+        color: $palettePrimary;
         margin-bottom: 32px;
     }
     
@@ -114,7 +121,7 @@ $colorBackgroundBannerTop: #252B49;
         font-size: 24px;
         line-height: 28px;
         font-family: $fontFamilyPrimary;
-        color: $colorWhite;
+        color: $palettePrimary;
     }
 
     &__btn{
@@ -125,19 +132,20 @@ $colorBackgroundBannerTop: #252B49;
         font-size: 24px;
         line-height: 28px;
         font-family: $fontFamilyPrimary;
-        background-color: $colorBtnBannerTop;
-        color: $colorWhite;
+        background-color: $colorBtnAndActive;
+        color: $palettePrimary;
         border: none;
         cursor: pointer;
+        transition: background-color .3s linear;
     }
 
     &__btn:hover{
-        background-color: $colorBtnBannerTopHover;
+        background-color: $colorBtnHover;
     }
 
     &__btn:active{
-        background-color: $colorBtnBannerTop;
-        box-shadow: 4px 4px 30px $colorBtnBannerTop;
+        background-color: $colorBtnAndActive;
+        box-shadow: 4px 4px 30px $colorBtnAndActive;
     }
 }
 
@@ -167,7 +175,7 @@ $colorBackgroundBannerTop: #252B49;
     &__title{
         font-family: $fontFamilyPrimary;
         text-transform: uppercase;
-        color: #2D3033;
+        color: $paletteTertiary;
         font-weight: 900;
         font-size: 24px;
         line-height: 28px;
@@ -175,12 +183,13 @@ $colorBackgroundBannerTop: #252B49;
     }
 
     &__text{
-        color: #6C7279;
+        color: $paletteSecondary;
         font-family: $fontFamilyPrimary;
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
     }
+
 }
 
 .container__advantages{
@@ -204,13 +213,26 @@ $colorBackgroundBannerTop: #252B49;
     &__imageWrap{
         width: 378px;
         height: 340px;
-        border: 1px solid #ffff;
+        border: 1px solid $palettePrimary;
+        position: relative;
+    }
+
+    &__imageWrap::after{
+        content: '';
+        display: block;
+        padding-top: 100%;
     }
 
     &__image{
         width: 100%;
         height: 100%;
         object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        
     }
 }
 
@@ -251,7 +273,7 @@ $colorBackgroundBannerTop: #252B49;
     &__title{
         margin-bottom: 5px;
         font-family: $fontFamilyPrimary;
-        color: #2D3033;
+        color: $paletteTertiary;
         font-weight: 700;
         font-size: 24px;
         line-height: 28px;
@@ -261,7 +283,7 @@ $colorBackgroundBannerTop: #252B49;
         margin-bottom: 18px;
         font-family: $fontFamilyPrimary;
         text-transform: uppercase;
-        color: #FF4343;
+        color: $colorTeamSubtitle;
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
@@ -270,17 +292,17 @@ $colorBackgroundBannerTop: #252B49;
     &__text{
         margin-bottom: 38px;
         font-family: $fontFamilyPrimary;
-        color: #6C7279;
+        color: $paletteSecondary;
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
     }
 
-    &__socialsSvg{
+    &__link{
         margin-right: 5px;
     }
 
-    &__socialsSvg:last-child{
+    &__link:last-child{
         margin-right: 0;
     }
 }
@@ -292,7 +314,7 @@ $colorBackgroundBannerTop: #252B49;
     justify-content: center;
     align-items: center;
     column-gap: 129px;
-    background-color: #5C3249;
+    background-color: $colorBackgroundSlider;
 
     &__imageWrap{
         width: 741px;
@@ -312,7 +334,7 @@ $colorBackgroundBannerTop: #252B49;
 
     &__title{
         font-family: $fontFamilySecondary;
-        color: #FFFFFF;
+        color: $palettePrimary;
         font-weight: 400;
         font-size: 36px;
         line-height: 49px;
@@ -322,7 +344,7 @@ $colorBackgroundBannerTop: #252B49;
     &__text{
         font-family: $fontFamilyPrimary;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: $palettePrimary;
         font-weight: 700;
         font-size: 13px;
         line-height: 15px;
@@ -336,7 +358,7 @@ $colorBackgroundBannerTop: #252B49;
 
     &__title{
     font-family: $fontFamilyPrimary;
-    color: #000000;
+    color: $colorDownloadPrimary;
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
@@ -345,7 +367,7 @@ $colorBackgroundBannerTop: #252B49;
 
     &__text{
         font-family: $fontFamilyPrimary;
-        color: #000000;
+        color: $colorDownloadPrimary;
         text-transform: uppercase;
         font-weight: 700;
         font-size: 18px;
@@ -357,7 +379,7 @@ $colorBackgroundBannerTop: #252B49;
         max-width: 370px;
         width: 100%;
         padding: 25px;
-        color: #FFFFFF;
+        color: $palettePrimary;
         font-family: $fontFamilyPrimary;
         text-transform: uppercase;
         font-weight: 900;
@@ -365,16 +387,17 @@ $colorBackgroundBannerTop: #252B49;
         line-height: 28px;
         border: none;
         cursor: pointer;
-        background-color: #FF4343;
+        background-color: $colorBtnAndActive;
+        transition: background-color .3s linear;
     }
 
     &__btn:hover{
-        background-color: #E71414;
+        background-color: $colorBtnHover;
     }
 
     &__btn:active{
-        background-color: #FF4343;;
-        box-shadow: 4px 4px 30px #FF4343;
+        background-color: $colorBtnAndActive;;
+        box-shadow: 4px 4px 30px $colorBtnAndActive;
     }
 }
 
@@ -401,12 +424,12 @@ $colorBackgroundBannerTop: #252B49;
 .footer{
 
     &__light{
-        background-color: #353C65;
+        background-color: $colorBackgroundFooterLight;
         padding: 71px 0 71px;
     }
 
     &__dark{
-        background-color: #2C3154;
+        background-color: $colorBackgroundFooterDark;
         padding: 24px;
     }
 
@@ -418,7 +441,7 @@ $colorBackgroundBannerTop: #252B49;
 
     &__title{
         font-family: $fontFamilyPrimary;
-        color: #FFFFFF;
+        color: $palettePrimary;
         text-transform: uppercase;
         font-weight: 700;
         font-size: 18px;
@@ -428,7 +451,7 @@ $colorBackgroundBannerTop: #252B49;
 
     &__text{
         font-family: $fontFamilyPrimary;
-        color: #FFFFFF;
+        color: $palettePrimary;
         font-weight: 400;
         font-size: 18px;
         line-height: 21px
@@ -444,13 +467,13 @@ $colorBackgroundBannerTop: #252B49;
 
     &__copyright{
         font-family: $fontFamilyPrimary;
-        color: #808080;
+        color: $colorDarkFooterPrimary;
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
     }
 
     &__copyrightWhite{
-        color: #FFFFFF;
+        color: $palettePrimary;
     }
 }

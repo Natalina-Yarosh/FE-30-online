@@ -125,6 +125,8 @@
   color: #FFFFFF;
   border: none;
   cursor: pointer;
+  -webkit-transition: background-color .3s linear;
+  transition: background-color .3s linear;
 }
 
 .bannerTop__btn:hover {
@@ -202,7 +204,14 @@
 .projects__imageWrap {
   width: 378px;
   height: 340px;
-  border: 1px solid #ffff;
+  border: 1px solid #FFFFFF;
+  position: relative;
+}
+
+.projects__imageWrap::after {
+  content: '';
+  display: block;
+  padding-top: 100%;
 }
 
 .projects__image {
@@ -210,6 +219,11 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .container__projects {
@@ -280,11 +294,11 @@
   line-height: 21px;
 }
 
-.team__socialsSvg {
+.team__link {
   margin-right: 5px;
 }
 
-.team__socialsSvg:last-child {
+.team__link:last-child {
   margin-right: 0;
 }
 
@@ -374,6 +388,8 @@
   border: none;
   cursor: pointer;
   background-color: #FF4343;
+  -webkit-transition: background-color .3s linear;
+  transition: background-color .3s linear;
 }
 
 .download__btn:hover {
