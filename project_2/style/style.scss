@@ -305,6 +305,24 @@ $fontFamilySecondary: 'Cardo', serif;
     &__link:last-child{
         margin-right: 0;
     }
+
+    &__socialsSvg:hover path{
+        fill: $colorBtnHover;
+    }
+
+    &__socialsSvg:hover rect{
+        stroke: $colorBtnHover;
+    }
+
+    &__socialsSvg:active path{
+        fill: $colorBtnAndActive;
+        box-shadow: 4px 4px 30px $colorBtnAndActive;
+    }
+
+    &__socialsSvg:active rect{
+        stroke: $colorBtnAndActive;
+        box-shadow: 4px 4px 30px $colorBtnAndActive;
+    }
 }
 
 //Слайдер
@@ -396,7 +414,7 @@ $fontFamilySecondary: 'Cardo', serif;
     }
 
     &__btn:active{
-        background-color: $colorBtnAndActive;;
+        background-color: $colorBtnAndActive;
         box-shadow: 4px 4px 30px $colorBtnAndActive;
     }
 }
@@ -475,5 +493,23 @@ $fontFamilySecondary: 'Cardo', serif;
 
     &__copyrightWhite{
         color: $palettePrimary;
+    }
+
+    &__socialsSvg:hover path{
+        fill: $colorBtnHover;
+    }
+
+    &__socialsSvg:hover rect{
+        stroke: $colorBtnHover;
+    }
+
+    &__socialsSvg:active path{
+        fill: $colorBtnAndActive;
+        box-shadow: 4px 4px 30px $colorBtnAndActive;
+    }
+
+    &__socialsSvg:active rect{
+        stroke: $colorBtnAndActive;
+        box-shadow: 4px 4px 30px $colorBtnAndActive;
     }
 }
