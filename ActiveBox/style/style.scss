@@ -36,10 +36,20 @@ $linkActive: #B90C0CCC;
     font-size: 18px;
     line-height: 21px;
 }
+@mixin pStyleAdaptive {
+    font-family: $maneFont;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.5px;
+}
 @mixin container {
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+    @media (max-width: 1024px ) {
+        max-width: 1024px;
+        padding: 0 20px;
+        };
 }
 * {
     margin: 0;
@@ -51,6 +61,10 @@ $linkActive: #B90C0CCC;
 }
 .header {
     margin-bottom: 130px;
+    // position: fixed;
+    @media (max-width: 1024px ) {
+    margin-bottom: 157px;
+    }
 &_container {
     @include container();
     padding: 0px;
@@ -60,6 +74,10 @@ $linkActive: #B90C0CCC;
     justify-content: space-between;
     position: relative;
     z-index: 2;
+    @media (max-width: 1024px ) {
+    max-width: 984px;
+    padding: 0px;
+    }
 }
 &__logo__link {
     display: block;
@@ -81,6 +99,11 @@ $linkActive: #B90C0CCC;
         line-height: 15px;
         width: 134px;
         text-transform: uppercase;
+        @media (max-width: 1024px ) {
+            font-size: 12px;
+            line-height: 14px;
+            width: 112px;
+            }
     }
     &__link  {
         text-decoration: none;
@@ -89,6 +112,9 @@ $linkActive: #B90C0CCC;
         padding: 42.5px 0;
         text-align: center;
         position: relative;
+        @media (max-width: 1024px ) {
+            padding: 36px 0;
+            }
         &:hover::after {
             content: "";
             display: block;
@@ -98,6 +124,9 @@ $linkActive: #B90C0CCC;
             background-color: #BABBC5;
             top: calc(100% - 2px);
             left: 0px;
+            @media (max-width: 1024px ) {
+                width: 119px;
+                }
         } &:active {
             color: $colorBtnHover;
         }
@@ -110,6 +139,9 @@ $linkActive: #B90C0CCC;
             background-color: $colorBtnHover;
             top: calc(100% - 2px);
             left: 0px;
+            @media (max-width: 1024px ) {
+                width: 119px;
+                }
         }
 }
 
@@ -122,8 +154,11 @@ $linkActive: #B90C0CCC;
     background-size: cover;
     position: relative;
     color: #fff;
-    padding: 0 170px 120px ;
+    padding-bottom: 120px ;
     z-index: 0;
+    @media (max-width: 1024px ) {
+        padding: 0 20px 126px ;
+        }
 
     &::after {
         content: "";
@@ -140,15 +175,26 @@ $linkActive: #B90C0CCC;
     &__container {
         position: relative;
         z-index: 2;
-        text-align: center
+        text-align: center;
     }
     &__title {
         @include h1Style();
         margin-bottom: 31px;
+        @media (max-width: 1024px ) {
+            font-size: 48px;
+            line-height: 56px;
+            max-width: 744px;
+            margin: 0 auto 62px;
+            }
     }
     &__text {
         @include h4Style ();
         font-weight: 400;
+        @media (max-width: 1024px ) {
+            @include pStyle ();
+            max-width: 744px;
+            margin: 0 auto;
+            }
     }
     &__btn{
         @include h4Style();
@@ -160,6 +206,11 @@ $linkActive: #B90C0CCC;
         background-color: $colorBtn;
         margin: 82px auto 0;
         cursor: pointer;
+        @media (max-width: 1024px ) {
+            width: 100%;
+            max-width: 313px;
+            margin: 92px auto 0;
+            }
     }
     &__btn:hover{
         background-color: $colorBtnHover;
@@ -171,8 +222,12 @@ $linkActive: #B90C0CCC;
 }
 .features {
     padding-top: 127px;
+    @media (max-width: 1024px ) {
+        padding-top: 87px;
+        }
 
     &__container{
+        @include container();
         padding: 0;
     }
     &__wrap {
@@ -183,12 +238,21 @@ $linkActive: #B90C0CCC;
     &__item {
         width: calc((100% - 60px)/3);
         margin-bottom: 88px;
+        @media (max-width: 1024px ) {
+            margin-bottom: 50px;
+            width: calc((100% - 40px)/3);
+        }
 
         &__svg {
             max-width: 100px;
             max-height: 100px;
             margin: 0 auto 29px;
             display: block;
+            @media (max-width: 1024px ) {
+                max-width: 85px;
+                max-height: 85px;
+                margin: 0 auto 23.5px;
+                }
         }
         &__title {
             margin-bottom: 20px;
@@ -197,12 +261,22 @@ $linkActive: #B90C0CCC;
             text-align: center;
             line-height: 28px;
             padding: 22px 0;
+            @media (max-width: 1024px ) {
+                margin-bottom: 4px;
+                font-size: 18px;
+                line-height: 21px;
+                padding: 19.5px 0;
+                }
         }
         &__text {
             font-weight: 400;
             font-size: 18px;
             line-height: 21px;
             text-align: center;
+            @media (max-width: 1024px ) {
+                font-size: 14px;
+                line-height: 16.5px;
+                }
         }
     }
 }
@@ -211,6 +285,9 @@ $linkActive: #B90C0CCC;
         max-width: 1510px;
         padding: 0;
         padding-top: 45px;
+        @media (max-width: 1024px ) {
+            padding-top: 30px;
+            }
     }
     &__items {
         display: grid;
@@ -242,9 +319,17 @@ $linkActive: #B90C0CCC;
         &__title {
             @include h4Style();
             margin-bottom: 20px;
+            @media (max-width: 1024px ) {
+                font-size: 18px;
+                line-height: 21px;
+                margin-bottom: 13px;
+            }
         }
         &__comment {
             @include pStyle();
+            @media (max-width: 1024px ) {
+                @include pStyleAdaptive();
+            }
         }
         &:hover {
             position: relative;
@@ -280,6 +365,9 @@ $linkActive: #B90C0CCC;
 }
 .team {
     padding: 114px 0;
+    @media (max-width: 1024px ) {
+        padding: 78px 0;
+        }
     &__items {
         display: flex;
         justify-content: space-between;
@@ -289,12 +377,17 @@ $linkActive: #B90C0CCC;
         flex-wrap: wrap;
         align-content: flex-start;
         width: calc((100% - 90px) / 4);
+        @media (max-width: 1024px ) {
+            width: calc((100% - 75px) / 4);
+        }
 
         &__wraper{
             width: 100%;
-            max-height: 270px;
             margin-bottom: 30px;
             overflow: hidden; 
+            @media (max-width: 1024px ) {
+            margin-bottom: 25px;
+            }
         }
         &__img {
             object-fit: cover;
@@ -304,16 +397,29 @@ $linkActive: #B90C0CCC;
             font-weight: 700;
             text-transform: capitalize;
             margin-bottom: 5px;
+            @media (max-width: 1024px ) {
+                @include pStyle();
+                font-weight: 700;
+                margin-bottom: 4.5px;
+            }
         }
         &__position{
             @include pStyle();
             color: $colorTextAndIcons;
             text-transform: uppercase;
             margin-bottom: 18px;
+            @media (max-width: 1024px ) {
+                @include pStyleAdaptive();
+                margin-bottom: 22.5px;
+            }
         }
         &__text {
             @include pStyle();
             margin-bottom: 38px;
+            @media (max-width: 1024px ) {
+                @include pStyleAdaptive();
+                margin-bottom: 39px;
+            }
         }
     // не получается сделать ховер и эктив
     &__socials{
@@ -345,6 +451,10 @@ $linkActive: #B90C0CCC;
     &__container {
         max-width: 1510px;
         padding: 0;
+        @media (max-width: 1024px ) {
+            @include container();
+            padding: 0px;
+            }
     }
     &__wrapper{
         display: flex;
@@ -356,16 +466,21 @@ $linkActive: #B90C0CCC;
         overflow: hidden; 
     }
     &__img {
-    object-fit: cover;
+    // картинка все равно обрезается справа
+        object-position: right;
+        object-fit: cover;
     }
     &__content {
         width: 50%;
         background-color: #5C3249;
-        padding: 116px 129px 0;
+        padding: 116px 20px 0 129px ;
         color: #fff;
+        @media (max-width: 1024px ) {
+            padding: 47px 20px 0 88px ;
+        }
     }
     &__title {
-        font: $additionalFont;
+        font-family: $additionalFont;
         font-style: italic;
         font-weight: 400;
         font-size: 36px;
@@ -373,6 +488,11 @@ $linkActive: #B90C0CCC;
         text-transform: capitalize;
         margin-bottom: 30px;
         max-width: 470px;
+        @media (max-width: 1024px ) {
+            font-size: 24px;
+            line-height: 32px;
+            max-width: 300px;
+        }
     }
     &__comment {
         font: $maneFont;
@@ -380,19 +500,37 @@ $linkActive: #B90C0CCC;
         font-size: 13px;
         line-height: 15px;
         text-transform: uppercase;
+        @media (max-width: 1024px ) {
+            font-size: 12px;
+            line-height: 14px;
+            max-width: 300px;
+        }
     }
 }
 .download {
     padding: 114px 0;
     text-align: center;
+    @media (max-width: 1024px ) {
+        padding: 77.5px 0;
+        }
     &__title {
         @include h3Style();
-        margin-bottom: 22px;
+        margin-bottom: 5px;
+        padding: 17.5px 0;
+        @media (max-width: 1024px ) {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 4px;
+            padding: 16px 0;
+            }
     }
     &__text{
         @include pStyle();
         font-weight: 700;
-        margin-bottom: 50px;
+        @media (max-width: 1024px ) {
+            @include pStyleAdaptive();
+            font-weight: 700;
+            }
     }
     &__btn{
         @include h4Style();
@@ -402,7 +540,13 @@ $linkActive: #B90C0CCC;
         width: 100%;
         max-width: 369px;
         background-color: $colorBtn;
+        margin: 50px auto 0;
         cursor: pointer;
+        @media (max-width: 1024px ) {
+            width: 100%;
+            max-width: 313px;
+            margin: 45px auto 0;
+            }
     }
     &__btn:hover{
         background-color: $colorBtnHover;
@@ -417,7 +561,9 @@ $linkActive: #B90C0CCC;
     &__top {
     background-color: #353C65;
     padding: 71px 0 67px;
-
+    @media (max-width: 1024px ) {
+        padding: 47px 0 41px;
+    }
         &__container {
         display: flex;
         justify-content: space-between;
@@ -428,28 +574,52 @@ $linkActive: #B90C0CCC;
         text-align: center;
         color: #fff;
         text-transform: capitalize;
+        @media (max-width: 1024px ) {
+            width: calc((100% - 40px) / 3);
+        }
     }
     &__title {
         @include pStyle();
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 29px;
+        @media (max-width: 1024px ) {
+            @include pStyleAdaptive();
+            font-weight: 700;
+            margin-bottom: 17px;
+        }
     }
     &__text {
         @include pStyle();
+        @media (max-width: 1024px ) {
+            @include pStyleAdaptive();
+        }
     }
     // не получается сделать ховер и эктив
     &__socials {
         display: flex;
         justify-content:center;
+        padding-top: 20px;
+        @media (max-width: 1024px ) {
+            padding-top: 15px;
+        }
     
         &__link {
             display: block;
-            margin-right: 6px;
+            margin-right: 26px;
             height: 39px;
             width: 39px;
             cursor: pointer;
+            @media (max-width: 1024px ) {
+                margin-right: 22px;
+                height: 33px;
+                width: 33px;
+            }
         }
+        &__link:last-child{
+            margin-right: 0px;
+        }
+        
         &__svg {
             height: 100%;
             width: 100%;
@@ -467,13 +637,16 @@ $linkActive: #B90C0CCC;
         padding: 24px 0;
 
         &__text {
-            
             @include pStyle();
             color: #808080;
             text-transform: capitalize;
             text-align: center;
             max-width: 370px;
             margin: 0 auto;
+            @media (max-width: 1024px ) {
+                @include pStyleAdaptive();
+                max-width: 314px;
+            }
         }
         &__text_white {
             color: #fff;
