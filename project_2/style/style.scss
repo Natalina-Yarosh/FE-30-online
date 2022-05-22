@@ -1,12 +1,14 @@
-//Ээто от хедера
 $palettePrimary: #FFFFFF;
 $paletteSecondary: #6C7279;
 $paletteTertiary: #2D3033;
+
 $colorDecorationHeader: #BABBC5;
+
 $colorBtnAndActive: #FF4343;
 $colorTeamSubtitle: #FF4343;
 $colorBtnHover: #E71414;
 $colorNavActive: #E71414;
+
 $colorBackgroundBannerTop: #252B49;
 $colorBackgroundSlider: #5C3249;
 $colorBackgroundFooterLight: #353C65;
@@ -34,28 +36,31 @@ $fontFamilySecondary: 'Cardo', serif;
         display: flex;
         column-gap: 40px;
         list-style-type: none;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 13px;
-        line-height: 15px;
-        font-family: $fontFamilyPrimary;
-        padding: 42px 15px;
     }
 
     &__link{
         color: $palettePrimary;
         text-decoration: none;
         padding: 42px 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+        font-family: $fontFamilyPrimary;
+        display: block;
+        border-bottom: 3px solid transparent;
+    
+        &:hover{
+            border-bottom: 3px solid $colorDecorationHeader;
+        }
+    
+        &:active{
+            border-bottom: 3px solid $colorNavActive;
+            color: $colorNavActive;
+        }
+    
     }
 
-    &__link:hover{
-        border-bottom: 3px solid $colorDecorationHeader;
-    }
-
-    &__link:active{
-        border-bottom: 3px solid $colorNavActive;
-        color: $colorNavActive;
-    }
     
     &__linkLogo{
         width: 184px;
@@ -134,18 +139,20 @@ $fontFamilySecondary: 'Cardo', serif;
         font-family: $fontFamilyPrimary;
         background-color: $colorBtnAndActive;
         color: $palettePrimary;
+        text-transform: uppercase;
         border: none;
         cursor: pointer;
         transition: background-color .3s linear;
-    }
+    
+        &:hover{
+            background-color: $colorBtnHover;
+        }
+    
+        &:active{
+            background-color: $colorBtnAndActive;
+            box-shadow: 4px 4px 30px $colorBtnAndActive;
+        }
 
-    &__btn:hover{
-        background-color: $colorBtnHover;
-    }
-
-    &__btn:active{
-        background-color: $colorBtnAndActive;
-        box-shadow: 4px 4px 30px $colorBtnAndActive;
     }
 }
 
@@ -211,63 +218,29 @@ $fontFamilySecondary: 'Cardo', serif;
     padding-bottom: 114px;
 
     &__imageWrap{
-        width: 378px;
-        height: 340px;
         border: 1px solid $palettePrimary;
         position: relative;
-    }
 
-    &__imageWrap:hover::after{
-        content: 'Project Name';
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 67, 67, 0.8);
-        border: 2px solid #FFFFFF;
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: $palettePrimary;
-        font-family: $fontFamilyPrimary;
-        font-weight: 900;
-        font-size: 24px;
-        line-height: 28px;
-        text-align: center;
-        text-transform: uppercase;
-        cursor: pointer;
-    }
-
-    &__imageWrap:active::after{
-        content: 'Project Name';
-        width: 100%;
-        height: 100%;
-        background-color: rgba(185, 12, 12, 0.8);
-        border: 2px solid #FFFFFF;
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: $palettePrimary;
-        font-family: $fontFamilyPrimary;
-        font-weight: 900;
-        font-size: 24px;
-        line-height: 28px;
-        text-align: center;
-        text-transform: uppercase;
-        cursor: pointer;
+        &::before{
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
     }
 
     &__image{
         width: 100%;
         height: 100%;
         object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
     }
 }
 
 .container__projects{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    margin: 0 auto;
-    max-width: 1510px;
     width: 100%;
 }
 
