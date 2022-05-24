@@ -29,7 +29,7 @@ $fontFamilySecondary: 'Cardo', serif;
 
 .header{
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
 
     &__items{
@@ -49,6 +49,11 @@ $fontFamilySecondary: 'Cardo', serif;
         font-family: $fontFamilyPrimary;
         display: block;
         border-bottom: 3px solid transparent;
+
+        @media (max-width: 1024px) {
+            font-size: 12px;
+            line-height: 14px;
+        }
     
         &:hover{
             border-bottom: 3px solid $colorDecorationHeader;
@@ -84,6 +89,11 @@ $fontFamilySecondary: 'Cardo', serif;
     margin: 0 auto;
     padding: 0 15px;
     border-bottom: 1px solid $colorDecorationHeader;
+
+    @media (max-width: 1024px) {
+        max-width: 984px;
+        width: 100%;
+    }
 }
 
 //Это баннер
@@ -118,6 +128,11 @@ $fontFamilySecondary: 'Cardo', serif;
         text-transform: uppercase;
         color: $palettePrimary;
         margin-bottom: 32px;
+
+        @media (max-width: 1024px) {
+            font-size: 48px;
+            line-height: 56px;
+        }
     }
     
     &__text{
@@ -127,6 +142,11 @@ $fontFamilySecondary: 'Cardo', serif;
         line-height: 28px;
         font-family: $fontFamilyPrimary;
         color: $palettePrimary;
+
+        @media (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 21px;
+        }
     }
 
     &__btn{
@@ -143,6 +163,11 @@ $fontFamilySecondary: 'Cardo', serif;
         border: none;
         cursor: pointer;
         transition: background-color .3s linear;
+
+        @media (max-width: 1024px) {
+            max-width: 314px;
+            width: 100%;
+        }
     
         &:hover{
             background-color: $colorBtnHover;
@@ -164,6 +189,11 @@ $fontFamilySecondary: 'Cardo', serif;
     padding: 0 15px;
     text-align: center;
     margin: 0 auto;
+
+    @media (max-width: 1024px) {
+        max-width: 984px;
+        width: 100%;
+    }
 }
 
 //Это секция приоритеты
@@ -171,12 +201,20 @@ $fontFamilySecondary: 'Cardo', serif;
 .advantages{
     padding: 116px 0 134px;
 
+    @media (max-width: 1024px) {
+        padding: 78px 0 80px;
+    }
+
     &__list{
         text-align: center;
     }
 
     &__image{
         margin-bottom: 35px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 25px
+        }
     }
 
     &__title{
@@ -187,6 +225,12 @@ $fontFamilySecondary: 'Cardo', serif;
         font-size: 24px;
         line-height: 28px;
         margin-bottom: 25px;
+
+        @media (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 15px;
+        }
     }
 
     &__text{
@@ -195,6 +239,11 @@ $fontFamilySecondary: 'Cardo', serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 
 }
@@ -210,15 +259,102 @@ $fontFamilySecondary: 'Cardo', serif;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+
+    @media (max-width: 1024px) {
+        max-width: 984px;
+        width: 100%;
+    }
 }
 
 //Секция проекты 
 
 .projects{
-    padding-bottom: 114px;
+    margin-bottom: 114px;
 
     &__imageWrap{
         border: 1px solid $palettePrimary;
+        position: relative;
+        z-index: 1;
+
+        &::before{
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+    }
+
+    &__image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+
+        &:hover{
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 67, 67, 0.8);
+            border: 2px solid #FFFFFF;
+            display: block;
+            cursor: pointer;
+        }
+    }
+
+    &__imageInfo{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+    }
+
+    &__title{
+        font-family: $fontFamilyPrimary;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        color: $palettePrimary;
+        margin: 110px 0 20px;
+        text-transform: uppercase;
+    }
+
+    &__text{
+        font-family: $fontFamilyPrimary;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: $palettePrimary;
+    }
+}
+
+.container__projects{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+}
+
+//Секция команда
+
+.container__team{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 30px;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.team{
+    margin-bottom: 114px;
+
+    &__imageWrap{
+        margin-bottom: 30px;
         position: relative;
 
         &::before{
@@ -235,38 +371,6 @@ $fontFamilySecondary: 'Cardo', serif;
         position: absolute;
         left: 0;
         top: 0;
-    }
-}
-
-.container__projects{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    width: 100%;
-}
-
-//Секция команда
-
-.container__team{
-    display: flex;
-    column-gap: 30px;
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.team{
-    padding-bottom: 114px;
-
-    &__imageWrap{
-        width: 270px;
-        height: 270px;
-        margin-bottom: 30px;
-    }
-
-    &__image{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 
     &__title{
@@ -329,24 +433,25 @@ $fontFamilySecondary: 'Cardo', serif;
 .slider{
     display: flex;
     justify-content: center;
-    align-items: center;
     column-gap: 129px;
     background-color: $colorBackgroundSlider;
 
     &__imageWrap{
-        width: 741px;
-        height: 490px;
+        min-height: 490px;
     }
 
     &__image{
         width: 100%;
         height: 100%;
+        object-fit: cover;
+        object-position: right;
     }
 
     &__box{
         max-width: 471px;
         width: 100%;
         object-fit: cover;
+        align-self: center;
     }
 
     &__title{
@@ -429,13 +534,18 @@ $fontFamilySecondary: 'Cardo', serif;
     display: flex;
     column-gap: 30px;
     justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .container__footerDark{
     text-align: center;
-    max-width: 370px;
+    max-width: 400px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .footer{
