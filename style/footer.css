@@ -4,10 +4,10 @@
     padding: 40px 0 27px;
 }
 
-.media_icon {
+.wrapper_footer .media_icon {
     display: flex;
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
 }
 
 .wrapper_footer .Axure_Themes {
@@ -18,4 +18,9 @@
     line-height: 21px;
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
+}
+
+.icon object {
+    cursor: pointer;
+    pointer-events: none;
 }

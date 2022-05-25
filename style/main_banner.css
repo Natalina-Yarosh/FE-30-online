@@ -1,7 +1,7 @@
 .banner {
     background-image: url(../image/mainbanner.png);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     position: relative;
     padding: 306px 0 185px 0;
 }
@@ -21,7 +21,7 @@
     max-width: 670px;
 }
 
-.main_banner__info h1 {
+.main_banner__header {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
@@ -29,9 +29,10 @@
     line-height: 56px;
     margin-bottom: 98px;
     color: #FFFFFF;
+    position: relative;
 }
 
-.main_banner__info h1::after {
+.main_banner__header::after {
     display: block;
     content: "";
     width: 170px;
@@ -39,7 +40,7 @@
     position: relative;
     left: 0;
     bottom: -55px;
-    margin-bottom: 42px;
+    position: absolute;
 }
 
 .info__text {
@@ -55,10 +56,6 @@
 
 .main_banner__info__btm {
     max-width: 270px;
-    min-height: 58px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
@@ -68,7 +65,8 @@
     border: 2px solid #FFFFFF;
     background: none;
     cursor: pointer;
-    padding: 0 70px;
+    padding: 14px;
+    width: 100%;
 }
 
 .main_banner__info__btm:hover {
@@ -78,9 +76,7 @@
 
 .logo_big {
     display: block;
-    width: 170px;
-    height: 55px;
-    margin-top: -27px;
+    max-width: 170px;
     margin-bottom: 73px;
 }
 
@@ -93,7 +89,7 @@
     overflow: hidden;
 }
 
-.main_banner__registration h2 {
+.main_banner__registration__header {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -113,7 +109,7 @@
 }
 
 .registration__input {
-    padding: 33px 0 16px 0;
+    padding: 16px 0;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -124,7 +120,7 @@
     border: none;
     border-bottom: 1px solid #BDBDBD;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 14px;
     width: 100%;
 }
 
@@ -135,9 +131,14 @@
 
 .registration__input:focus {
     background: linear-gradient(#ffffff, #b1b1b1, #ffffff);
+    outline: none;
 }
 
-.main_banner__registration__button button {
+.main_banner__registration input:last-child {
+    margin: 0;
+}
+
+.main_banner__registration__button {
     width: 100%;
     background: #EC7979;
     border-radius: 0px 0px 10px 10px;
@@ -169,12 +170,12 @@
     color: #FFFFFF;
 }
 
-.main_banner__registration__button button:hover {
+.main_banner__registration__button:hover {
     color: rgb(255, 255, 255);
     background: #AB4949;
 }
 
-.main_banner__registration__button button:active {
+.main_banner__registration__button:active {
     background: #EC7979;
     box-shadow: inset 0px 0px 10px #AB4949;
 }
@@ -190,6 +191,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .media__text__text {
@@ -214,6 +216,8 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    cursor: pointer;
+    pointer-events: none;
 }
 
 .media_icon {

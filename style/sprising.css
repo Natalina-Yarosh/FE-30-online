@@ -1,5 +1,4 @@
 .pricing_wrapper {
-    margin-top: 110px;
     padding-top: 82px;
     background: #F5F5F5;
     padding-bottom: 83px;
@@ -36,7 +35,10 @@
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    margin-bottom: 59px;
+}
+
+.pricing_wrapper__text {
+    margin-bottom: 79px;
 }
 
 .prising_wrapper__tarifs {
@@ -59,9 +61,6 @@
 }
 
 .prising_wrapper__tarifs .tarif_tipe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     max-width: 100%;
     padding: 13px;
     background: #333333;
@@ -88,14 +87,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 370px;
-    height: 50px;
     background: #333333;
-    border: 2px solid #F5F5F5;
+    border-bottom: 2px solid #F5F5F5;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: rgba(255, 255, 255, 0.5)
+    color: rgba(255, 255, 255, 0.5);
+    padding: 14px;
 }
 
 .prising_wrapper__tarifs .price {
@@ -110,7 +108,7 @@
     align-items: center;
     justify-content: center;
     background: #FFFFFF;
-    border: 2px solid #F5F5F5;
+    border-bottom: 2px solid #F5F5F5;
     color: rgba(134, 135, 139, 1);
     font-family: 'Raleway';
     font-style: normal;
@@ -124,7 +122,7 @@
     border: none;
 }
 
-.prising_wrapper__tarifs div:hover {
+.prising_wrapper__tarifs .tarif:hover {
     filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
     margin-top: -20px;
 }

@@ -34,14 +34,19 @@
     font-size: 36px;
     line-height: 42px;
     text-align: center;
+    position: relative;
+    margin-bottom: 80px;
 }
 
 .banner_design__h2::after {
     display: block;
     content: "";
     width: 170px;
-    border: 1px solid #FFFFFF;
-    margin: 40px auto 40px;
+    border: 1px solid #EC7979;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
 }
 
 .banner_design__p {
@@ -73,9 +78,6 @@
 
 .design_banner__btm {
     max-width: 270px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 42px;
     font-family: 'Open Sans';
     font-style: normal;
@@ -86,6 +88,7 @@
     border: 2px solid #FFFFFF;
     background: none;
     cursor: pointer;
-    padding: 16px 70px;
+    padding: 16px;
     margin: 0 auto;
+    width: 100%;
 }

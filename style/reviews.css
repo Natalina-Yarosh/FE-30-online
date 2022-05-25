@@ -11,8 +11,9 @@
     line-height: 42px;
     text-align: center;
     color: #000000;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     text-transform: uppercase;
+    position: relative;
 }
 
 .reviews_wrapper__title::after {
@@ -20,7 +21,10 @@
     content: "";
     width: 170px;
     border: 1px solid #EC7979;
-    margin: 40px auto 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
 }
 
 .main_wrapper__reviews_wrapper .text {
@@ -35,11 +39,7 @@
 
 .text_review {
     position: relative;
-    display: flex;
     text-align: center;
-    max-width: 370px;
-    flex-direction: column;
-    align-items: center;
     background: #E2E2E2;
     border-radius: 10px;
     padding: 38px 25px;
@@ -68,6 +68,7 @@
     width: 100%;
     background-color: #ffffff;
     column-gap: 30px;
+    max-width: 370px;
 }
 
 .reviews_wrapper__contacts_clients {
@@ -80,6 +81,7 @@
     height: 70px;
     overflow: hidden;
     margin-right: 30px;
+    border-radius: 50%;
 }
 
 .contact_client__img_client img {
@@ -89,7 +91,6 @@
 }
 
 .reviews_wrapper__contact_client {
-    max-width: 370px;
     display: flex;
 }
 

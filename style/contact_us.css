@@ -67,6 +67,16 @@
         width: 100%;
     }
     
+    .contact_us__input:hover {
+        color: #000000;
+        background-color: rgb(236, 236, 236);
+    }
+    
+    .contact_us__input:focus {
+        outline: none;
+        background: linear-gradient(#ffffff, #b1b1b1, #ffffff);
+    }
+    
     .contact_us__input_message {
         padding-top: 19px;
         margin: 0;
@@ -77,6 +87,11 @@
         border-bottom: 1px solid #BDBDBD;
         align-items: stretch;
         padding: 10px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
     }
     
     .wrapper_contact_us__input__btm {
