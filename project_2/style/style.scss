@@ -49,21 +49,23 @@ $fontFamilySecondary: 'Cardo', serif;
         font-family: $fontFamilyPrimary;
         display: block;
         border-bottom: 3px solid transparent;
+        transition: .3s linear;
 
         @media (max-width: 1024px) {
             font-size: 12px;
             line-height: 14px;
         }
-    
+
         &:hover{
             border-bottom: 3px solid $colorDecorationHeader;
+            transition: .3s linear;
         }
     
         &:active{
             border-bottom: 3px solid $colorNavActive;
             color: $colorNavActive;
+            transition: .3s linear;
         }
-    
     }
 
     
@@ -77,6 +79,21 @@ $fontFamilySecondary: 'Cardo', serif;
         height: 100%;
         object-fit: cover;
         pointer-events: none;
+    }
+
+    &__menuSvg{
+        pointer-events: none;
+        display: none;
+
+        @media (max-width: 980px) {
+            display: block;
+        }
+    }
+
+    &__nav{
+        @media (max-width: 980px) {
+            display: none;
+        }
     }
 }
 
@@ -93,6 +110,10 @@ $fontFamilySecondary: 'Cardo', serif;
     @media (max-width: 1024px) {
         max-width: 984px;
         width: 100%;
+    }
+
+    @media (max-width: 980px) {
+        border-bottom: none;
     }
 }
 
@@ -162,7 +183,7 @@ $fontFamilySecondary: 'Cardo', serif;
         text-transform: uppercase;
         border: none;
         cursor: pointer;
-        transition: background-color .3s linear;
+        transition: background-color .5s linear;
 
         @media (max-width: 1024px) {
             max-width: 314px;
@@ -274,12 +295,25 @@ $fontFamilySecondary: 'Cardo', serif;
     &__imageWrap{
         border: 1px solid $palettePrimary;
         position: relative;
-        z-index: 1;
 
         &::before{
             content: '';
             display: block;
             padding-top: 100%;
+        }
+
+        :hover{
+            opacity: 0.8;
+            cursor: pointer;
+            background-color: #FF4343;
+            transition: .4s linear;
+        }
+
+        :active{
+            opacity: 0.8;
+            cursor: pointer;
+            background-color: #B90C0C;
+            transition: .4s linear;
         }
     }
 
@@ -290,28 +324,16 @@ $fontFamilySecondary: 'Cardo', serif;
         position: absolute;
         left: 0;
         top: 0;
-        z-index: 2;
-
-        &:hover{
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: rgba(255, 67, 67, 0.8);
-            border: 2px solid #FFFFFF;
-            display: block;
-            cursor: pointer;
-        }
     }
 
     &__imageInfo{
         position: absolute;
-        z-index: 1;
         width: 100%;
         height: 100%;
         text-align: center;
         top: 0;
         left: 0;
+        opacity: 0;
     }
 
     &__title{
@@ -333,6 +355,7 @@ $fontFamilySecondary: 'Cardo', serif;
     }
 }
 
+
 .container__projects{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -348,14 +371,24 @@ $fontFamilySecondary: 'Cardo', serif;
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 1024px) {
+        column-gap: 25px;
+    }
 }
 
 .team{
     margin-bottom: 114px;
 
+    @media (max-width: 1024px) {
+        margin-bottom: 87px;
+    }
+
     &__imageWrap{
         margin-bottom: 30px;
         position: relative;
+        
 
         &::before{
             content: '';
@@ -380,6 +413,11 @@ $fontFamilySecondary: 'Cardo', serif;
         font-weight: 700;
         font-size: 24px;
         line-height: 28px;
+
+        @media (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 21px;
+        }
     }
 
     &__subtitle{
@@ -390,6 +428,11 @@ $fontFamilySecondary: 'Cardo', serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 
     &__text{
@@ -399,6 +442,11 @@ $fontFamilySecondary: 'Cardo', serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 
     &__link{
@@ -410,21 +458,25 @@ $fontFamilySecondary: 'Cardo', serif;
     }
 
     &__socialsSvg:hover path{
+        transition: .4s linear;
         fill: $colorBtnHover;
     }
 
     &__socialsSvg:hover rect{
         stroke: $colorBtnHover;
+        transition: .4s linear;
     }
 
     &__socialsSvg:active path{
         fill: $colorBtnAndActive;
         box-shadow: 4px 4px 30px $colorBtnAndActive;
+        transition: .4s linear;
     }
 
     &__socialsSvg:active rect{
         stroke: $colorBtnAndActive;
         box-shadow: 4px 4px 30px $colorBtnAndActive;
+        transition: .4s linear;
     }
 }
 
@@ -478,6 +530,10 @@ $fontFamilySecondary: 'Cardo', serif;
 .download{
     padding: 155px 0 114px;
 
+    @media (max-width: 1024px) {
+        padding: 77px 0 78px;
+    }
+
     &__title{
     font-family: $fontFamilyPrimary;
     color: $colorDownloadPrimary;
@@ -485,6 +541,13 @@ $fontFamilySecondary: 'Cardo', serif;
     font-size: 30px;
     line-height: 35px;
     margin-bottom: 20px;
+
+    @media (max-width: 1024px) {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 15px;
+    }
+
     }
 
     &__text{
@@ -495,6 +558,12 @@ $fontFamilySecondary: 'Cardo', serif;
         font-size: 18px;
         line-height: 21px;
         margin-bottom: 50px;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 45px;
+        }
     }
 
     &__btn{
@@ -510,7 +579,14 @@ $fontFamilySecondary: 'Cardo', serif;
         border: none;
         cursor: pointer;
         background-color: $colorBtnAndActive;
-        transition: background-color .3s linear;
+        transition: background-color .5s linear;
+
+        @media (max-width: 1024px) {
+            max-width: 313px;
+            font-size: 18px;
+            line-height: 21px;
+            padding: 28px;
+        }
     }
 
     &__btn:hover{
@@ -538,6 +614,10 @@ $fontFamilySecondary: 'Cardo', serif;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+
+    @media (max-width: 1024px) {
+        column-gap: 20px;
+    }
 }
 
 .container__footerDark{
@@ -553,11 +633,19 @@ $fontFamilySecondary: 'Cardo', serif;
     &__light{
         background-color: $colorBackgroundFooterLight;
         padding: 71px 0 71px;
+
+        @media (max-width: 1024px) {
+            padding: 46px 0 43px;
+        }
     }
 
     &__dark{
         background-color: $colorBackgroundFooterDark;
         padding: 24px;
+
+        @media (max-width: 1024px) {
+            padding: 14px;
+        }
     }
 
     &__wrap{
@@ -574,6 +662,12 @@ $fontFamilySecondary: 'Cardo', serif;
         font-size: 18px;
         line-height: 21px;
         margin-bottom: 29px;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 17px;
+        }
     }
 
     &__text{
@@ -581,7 +675,13 @@ $fontFamilySecondary: 'Cardo', serif;
         color: $palettePrimary;
         font-weight: 400;
         font-size: 18px;
-        line-height: 21px
+        line-height: 21px;
+
+        @media (max-width: 1024px) {
+            font-size: 18px;
+            line-height: 21px;
+        }
+
     }
 
     &__socials{
@@ -590,6 +690,10 @@ $fontFamilySecondary: 'Cardo', serif;
         justify-content: center;
         align-items: flex-end;
         margin-top: 48px;
+
+        @media (max-width: 1024px) {
+            column-gap: 22px;
+        }
     }
 
     &__copyright{
@@ -598,6 +702,11 @@ $fontFamilySecondary: 'Cardo', serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 
     &__copyrightWhite{
@@ -605,20 +714,24 @@ $fontFamilySecondary: 'Cardo', serif;
     }
 
     &__socialsSvg:hover path{
+        transition: .4s linear;
         fill: $colorBtnHover;
     }
 
     &__socialsSvg:hover rect{
+        transition: .4s linear;
         stroke: $colorBtnHover;
     }
 
     &__socialsSvg:active path{
         fill: $colorBtnAndActive;
         box-shadow: 4px 4px 30px $colorBtnAndActive;
+        transition: .4s linear;
     }
 
     &__socialsSvg:active rect{
         stroke: $colorBtnAndActive;
         box-shadow: 4px 4px 30px $colorBtnAndActive;
+        transition: .4s linear;
     }
 }
