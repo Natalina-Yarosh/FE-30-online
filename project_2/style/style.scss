@@ -129,6 +129,14 @@ $fontFamilySecondary: 'Cardo', serif;
     background-size: cover;
     padding: 230px 0 120px;
 
+    @media (max-width: 1024px) {
+        padding: 257px 0 126px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 106px 0 52px;
+    }
+
     &::after{
         content: '';
         position: absolute;
@@ -153,6 +161,13 @@ $fontFamilySecondary: 'Cardo', serif;
         @media (max-width: 1024px) {
             font-size: 48px;
             line-height: 56px;
+            margin-bottom: 61px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 36px;
+            line-height: 42px;
+            margin-bottom: 32px;
         }
     }
     
@@ -167,6 +182,13 @@ $fontFamilySecondary: 'Cardo', serif;
         @media (max-width: 1024px) {
             font-size: 18px;
             line-height: 21px;
+            margin-bottom: 91px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 51px;
         }
     }
 
@@ -188,6 +210,12 @@ $fontFamilySecondary: 'Cardo', serif;
         @media (max-width: 1024px) {
             max-width: 314px;
             width: 100%;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 280px;
+            width: 100%;
+            padding: 15px 0;
         }
     
         &:hover{
@@ -226,6 +254,10 @@ $fontFamilySecondary: 'Cardo', serif;
         padding: 78px 0 80px;
     }
 
+    @media (max-width: 767px) {
+        padding: 40px 0 34px;
+    }
+
     &__list{
         text-align: center;
     }
@@ -234,7 +266,11 @@ $fontFamilySecondary: 'Cardo', serif;
         margin-bottom: 35px;
 
         @media (max-width: 1024px) {
-            margin-bottom: 25px
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 66px;
         }
     }
 
@@ -252,6 +288,10 @@ $fontFamilySecondary: 'Cardo', serif;
             line-height: 21px;
             margin-bottom: 15px;
         }
+
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__text{
@@ -264,6 +304,10 @@ $fontFamilySecondary: 'Cardo', serif;
         @media (max-width: 1024px) {
             font-size: 14px;
             line-height: 16px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
         }
     }
 
@@ -285,12 +329,24 @@ $fontFamilySecondary: 'Cardo', serif;
         max-width: 984px;
         width: 100%;
     }
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 //Секция проекты 
 
 .projects{
     margin-bottom: 114px;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 78px;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 35px;
+    }
 
     &__imageWrap{
         border: 1px solid $palettePrimary;
@@ -344,6 +400,12 @@ $fontFamilySecondary: 'Cardo', serif;
         color: $palettePrimary;
         margin: 110px 0 20px;
         text-transform: uppercase;
+
+        @media (max-width: 1024px) {
+            margin: 75px 0 12px;
+            font-size: 18px;
+            line-height: 21px;
+        }
     }
 
     &__text{
@@ -352,6 +414,11 @@ $fontFamilySecondary: 'Cardo', serif;
         font-size: 18px;
         line-height: 21px;
         color: $palettePrimary;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 }
 
@@ -360,6 +427,10 @@ $fontFamilySecondary: 'Cardo', serif;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     width: 100%;
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 //Секция команда
@@ -376,13 +447,21 @@ $fontFamilySecondary: 'Cardo', serif;
     @media (max-width: 1024px) {
         column-gap: 25px;
     }
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .team{
     margin-bottom: 114px;
 
     @media (max-width: 1024px) {
-        margin-bottom: 87px;
+        margin-bottom: 78px;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 34px;
     }
 
     &__imageWrap{
@@ -458,25 +537,25 @@ $fontFamilySecondary: 'Cardo', serif;
     }
 
     &__socialsSvg:hover path{
-        transition: .4s linear;
+        transition: .5s linear;
         fill: $colorBtnHover;
     }
 
     &__socialsSvg:hover rect{
         stroke: $colorBtnHover;
-        transition: .4s linear;
+        transition: .5s linear;
     }
 
     &__socialsSvg:active path{
         fill: $colorBtnAndActive;
         box-shadow: 4px 4px 30px $colorBtnAndActive;
-        transition: .4s linear;
+        transition: .5s linear;
     }
 
     &__socialsSvg:active rect{
         stroke: $colorBtnAndActive;
         box-shadow: 4px 4px 30px $colorBtnAndActive;
-        transition: .4s linear;
+        transition: .5s linear;
     }
 }
 
@@ -534,6 +613,10 @@ $fontFamilySecondary: 'Cardo', serif;
         padding: 77px 0 78px;
     }
 
+    @media (max-width: 676px) {
+        padding: 67px 0 45px;
+    }
+
     &__title{
     font-family: $fontFamilyPrimary;
     color: $colorDownloadPrimary;
@@ -545,6 +628,12 @@ $fontFamilySecondary: 'Cardo', serif;
     @media (max-width: 1024px) {
         font-size: 24px;
         line-height: 28px;
+        margin-bottom: 15px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 18px;
+        line-height: 21px;
         margin-bottom: 15px;
     }
 
@@ -563,6 +652,12 @@ $fontFamilySecondary: 'Cardo', serif;
             font-size: 14px;
             line-height: 16px;
             margin-bottom: 45px;
+        }
+
+        @media (max-width: 767px) {
+            font-weight: 700;
+            font-size: 13px;
+            margin-bottom: 13px;
         }
     }
 
@@ -583,8 +678,15 @@ $fontFamilySecondary: 'Cardo', serif;
 
         @media (max-width: 1024px) {
             max-width: 313px;
+            width: 100%;
             font-size: 18px;
             line-height: 21px;
+            padding: 28px;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 278px;
+            width: 100%;
             padding: 28px;
         }
     }
@@ -618,6 +720,11 @@ $fontFamilySecondary: 'Cardo', serif;
     @media (max-width: 1024px) {
         column-gap: 20px;
     }
+
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+        row-gap: 68px;
+    }
 }
 
 .container__footerDark{
@@ -637,6 +744,10 @@ $fontFamilySecondary: 'Cardo', serif;
         @media (max-width: 1024px) {
             padding: 46px 0 43px;
         }
+
+        @media (max-width: 767px) {
+            padding: 34px 0 33px;
+        }
     }
 
     &__dark{
@@ -645,6 +756,10 @@ $fontFamilySecondary: 'Cardo', serif;
 
         @media (max-width: 1024px) {
             padding: 14px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 29px 0 28px;
         }
     }
 
@@ -667,6 +782,10 @@ $fontFamilySecondary: 'Cardo', serif;
             font-size: 14px;
             line-height: 16px;
             margin-bottom: 17px;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 34px;
         }
     }
 
@@ -714,24 +833,24 @@ $fontFamilySecondary: 'Cardo', serif;
     }
 
     &__socialsSvg:hover path{
-        transition: .4s linear;
+        transition: .5s linear;
         fill: $colorBtnHover;
     }
 
     &__socialsSvg:hover rect{
-        transition: .4s linear;
+        transition: .5s linear;
         stroke: $colorBtnHover;
     }
 
     &__socialsSvg:active path{
         fill: $colorBtnAndActive;
         box-shadow: 4px 4px 30px $colorBtnAndActive;
-        transition: .4s linear;
+        transition: .5s linear;
     }
 
     &__socialsSvg:active rect{
         stroke: $colorBtnAndActive;
         box-shadow: 4px 4px 30px $colorBtnAndActive;
-        transition: .4s linear;
+        transition: .5s linear;
     }
 }
