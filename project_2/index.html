@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style/style.css">
     <title>Project 2</title>
 </head>
@@ -266,12 +267,65 @@
     </section>
 
     <section class="slider">
-        <div class="slider__imageWrap">
-            <img class="slider__image" src="image/slider/sliderImage.jpg" alt="sliderImage">
-        </div>
-        <div class="slider__box">
-            <h2 class="slider__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h2>
-            <p class="slider__text">Susan Sims, Interaction Designer at XYZ</p>
+        <div class="swiper slider__swiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slider__block">
+                <div class="slider__imageWrap">
+                    <img class="slider__image" src="image/slider/sliderImage.jpg" alt="sliderImage">
+                </div>
+                <div class="slider__box">
+                    <h2 class="slider__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h2>
+                    <p class="slider__text">Susan Sims, Interaction Designer at XYZ</p>
+                </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                    <div class="slider__block">
+                    <div class="slider__imageWrap">
+                        <img class="slider__image" src="image/slider/sliderImage.jpg" alt="sliderImage">
+                    </div>
+                    <div class="slider__box">
+                        <h2 class="slider__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h2>
+                        <p class="slider__text">Susan Sims, Interaction Designer at XYZ</p>
+                    </div>
+                    </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider__block">
+                    <div class="slider__imageWrap">
+                        <img class="slider__image" src="image/slider/sliderImage.jpg" alt="sliderImage">
+                    </div>
+                    <div class="slider__box">
+                        <h2 class="slider__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h2>
+                        <p class="slider__text">Susan Sims, Interaction Designer at XYZ</p>
+                    </div>
+                    </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider__block">
+                    <div class="slider__imageWrap">
+                        <img class="slider__image" src="image/slider/sliderImage.jpg" alt="sliderImage">
+                    </div>
+                    <div class="slider__box">
+                        <h2 class="slider__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h2>
+                        <p class="slider__text">Susan Sims, Interaction Designer at XYZ</p>
+                    </div>
+                    </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider__block">
+                    <div class="slider__imageWrap">
+                        <img class="slider__image" src="image/slider/sliderImage.jpg" alt="sliderImage">
+                    </div>
+                    <div class="slider__box">
+                        <h2 class="slider__title">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</h2>
+                        <p class="slider__text">Susan Sims, Interaction Designer at XYZ</p>
+                    </div>
+                    </div>
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -321,5 +375,16 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".slider__swiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+    </script>
+
 </body>
 </html>

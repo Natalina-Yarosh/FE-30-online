@@ -633,7 +633,7 @@
   transition: .5s linear;
 }
 
-.slider {
+.slider__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,6 +643,20 @@
   -webkit-column-gap: 129px;
           column-gap: 129px;
   background-color: #5C3249;
+}
+
+@media (max-width: 1024px) {
+  .slider__block {
+    -webkit-column-gap: 88px;
+            column-gap: 88px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider__block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .slider__imageWrap {
@@ -677,6 +691,13 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 1024px) {
+  .slider__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
 .slider__text {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -684,6 +705,50 @@
   font-weight: 700;
   font-size: 13px;
   line-height: 15px;
+}
+
+@media (max-width: 1024px) {
+  .slider__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.swiper.slider__swiper {
+  padding-bottom: 60px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: #5C3249;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 14px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 14px));
+}
+
+@media (max-width: 1024px) {
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 13px);
+}
+
+@media (max-width: 1024px) {
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+  }
 }
 
 .download {

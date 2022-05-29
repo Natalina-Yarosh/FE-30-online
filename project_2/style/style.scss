@@ -562,10 +562,20 @@ $fontFamilySecondary: 'Cardo', serif;
 //Слайдер
 
 .slider{
-    display: flex;
-    justify-content: center;
-    column-gap: 129px;
-    background-color: $colorBackgroundSlider;
+    &__block{
+        display: flex;
+        justify-content: center;
+        column-gap: 129px;
+        background-color: $colorBackgroundSlider;
+
+        @media (max-width: 1024px) {
+            column-gap: 88px;
+        }
+    
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
+    }
 
     &__imageWrap{
         min-height: 490px;
@@ -592,6 +602,11 @@ $fontFamilySecondary: 'Cardo', serif;
         font-size: 36px;
         line-height: 49px;
         margin-bottom: 20px;
+
+        @media (max-width: 1024px) {
+            font-size: 24px;
+            line-height: 32px;
+        }
     }
 
     &__text{
@@ -601,6 +616,42 @@ $fontFamilySecondary: 'Cardo', serif;
         font-weight: 700;
         font-size: 13px;
         line-height: 15px;
+
+        @media (max-width: 1024px) {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+}
+
+.swiper.slider__swiper {
+    padding-bottom: 60px;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: $colorBackgroundSlider;
+}
+
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,14px));
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,14px));
+
+    @media (max-width: 1024px) {
+        width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,10px));
+        height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,10px));
+    }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,13px);
+
+    @media (max-width: 1024px) {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap,10px);
+    }
+
+    @media (max-width: 767px) {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap,8px);
     }
 }
 
