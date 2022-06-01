@@ -15,6 +15,7 @@ $colorBackgroundFooterLight: #353C65;
 $colorBackgroundFooterDark: #2C3154;
 $colorDownloadPrimary: #000000;
 $colorDarkFooterPrimary: #808080;
+$color-border-svg: #C6CBCD;
 
 $fontFamilyPrimary: 'Raleway', sans-serif;
 $fontFamilySecondary: 'Cardo', serif;
@@ -531,20 +532,30 @@ $fontFamilySecondary: 'Cardo', serif;
 
     &__link{
         margin-right: 5px;
+
+        :hover{
+            border: 1px solid $colorBtnHover;
+            transition: .5s linear;
+        }
+
+        :active{
+            border: 1px solid $colorBtnHover;
+            transition: .5s linear;
+            box-shadow: 4px 4px 30px $colorBtnAndActive
+        }
     }
 
     &__link:last-child{
         margin-right: 0;
     }
 
+    &__socialsSvg{
+        border: 1px solid $color-border-svg;
+    }
+
     &__socialsSvg:hover path{
         transition: .5s linear;
         fill: $colorBtnHover;
-    }
-
-    &__socialsSvg:hover rect{
-        stroke: $colorBtnHover;
-        transition: .5s linear;
     }
 
     &__socialsSvg:active path{
@@ -553,12 +564,6 @@ $fontFamilySecondary: 'Cardo', serif;
         transition: .5s linear;
     }
 
-    &__socialsSvg:active rect{
-        stroke: $colorBtnAndActive;
-        box-shadow: 4px 4px 30px $colorBtnAndActive;
-        transition: .5s linear;
-    }
-    
     &__wrap{
         @media (max-width: 767px) {
             margin-bottom: 50px;
@@ -917,20 +922,27 @@ $fontFamilySecondary: 'Cardo', serif;
         fill: $colorBtnHover;
     }
 
-    &__socialsSvg:hover rect{
-        transition: .5s linear;
-        stroke: $colorBtnHover;
-    }
-
     &__socialsSvg:active path{
         fill: $colorBtnAndActive;
         box-shadow: 4px 4px 30px $colorBtnAndActive;
         transition: .5s linear;
     }
 
-    &__socialsSvg:active rect{
-        stroke: $colorBtnAndActive;
-        box-shadow: 4px 4px 30px $colorBtnAndActive;
-        transition: .5s linear;
+    &__socialsSvg{
+        border: 1px solid $color-border-svg;
     }
+    
+    &__link{
+        :hover{
+        transition: .5s linear;
+        border: 1px solid $colorBtnHover;
+        }
+
+        :active{
+            box-shadow: 4px 4px 30px $colorBtnAndActive;
+            transition: .5s linear;
+            border: 1px solid $colorBtnAndActive;
+        }
+    }
+    
 }

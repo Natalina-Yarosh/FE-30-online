@@ -609,8 +609,26 @@
   margin-right: 5px;
 }
 
+.team__link :hover {
+  border: 1px solid #E71414;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+}
+
+.team__link :active {
+  border: 1px solid #E71414;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+  -webkit-box-shadow: 4px 4px 30px #FF4343;
+          box-shadow: 4px 4px 30px #FF4343;
+}
+
 .team__link:last-child {
   margin-right: 0;
+}
+
+.team__socialsSvg {
+  border: 1px solid #C6CBCD;
 }
 
 .team__socialsSvg:hover path {
@@ -619,22 +637,8 @@
   fill: #E71414;
 }
 
-.team__socialsSvg:hover rect {
-  stroke: #E71414;
-  -webkit-transition: .5s linear;
-  transition: .5s linear;
-}
-
 .team__socialsSvg:active path {
   fill: #FF4343;
-  -webkit-box-shadow: 4px 4px 30px #FF4343;
-          box-shadow: 4px 4px 30px #FF4343;
-  -webkit-transition: .5s linear;
-  transition: .5s linear;
-}
-
-.team__socialsSvg:active rect {
-  stroke: #FF4343;
   -webkit-box-shadow: 4px 4px 30px #FF4343;
           box-shadow: 4px 4px 30px #FF4343;
   -webkit-transition: .5s linear;
@@ -1074,12 +1078,6 @@
   fill: #E71414;
 }
 
-.footer__socialsSvg:hover rect {
-  -webkit-transition: .5s linear;
-  transition: .5s linear;
-  stroke: #E71414;
-}
-
 .footer__socialsSvg:active path {
   fill: #FF4343;
   -webkit-box-shadow: 4px 4px 30px #FF4343;
@@ -1088,11 +1086,21 @@
   transition: .5s linear;
 }
 
-.footer__socialsSvg:active rect {
-  stroke: #FF4343;
+.footer__socialsSvg {
+  border: 1px solid #C6CBCD;
+}
+
+.footer__link :hover {
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+  border: 1px solid #E71414;
+}
+
+.footer__link :active {
   -webkit-box-shadow: 4px 4px 30px #FF4343;
           box-shadow: 4px 4px 30px #FF4343;
   -webkit-transition: .5s linear;
   transition: .5s linear;
+  border: 1px solid #FF4343;
 }
 /*# sourceMappingURL=style.css.map */
