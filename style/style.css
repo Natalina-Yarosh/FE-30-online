@@ -254,7 +254,7 @@
 
 /*tabs*/
 .tabs {
-    padding: 100px 0 18px;
+    padding-top: 100px;
 }
 .tabs__nav {
     display: flex;
@@ -334,7 +334,7 @@
 
 /*awesome*/
 .awesome {
-    padding: 100px 0 118px;
+    padding: 118px 0;
 }
 .awesome__title {
     font-size: 36px;
