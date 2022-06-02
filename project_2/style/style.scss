@@ -386,6 +386,8 @@ $fontFamilySecondary: 'Cardo', serif;
     &__imageInfo{
         position: absolute;
         display: flex;
+        flex-direction: column;
+        row-gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
@@ -394,6 +396,14 @@ $fontFamilySecondary: 'Cardo', serif;
         top: 0;
         left: 0;
         opacity: 0;
+
+        @media (max-width: 1024px) {
+            row-gap: 13px;
+        }
+
+        @media (max-width: 767px) {
+            row-gap: 6px;
+        }
     }
 
     &__title{
@@ -532,6 +542,10 @@ $fontFamilySecondary: 'Cardo', serif;
 
     &__link{
         margin-right: 5px;
+        display: inline-block;
+        border: 1px solid $color-border-svg;
+        height: 40px;
+        transition: .5s linear;
 
         :hover{
             border: 1px solid $colorBtnHover;
@@ -547,10 +561,6 @@ $fontFamilySecondary: 'Cardo', serif;
 
     &__link:last-child{
         margin-right: 0;
-    }
-
-    &__socialsSvg{
-        border: 1px solid $color-border-svg;
     }
 
     &__socialsSvg:hover path{
@@ -601,6 +611,14 @@ $fontFamilySecondary: 'Cardo', serif;
 
     &__imageWrap{
         min-height: 490px;
+
+        @media (max-width: 1024px) {
+        min-height: 332px;
+        }
+
+        @media (max-width: 767px) {
+        min-height: 212px;
+        }
     }
 
     &__image{
@@ -615,8 +633,6 @@ $fontFamilySecondary: 'Cardo', serif;
         width: 100%;
         object-fit: cover;
         align-self: center;
-
-        
     }
 
     &__title{
@@ -928,11 +944,11 @@ $fontFamilySecondary: 'Cardo', serif;
         transition: .5s linear;
     }
 
-    &__socialsSvg{
-        border: 1px solid $color-border-svg;
-    }
-    
     &__link{
+        border: 1px solid $color-border-svg;
+        display: block;
+        height: 40px;
+
         :hover{
         transition: .5s linear;
         border: 1px solid $colorBtnHover;
